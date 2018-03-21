@@ -16,7 +16,15 @@ So far the user can add an item and click it to remove it from the list.
 #### R1D2
 
 **Today's Progress:**
-Updated styling and tweaked functionality of vanilla JS version of my pixel art maker, including making it so the default grid size appears on page load (as opposed to having to first hit submit). Also worked toward adding an erase feature (coming up with some ideas as to how it could be done)
+Updated styling and tweaked functionality of the vanilla JS version of my pixel art maker, including making it so the default grid size appears on page load (as opposed to having to first hit submit). Also worked toward adding an erase feature (coming up with some ideas as to how it could be done).
 
 **Link to Work:**
 https://codepen.io/nataliecardot/pen/MQRxJZ
+
+#### R1D3
+
+**Today's Progress:**
+Added double-click erase functionality to the jQuery version of my pixel art maker and got started with moving text and buttons to the left of the grid.
+
+**Link to Work:**
+https://codepen.io/nataliecardot/pen/VQRrgQ
