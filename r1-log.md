@@ -32,6 +32,8 @@ Added double-click erase functionality to the jQuery version of my pixel art mak
 **Today's Progress:**
 Used CSS to create a two-column layout and added styling including a background color and content box for both the vanilla JS and jQuery versions of my pixel art maker.
 
-**Link to Work:**
-[jQuery pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/VQRrgQ)
-[Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
+**Links to Work:**
+
+* [jQuery pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/VQRrgQ)
+
+* [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
