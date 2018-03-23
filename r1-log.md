@@ -37,3 +37,10 @@ Used CSS to create a two-column layout and added styling including a background 
 * [jQuery pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/VQRrgQ)
 
 * [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
+
+#### R1D5
+
+**Today's Progress:**
+Added functionality to the vanilla JavaScript version of my pixel art maker enabling the user to remove color from a cell by double-clicking it.
+
+**Link to Work:** [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
