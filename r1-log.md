@@ -14,7 +14,7 @@ So far the user can add an item and click it to remove it from the list.
 #### R1D2
 
 **Today's Progress:**
-Updated styling and tweaked functionality of the vanilla JS version of my pixel art maker, including making it so the default grid size appears on page load (as opposed to having to first hit submit). Also worked toward adding an erase feature (coming up with some ideas as to how it could be done).
+Updated styling and tweaked functionality of the vanilla JS version of my pixel art maker, including making it so the default grid size appears on page load (as opposed to having to first hit 'submit'). Also worked toward adding an erase feature (coming up with some ideas as to how it could be done).
 
 **Link to Work:**
 [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
@@ -44,3 +44,12 @@ Used CSS to create a two-column layout and added styling including a background 
 Added functionality to the vanilla JavaScript version of my pixel art maker enabling the user to remove color from a cell by double-clicking it.
 
 **Link to Work:** [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
+
+#### R1D6
+
+**Today's Progress:**
+Added functionality to the jQuery version of my pixel art maker, making it so the default grid size appears on page load (as opposed to having to first hit 'submit'). Also improved styling of both versions, including fixed grid distortion and title misalignment over grid.
+
+* [jQuery pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/VQRrgQ)
+
+* [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
