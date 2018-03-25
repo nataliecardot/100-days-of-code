@@ -53,3 +53,12 @@ Added functionality to the jQuery version of my pixel art maker, making it so th
 * [jQuery pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/VQRrgQ)
 
 * [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
+
+#### R1D7
+
+**Today's Progress:**
+Added color-fill functionality to both the jQuery and vanilla JS versions of my pixel art maker.
+
+* [jQuery pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/VQRrgQ)
+
+* [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
