@@ -50,6 +50,7 @@ Added functionality to the vanilla JavaScript version of my pixel art maker enab
 **Today's Progress:**
 Added functionality to the jQuery version of my pixel art maker, making it so the default grid size appears on page load (as opposed to having to first hit 'submit'). Also improved styling of both versions, including fixed grid distortion and title misalignment over grid.
 
+**Links to Work:**
 * [jQuery pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/VQRrgQ)
 
 * [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
@@ -59,6 +60,17 @@ Added functionality to the jQuery version of my pixel art maker, making it so th
 **Today's Progress:**
 Added color-fill functionality to both the jQuery and vanilla JS versions of my pixel art maker.
 
+**Links to Work:**
+* [jQuery pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/VQRrgQ)
+
+* [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
+
+#### R1D8
+
+**Today's Progress:**
+Added erase and draw modes to both the jQuery and vanilla JS versions of my pixel art maker.
+
+**Links to Work:**
 * [jQuery pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/VQRrgQ)
 
 * [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
