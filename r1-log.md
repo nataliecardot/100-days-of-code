@@ -74,3 +74,13 @@ Added erase and draw modes to both the jQuery and vanilla JS versions of my pixe
 * [jQuery pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/VQRrgQ)
 
 * [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
+
+#### R1D9
+
+**Today's Progress:**
+Improved erase and draw modes (with single-cell erase/color fill on mousedown) for jQuery version of my pixel art maker, and updated styling (change to more subtle grid lines) for both jQuery and vanilla JS versions.
+
+**Links to Work:**
+* [jQuery pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/VQRrgQ)
+
+* [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
