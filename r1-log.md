@@ -84,3 +84,11 @@ Improved erase and draw modes (with single-cell erase/color fill on mousedown) f
 * [jQuery pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/VQRrgQ)
 
 * [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
+
+#### R1D10
+
+**Today's Progress:**
+Changed the styling of my color picker and looked into ways to add additional ones with preset colors. The updated appearance is sleeker, but it seems it's not feasible to have more than one functioning color picker, and doing so would require installation of plugins/software.
+
+**Link to Work:**
+https://codepen.io/nataliecardot/pen/QmQvOL
