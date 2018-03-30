@@ -92,3 +92,11 @@ Changed the styling of my color picker and looked into ways to add additional on
 
 **Link to Work:**
 https://codepen.io/nataliecardot/pen/QmQvOL
+
+#### R1D10
+
+**Today's Progress:**
+Fixed a couple bugs that occurred while using the newly added 'draw' mode in my vanilla JS pixel art maker. Slightly modified styling of both versions. Removed additional nonfunctioning color pickers for now but continued to investigate methods of having multiple.
+
+**Link to Work:**
+https://codepen.io/nataliecardot/pen/MQRxJZ
