@@ -100,3 +100,8 @@ Fixed a couple bugs that occurred while using the newly added 'draw' mode in my 
 
 **Link to Work:**
 https://codepen.io/nataliecardot/pen/MQRxJZ
+
+#### R1D12
+
+**Today's Progress:**
+Made a further attempt to add additional color pickers to my pixel art maker as well as add CSS to automatically align the input box/toolbar relative to the grid with each addition/removal of content. Both unsuccessful (the latter may not be possible). 
