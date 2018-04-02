@@ -104,4 +104,12 @@ https://codepen.io/nataliecardot/pen/MQRxJZ
 #### R1D12
 
 **Today's Progress:**
-Made a further attempt to add additional color pickers to my pixel art maker as well as add CSS to automatically align the input box/toolbar relative to the grid with each addition/removal of content. Both unsuccessful (the latter may not be possible). 
+Made a further attempt to add additional color pickers to my pixel art maker as well as to add CSS to automatically align the input box/toolbar relative to the grid with each addition/removal of content. Both unsuccessful (the latter may not be possible).
+
+#### R1D13
+
+**Today's Progress:**
+Updated styling and functionality of my jQuery to-do list, including adding strike-through and fade-out to completed items, banded coloring of list, and appearance change upon hovering over list items. 
+
+**Link to Work:**
+https://codepen.io/nataliecardot/pen/VXmPrO
