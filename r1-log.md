@@ -109,7 +109,15 @@ Made a further attempt to add additional color pickers to my pixel art maker as 
 #### R1D13
 
 **Today's Progress:**
-Updated styling and functionality of my jQuery to-do list, including adding strike-through and fade-out to completed items, banded coloring of list, and appearance change upon hovering over list items. 
+Updated styling and functionality of my jQuery to-do list, including adding strike-through and fade-out of completed items, banded coloring of list items, and appearance change upon hovering over list items.
+
+**Link to Work:**
+https://codepen.io/nataliecardot/pen/VXmPrO
+
+#### R1D14
+
+**Today's Progress:**
+Updated styling of my jQuery to-do list, including a change to input box border color and placement of button relative to input box.
 
 **Link to Work:**
 https://codepen.io/nataliecardot/pen/VXmPrO
