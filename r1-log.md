@@ -121,3 +121,11 @@ Updated styling of my jQuery to-do list, including a change to input box border 
 
 **Link to Work:**
 https://codepen.io/nataliecardot/pen/VXmPrO
+
+#### R1D15
+
+**Today's Progress:**
+Debugged and restyled my jQuery to-do list. Solved bugs include refresh upon hitting enter and lines in the list added by blank input. Removed default button focus outline color.
+
+**Link to Work:**
+https://codepen.io/nataliecardot/pen/VXmPrO
