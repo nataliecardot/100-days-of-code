@@ -129,3 +129,11 @@ Debugged and restyled my jQuery to-do list. Solved bugs include refresh upon hit
 
 **Link to Work:**
 https://codepen.io/nataliecardot/pen/VXmPrO
+
+#### R1D16
+
+**Today's Progress:**
+Got started creating another to-do list, this time using Bootstrap in addition to jQuery.
+
+**Link to Work:**
+https://codepen.io/nataliecardot/full/NYLMwW/
