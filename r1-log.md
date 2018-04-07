@@ -112,7 +112,7 @@ Made a further attempt to add additional color pickers to my pixel art maker as 
 Updated styling and functionality of my jQuery to-do list, including adding strike-through and fade-out of completed items, banded coloring of list items, and appearance change upon hovering over list items.
 
 **Link to Work:**
-https://codepen.io/nataliecardot/pen/VXmPrO
+[jQuery to-do list (CodePen)](https://codepen.io/nataliecardot/pen/VXmPrO)
 
 #### R1D14
 
@@ -120,7 +120,7 @@ https://codepen.io/nataliecardot/pen/VXmPrO
 Updated styling of my jQuery to-do list, including a change to input box border color and placement of button relative to input box.
 
 **Link to Work:**
-https://codepen.io/nataliecardot/pen/VXmPrO
+[jQuery to-do list (CodePen)](https://codepen.io/nataliecardot/pen/VXmPrO)
 
 #### R1D15
 
@@ -128,7 +128,7 @@ https://codepen.io/nataliecardot/pen/VXmPrO
 Debugged and restyled my jQuery to-do list. Solved bugs include refresh upon hitting enter and lines in the list added by blank input. Removed default button focus outline color.
 
 **Link to Work:**
-https://codepen.io/nataliecardot/pen/VXmPrO
+[jQuery to-do list (CodePen)](https://codepen.io/nataliecardot/pen/VXmPrO)
 
 #### R1D16
 
@@ -136,7 +136,7 @@ https://codepen.io/nataliecardot/pen/VXmPrO
 Got started creating another to-do list, this time using Bootstrap in addition to jQuery.
 
 **Link to Work:**
-https://codepen.io/nataliecardot/full/NYLMwW/
+[jQuery/Bootstrap to-do list (CodePen)](https://codepen.io/nataliecardot/full/NYLMwW/)
 
 #### R1D17
 
@@ -144,4 +144,14 @@ https://codepen.io/nataliecardot/full/NYLMwW/
 Made various styling changes to my jQuery/Bootstrap to-do list, including to cursors, placement of slide-out trash can icon, and a fix for line text overlap.
 
 **Link to Work:**
-https://codepen.io/nataliecardot/full/NYLMwW/
+[jQuery/Bootstrap to-do list (CodePen)](https://codepen.io/nataliecardot/full/NYLMwW/)
+
+#### R1D18
+
+**Today's Progress:**
+Added list item reordering functionality to both my jQuery/Bootstrap and jQuery to-do lists, and added code that moves completed items to the end of my jQuery/Bootstrap to-do list.
+
+**Links to Work:**
+* [jQuery to-do list (CodePen)](https://codepen.io/nataliecardot/pen/VXmPrO)
+
+* [jQuery/Bootstrap to-do list (CodePen)](https://codepen.io/nataliecardot/full/NYLMwW/)
