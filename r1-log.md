@@ -137,3 +137,11 @@ Got started creating another to-do list, this time using Bootstrap in addition t
 
 **Link to Work:**
 https://codepen.io/nataliecardot/full/NYLMwW/
+
+#### R1D17
+
+**Today's Progress:**
+Made various styling changes to my jQuery/Bootstrap to-do list, including to cursors, placement of slide-out trash can icon, and a fix for line text overlap.
+
+**Link to Work:**
+https://codepen.io/nataliecardot/full/NYLMwW/
