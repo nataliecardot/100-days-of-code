@@ -155,3 +155,11 @@ Added list item reordering functionality to both my jQuery/Bootstrap and jQuery 
 * [jQuery to-do list (CodePen)](https://codepen.io/nataliecardot/pen/VXmPrO)
 
 * [jQuery/Bootstrap to-do list (CodePen)](https://codepen.io/nataliecardot/full/NYLMwW/)
+
+#### R1D19
+
+**Today's Progress:**
+Got started on the freeCodeCamp tribute page project.
+
+**Links to Work:**
+* [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
