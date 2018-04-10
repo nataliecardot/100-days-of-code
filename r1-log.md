@@ -163,3 +163,11 @@ Got started on the freeCodeCamp tribute page project.
 
 **Links to Work:**
 * [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
+
+#### R1D20
+
+**Today's Progress:**
+Added styling and content to my freeCodeCamp tribute page project.
+
+**Links to Work:**
+* [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
