@@ -179,3 +179,11 @@ Added styling and content to my freeCodeCamp tribute page project.
 
 **Links to Work:**
 * [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
+
+#### R1D22
+
+**Today's Progress:**
+Worked on CSS styling on my freeCodeCamp tribute page project.
+
+**Links to Work:**
+* [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
