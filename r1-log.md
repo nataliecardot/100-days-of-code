@@ -187,3 +187,11 @@ Worked on CSS styling on my freeCodeCamp tribute page project.
 
 **Links to Work:**
 * [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
+
+#### R1D23
+
+**Today's Progress:**
+Added content, updating styling, and refactored my freeCodeCamp tribute page project to Bootstrap 4.
+
+**Links to Work:**
+* [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
