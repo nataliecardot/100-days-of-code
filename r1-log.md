@@ -195,3 +195,11 @@ Added content, updating styling, and refactored my freeCodeCamp tribute page pro
 
 **Links to Work:**
 * [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
+
+#### R1D24
+
+**Today's Progress:**
+Updated content and layout of my freeCodeCamp tribute page project.
+
+**Links to Work:**
+* [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
