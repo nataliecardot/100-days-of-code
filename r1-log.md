@@ -211,3 +211,11 @@ Fixed CodePen format issues and added content to my freeCodeCamp tribute page pr
 
 **Links to Work:**
 * [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
+
+#### R1D26
+
+**Today's Progress:**
+Improved styling of (and finished!) my freeCodeCamp tribute page project.
+
+**Links to Work:**
+* [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
