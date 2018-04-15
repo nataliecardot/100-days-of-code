@@ -203,3 +203,11 @@ Updated content and layout of my freeCodeCamp tribute page project.
 
 **Links to Work:**
 * [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
+
+#### R1D25
+
+**Today's Progress:**
+Fixed CodePen format issues and added content to my freeCodeCamp tribute page project.
+
+**Links to Work:**
+* [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
