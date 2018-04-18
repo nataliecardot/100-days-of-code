@@ -218,4 +218,21 @@ Fixed CodePen format issues and added content to my freeCodeCamp tribute page pr
 Improved styling of (and finished!) my freeCodeCamp tribute page project.
 
 **Links to Work:**
+
 * [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
+
+#### R1D27
+
+**Today's Progress:**
+Got started on my freeCodeCamp portfolio page project, fleshing out much of the styling and layout.
+
+**Links to Work:**
+* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+
+#### R1D28
+
+**Today's Progress:**
+Worked on my freeCodeCamp portfolio page project, making it more mobile friendly and changing the appearance of the navigation bar.
+
+**Links to Work:**
+* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
