@@ -236,3 +236,11 @@ Worked on my freeCodeCamp portfolio page project, making it more mobile friendly
 
 **Links to Work:**
 * [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+
+#### R1D29
+
+**Today's Progress:**
+Worked on my freeCodeCamp portfolio page project, changing hero image/text size and styling.
+
+**Links to Work:**
+* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
