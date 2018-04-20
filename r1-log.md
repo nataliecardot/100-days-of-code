@@ -244,3 +244,11 @@ Worked on my freeCodeCamp portfolio page project, changing hero image/text size 
 
 **Links to Work:**
 * [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+
+#### R1D30
+
+**Today's Progress:**
+Worked on my freeCodeCamp portfolio page project. Updated styling, tidied CSS, and structured the portfolio section.
+
+**Links to Work:**
+* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
