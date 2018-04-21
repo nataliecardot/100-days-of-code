@@ -252,3 +252,11 @@ Worked on my freeCodeCamp portfolio page project. Updated styling, tidied CSS, a
 
 **Links to Work:**
 * [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+
+#### R1D31
+
+**Today's Progress:**
+Worked on my freeCodeCamp portfolio page project. Made minor changes to styling, re-added the mobile nav bar, and rearranged the footer.
+
+**Links to Work:**
+* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
