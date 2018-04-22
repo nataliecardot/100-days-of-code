@@ -260,3 +260,11 @@ Worked on my freeCodeCamp portfolio page project. Made minor changes to styling,
 
 **Links to Work:**
 * [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+
+#### R1D32
+
+**Today's Progress:**
+Worked on my freeCodeCamp portfolio page project. Added portfolio and about section content and fixed unwanted horizontal scroll.
+
+**Links to Work:**
+* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
