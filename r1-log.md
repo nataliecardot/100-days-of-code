@@ -268,3 +268,11 @@ Worked on my freeCodeCamp portfolio page project. Added portfolio and about sect
 
 **Links to Work:**
 * [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+
+#### R1D33
+
+**Today's Progress:**
+Set up my freeCodeCamp portfolio page on GitHub Pages with a custom domain.
+
+**Links to Work:**
+* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
