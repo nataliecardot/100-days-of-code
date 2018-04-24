@@ -276,3 +276,11 @@ Set up my freeCodeCamp portfolio page on GitHub Pages with a custom domain.
 
 **Links to Work:**
 * [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+
+#### R1D34
+
+**Today's Progress:**
+Added a favicon, brand logo, and a parallax scrolling effect to my portfolio page.
+
+**Links to Work:**
+* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
