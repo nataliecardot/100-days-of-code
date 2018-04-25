@@ -284,3 +284,11 @@ Added a favicon, brand logo, and a parallax scrolling effect to my portfolio pag
 
 **Links to Work:**
 * [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+
+#### R1D34
+
+**Today's Progress:**
+Fixed a bug in the code for my vanilla JS pixel art maker project that was preventing single-cell coloring in draw mode.
+
+**Links to Work:**
+* [Vanilla JS pixel art maker](http://nataliecardot.com/pixel-art-maker-vanilla-js/index.html)
