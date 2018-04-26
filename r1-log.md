@@ -161,134 +161,142 @@ Added list item reordering functionality to both my jQuery/Bootstrap and jQuery 
 **Today's Progress:**
 Got started on the freeCodeCamp tribute page project.
 
-**Links to Work:**
-* [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
+**Link to Work:**
+[Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
 
 #### R1D20
 
 **Today's Progress:**
 Added styling and content to my freeCodeCamp tribute page project.
 
-**Links to Work:**
-* [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
+**Link to Work:**
+[Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
 
 #### R1D21
 
 **Today's Progress:**
 Added styling and content to my freeCodeCamp tribute page project.
 
-**Links to Work:**
-* [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
+**Link to Work:**
+[Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
 
 #### R1D22
 
 **Today's Progress:**
 Worked on CSS styling on my freeCodeCamp tribute page project.
 
-**Links to Work:**
-* [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
+**Link to Work:**
+[Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
 
 #### R1D23
 
 **Today's Progress:**
 Added content, updating styling, and refactored my freeCodeCamp tribute page project to Bootstrap 4.
 
-**Links to Work:**
-* [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
+**Link to Work:**
+[Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
 
 #### R1D24
 
 **Today's Progress:**
 Updated content and layout of my freeCodeCamp tribute page project.
 
-**Links to Work:**
-* [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
+**Link to Work:**
+[Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
 
 #### R1D25
 
 **Today's Progress:**
 Fixed CodePen format issues and added content to my freeCodeCamp tribute page project.
 
-**Links to Work:**
-* [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
+**Link to Work:**
+[Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
 
 #### R1D26
 
 **Today's Progress:**
 Improved styling of (and finished!) my freeCodeCamp tribute page project.
 
-**Links to Work:**
+**Link to Work:**
 
-* [Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
+[Tribute page](https://codepen.io/nataliecardot/pen/JLwGdY)
 
 #### R1D27
 
 **Today's Progress:**
 Got started on my freeCodeCamp portfolio page project, fleshing out much of the styling and layout.
 
-**Links to Work:**
-* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+**Link to Work:**
+[Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
 
 #### R1D28
 
 **Today's Progress:**
 Worked on my freeCodeCamp portfolio page project, making it more mobile friendly and changing the appearance of the navigation bar.
 
-**Links to Work:**
-* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+**Link to Work:**
+[Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
 
 #### R1D29
 
 **Today's Progress:**
 Worked on my freeCodeCamp portfolio page project, changing hero image/text size and styling.
 
-**Links to Work:**
-* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+**Link to Work:**
+[Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
 
 #### R1D30
 
 **Today's Progress:**
 Worked on my freeCodeCamp portfolio page project. Updated styling, tidied CSS, and structured the portfolio section.
 
-**Links to Work:**
-* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+**Link to Work:**
+[Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
 
 #### R1D31
 
 **Today's Progress:**
 Worked on my freeCodeCamp portfolio page project. Made minor changes to styling, re-added the mobile nav bar, and rearranged the footer.
 
-**Links to Work:**
-* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+**Link to Work:**
+[Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
 
 #### R1D32
 
 **Today's Progress:**
 Worked on my freeCodeCamp portfolio page project. Added portfolio and about section content and fixed unwanted horizontal scroll.
 
-**Links to Work:**
-* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+**Link to Work:**
+[Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
 
 #### R1D33
 
 **Today's Progress:**
 Set up my freeCodeCamp portfolio page on GitHub Pages with a custom domain.
 
-**Links to Work:**
-* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+**Link to Work:**
+[Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
 
 #### R1D34
 
 **Today's Progress:**
 Added a favicon, brand logo, and a parallax scrolling effect to my portfolio page.
 
-**Links to Work:**
-* [Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
+**Link to Work:**
+[Portfolio page](https://codepen.io/nataliecardot/pen/PRMvbP)
 
-#### R1D34
+#### R1D35
 
 **Today's Progress:**
 Fixed a bug in the code for my vanilla JS pixel art maker project that was preventing single-cell coloring in draw mode.
 
-**Links to Work:**
-* [Vanilla JS pixel art maker](http://nataliecardot.com/pixel-art-maker-vanilla-js/index.html)
+**Link to Work:**
+[Vanilla JS pixel art maker](http://nataliecardot.com/pixel-art-maker-vanilla-js/index.html)
+
+#### R1D36
+
+**Today's Progress:**
+Added meta tags to my portfolio page and swapped its favicon PNG for a translucent one.
+
+**Link to Work:**
+[Portfolio page](http://nataliecardot.com)
