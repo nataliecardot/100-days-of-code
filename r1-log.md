@@ -296,7 +296,7 @@ Fixed a bug in the code for my vanilla JS pixel art maker project that was preve
 #### R1D36
 
 **Today's Progress:**
-Added meta tags to my portfolio page and swapped its favicon PNG for a translucent one.
+Added meta tags to my portfolio page and swapped its favicon PNG out with a transparent one.
 
 **Link to Work:**
 [Portfolio page](http://nataliecardot.com)
