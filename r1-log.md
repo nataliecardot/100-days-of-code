@@ -300,3 +300,11 @@ Added meta tags to my portfolio page and swapped its favicon PNG out with a tran
 
 **Link to Work:**
 [Portfolio page](http://nataliecardot.com)
+
+#### R1D37
+
+**Today's Progress:**
+Added a favicon to my portfolio site's project pages and did some HTML element tidying/rearranging. 
+
+**Link to Work:**
+[Portfolio page](http://nataliecardot.com)
