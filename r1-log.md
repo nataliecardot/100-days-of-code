@@ -304,7 +304,15 @@ Added meta tags to my portfolio page and swapped its favicon PNG out with a tran
 #### R1D37
 
 **Today's Progress:**
-Added a favicon to my portfolio site's project pages and did some HTML element tidying/rearranging. 
+Added a favicon to my portfolio site's project pages and did some HTML element tidying/rearranging.
+
+**Link to Work:**
+[Portfolio page](http://nataliecardot.com)
+
+#### R1D38
+
+**Today's Progress:**
+Added/edited HTML and CSS to cause an "X" to be displayed upon clicking the navbar hamburger icon in the mobile view of my site. 
 
 **Link to Work:**
 [Portfolio page](http://nataliecardot.com)
