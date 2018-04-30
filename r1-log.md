@@ -312,7 +312,23 @@ Added a favicon to my portfolio site's project pages and did some HTML element t
 #### R1D38
 
 **Today's Progress:**
-Added/edited HTML and CSS to cause an "X" to be displayed upon clicking the navbar hamburger icon in the mobile view of my site. 
+Added/edited HTML and CSS to cause an "X" to be displayed upon clicking the navbar hamburger icon in the mobile view of my site.
+
+**Link to Work:**
+[Portfolio page](http://nataliecardot.com)
+
+#### R1D39
+
+**Today's Progress:**
+Changed the colors used in my portfolio site's navbar and learned about how data-target works (recently added to navbar code directly from a tutorial)
+
+**Link to Work:**
+[Portfolio page](http://nataliecardot.com)
+
+#### R1D40
+
+**Today's Progress:**
+Changed my portfolio site's media query breakpoint to something that made more sense. (Focused mainly on working through Udacity FEND lessons and quizzes in order to get to the first project.)
 
 **Link to Work:**
 [Portfolio page](http://nataliecardot.com)
