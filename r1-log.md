@@ -332,3 +332,8 @@ Changed my portfolio site's media query breakpoint to something that made more s
 
 **Link to Work:**
 [Portfolio page](http://nataliecardot.com)
+
+#### R1D41
+
+**Today's Progress:**
+Got started with the first project for Udacity's Front-End Nanodegree, building a portfolio page. I'll be using the flexbox layout.
