@@ -337,3 +337,8 @@ Changed my portfolio site's media query breakpoint to something that made more s
 
 **Today's Progress:**
 Got started with the first project for Udacity's Front-End Nanodegree, building a portfolio page. I'll be using the flexbox layout.
+
+#### R1D42
+
+**Today's Progress:**
+Worked on my Udacity flexbox portfolio project. I got down a very rough layout with some placeholder images.
