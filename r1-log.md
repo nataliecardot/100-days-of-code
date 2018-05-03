@@ -342,3 +342,8 @@ Got started with the first project for Udacity's Front-End Nanodegree, building 
 
 **Today's Progress:**
 Worked on my Udacity flexbox portfolio project. I got down a very rough layout with some placeholder images.
+
+#### R1D43
+
+**Today's Progress:**
+Worked on my Udacity flexbox portfolio project, with various styling adjustments. I'm starting to get a handle on how the flex layout works.
