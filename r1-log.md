@@ -347,3 +347,11 @@ Worked on my Udacity flexbox portfolio project. I got down a very rough layout w
 
 **Today's Progress:**
 Worked on my Udacity flexbox portfolio project, with various styling adjustments. I'm starting to get a handle on how the flex layout works.
+
+#### R1D44
+
+**Today's Progress:**
+Worked on my Udacity flexbox portfolio project. I styled the portfolio section and added media queries.
+
+**Link to Work:**
+[Udacity portfolio page](https://codepen.io/nataliecardot/pen/MGmvpZ)
