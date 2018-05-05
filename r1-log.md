@@ -364,3 +364,11 @@ Worked on my Udacity flexbox portfolio project. I styled the portfolio section a
 
 **Link to Work:**
 [Udacity portfolio page](https://codepen.io/nataliecardot/pen/MGmvpZ)
+
+#### R1D45
+
+**Today's Progress:**
+Completed and submitted my Udacity flexbox portfolio project, with various media query styling tweaks for mobile.
+
+**Link to Work:**
+[Udacity portfolio page](https://codepen.io/nataliecardot/pen/MGmvpZ)
