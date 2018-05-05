@@ -372,3 +372,12 @@ Completed and submitted my Udacity flexbox portfolio project, with various media
 
 **Link to Work:**
 [Udacity portfolio page](https://codepen.io/nataliecardot/pen/MGmvpZ)
+
+#### R1D46
+
+**Today's Progress:**
+Udacity portfolio page: Fixed order of media queries and reorganized to fix a layout bug. Also changed and vertically centered my homepage's hero text.
+
+**Links to Work:**
+[Udacity portfolio page](https://codepen.io/nataliecardot/pen/MGmvpZ)
+[Portfolio page](http://nataliecardot.com)
