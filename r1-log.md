@@ -88,10 +88,12 @@ Improved erase and draw modes (with single-cell erase/color fill on mousedown) f
 #### R1D10
 
 **Today's Progress:**
-Changed the styling of my color picker and looked into ways to add additional ones with preset colors. The updated appearance is sleeker, but it seems it's not feasible to have more than one functioning color picker, and doing so would require installation of plugins/software.
+Changed the styling of my color pickers and looked into ways to add additional ones with preset colors. The updated appearance is sleeker, but it seems it's not feasible to have more than one functioning color picker, and doing so would require installation of plugins/software.
 
-**Link to Work:**
-https://codepen.io/nataliecardot/pen/QmQvOL
+**Links to Work:**
+* [jQuery pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/VQRrgQ)
+
+* [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
 
 #### R1D11
 
@@ -99,12 +101,17 @@ https://codepen.io/nataliecardot/pen/QmQvOL
 Fixed a couple bugs that occurred while using the newly added 'draw' mode in my pixel art maker (vanilla JS version). Slightly modified styling of both versions. Removed additional nonfunctioning color pickers for now but continued to investigate methods of having multiple.
 
 **Link to Work:**
-https://codepen.io/nataliecardot/pen/MQRxJZ
+[Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
 
 #### R1D12
 
 **Today's Progress:**
-Made a further attempt to add additional color pickers to my pixel art maker as well as to add CSS to automatically align the input box/toolbar relative to the grid with each addition/removal of content. Both unsuccessful (the latter may not be possible).
+Made a further attempt to add additional color pickers to my pixel art makers as well as to add CSS to automatically align the input box/toolbar relative to the grid with each addition/removal of content. Both unsuccessful (the latter may not be possible).
+
+**Links to Work:**
+* [jQuery pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/VQRrgQ)
+
+* [Vanilla JS pixel art maker (CodePen)](https://codepen.io/nataliecardot/pen/MQRxJZ)
 
 #### R1D13
 
@@ -379,5 +386,6 @@ Completed and submitted my Udacity flexbox portfolio project, with various media
 Fixed order of media queries and reorganized HTML/CSS on my Udacity portfolio page to fix a layout bug. Also changed and vertically centered my homepage's hero text.
 
 **Links to Work:**
-[Udacity portfolio page](https://codepen.io/nataliecardot/pen/MGmvpZ)
-[Portfolio page](http://nataliecardot.com)
+* [Udacity portfolio page](https://codepen.io/nataliecardot/pen/MGmvpZ)
+
+* [Portfolio page](http://nataliecardot.com)
