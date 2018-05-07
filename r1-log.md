@@ -389,3 +389,8 @@ Fixed order of media queries and reorganized HTML/CSS on my Udacity portfolio pa
 * [Udacity portfolio page](https://codepen.io/nataliecardot/pen/MGmvpZ)
 
 * [Portfolio page](http://nataliecardot.com)
+
+### R1D47
+
+**Today's Progress:**
+Since I'm ahead of schedule for my Udacity nanodegree program, I worked through a good chunk of freeCodeCamp's basic JavaScript section exercises, brushing up on some familiar things like array manipulation methods.
