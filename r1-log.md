@@ -394,3 +394,8 @@ Fixed order of media queries and reorganized HTML/CSS on my Udacity portfolio pa
 
 **Today's Progress:**
 Since I'm ahead of schedule for my Udacity nanodegree program, I worked through a good chunk of freeCodeCamp's basic JavaScript section exercises, brushing up on some familiar things like array manipulation methods.
+
+### R1D48
+
+**Today's Progress:**
+I worked through more of freeCodeCamp's basic JavaScript section, getting a refresher on things like switch statement syntax and data types.
