@@ -399,3 +399,11 @@ Since I'm ahead of schedule for my Udacity nanodegree program, I worked through 
 
 **Today's Progress:**
 I worked through more of freeCodeCamp's basic JavaScript section, getting a refresher on things like switch statement syntax and data types.
+
+### R1D49
+
+**Today's Progress:**
+Adjusted styling of my portfolio site's "about" section (including adding a line width to improve readability) and worked through more of freeCodeCamp's basic JavaScript section.
+
+**Links to Work:**
+* [Portfolio page](http://nataliecardot.com)
