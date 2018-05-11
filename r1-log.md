@@ -405,5 +405,10 @@ I worked through more of freeCodeCamp's basic JavaScript section, getting a refr
 **Today's Progress:**
 Adjusted styling of my portfolio site's "about" section (including adding a line width to improve readability) and worked through more of freeCodeCamp's basic JavaScript section.
 
-**Links to Work:**
+**Link to Work:**
 * [Portfolio page](http://nataliecardot.com)
+
+### R1D50
+
+**Today's Progress:**
+Completed freeCodeCamp's basic JavaScript section, which covered random number generation and searching strings using regular expression selectors.
