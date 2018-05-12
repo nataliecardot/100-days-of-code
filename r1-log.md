@@ -412,3 +412,8 @@ Adjusted styling of my portfolio site's "about" section (including adding a line
 
 **Today's Progress:**
 Completed freeCodeCamp's basic JavaScript section, which covered random number generation and searching strings using regular expression selectors.
+
+### R1D51
+
+**Today's Progress:**
+Got through most of Lesson 8, Syntax, of Part 2, Web Programming with JavaScript (Udacity Front-End Nanodegree). 
