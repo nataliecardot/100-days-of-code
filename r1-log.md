@@ -416,4 +416,9 @@ Completed freeCodeCamp's basic JavaScript section, which covered random number g
 ### R1D51
 
 **Today's Progress:**
-Got through most of Lesson 8, Syntax, of Part 2, Web Programming with JavaScript (Udacity Front-End Nanodegree). 
+Got through most of Lesson 8, Syntax, of Part 2, Web Programming with JavaScript (Udacity Front-End Nanodegree).
+
+### R1D52
+
+**Today's Progress:**
+Finished Lesson 8, Syntax, and most of Lesson 9, Shell Workshop, of Part 2, Web Programming with JavaScript (Udacity Front-End Nanodegree). Installed Git Bash and tried out some command line commands for the first time. 
