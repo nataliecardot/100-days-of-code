@@ -421,4 +421,9 @@ Got through most of Lesson 8, Syntax, of Part 2, Web Programming with JavaScript
 ### R1D52
 
 **Today's Progress:**
-Finished Lesson 8, Syntax, and most of Lesson 9, Shell Workshop, of Part 2, Web Programming with JavaScript (Udacity Front-End Nanodegree). Installed Git Bash and tried out some command line commands for the first time. 
+Finished Lesson 8, Syntax, and most of Lesson 9, Shell Workshop, of Part 2, Web Programming with JavaScript (Udacity Front-End Nanodegree). Installed Git Bash and tried out some command line commands for the first time.
+
+### R1D53
+
+**Today's Progress:**
+Learned more basic Git Bash commands, discovered some version control terminology, and configured Git (I've already been using Atom and GitHub Desktop to manage repositories on GitHub but am now learning how it's done with the command line). 
