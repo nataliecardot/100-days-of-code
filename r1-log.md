@@ -432,3 +432,8 @@ Learned more basic Git Bash commands, discovered some version control terminolog
 
 **Today's Progress:**
 Learned how to and practiced creating a git repo and reviewing a repo's history using the command line (Git Bash in my case).
+
+### R1D55
+
+**Today's Progress:**
+Learned how to and practiced staging changes and adding commits to a repo using the command line (Git Bash in my case).
