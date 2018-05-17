@@ -437,3 +437,8 @@ Learned how to and practiced creating a git repo and reviewing a repo's history 
 
 **Today's Progress:**
 Learned how to and practiced staging changes and adding commits to a repo using the command line (Git Bash in my case).
+
+### R1D56
+
+**Today's Progress:**
+Learned about and practiced using a .gitignore file to tell Git not to track files as well as the commands git diff (to recall changes not committed to a repo yet) and git tag (to add a marker to specific commit).
