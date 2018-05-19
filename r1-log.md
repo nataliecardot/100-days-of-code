@@ -442,3 +442,8 @@ Learned how to and practiced staging changes and adding commits to a repo using 
 
 **Today's Progress:**
 Learned about and practiced using a .gitignore file to tell Git not to track files as well as the commands git diff (to recall changes not committed to a repo yet) and git tag (to add a marker to specific commit).
+
+### R1D57
+
+**Today's Progress:**
+Learned about and practiced using branching and merging in Git using the command line. 
