@@ -446,4 +446,14 @@ Learned about and practiced using a .gitignore file to tell Git not to track fil
 ### R1D57
 
 **Today's Progress:**
-Learned about and practiced using branching and merging in Git using the command line. 
+Learned about and practiced using branching and merging in Git using the command line.
+
+### R1D58
+
+**Today's Progress:**
+Learned about modifying Git commits with git commit --amend, reverting commits (inverting them) with git revert, and referencing commits relative to one another with ancestry references.
+
+### R1D59
+
+**Today's Progress:**
+Learned more about referencing Git commits relative to one another with ancestry references, started a lesson on remote repositories, and changed some images and the navbar on my portfolio site.
