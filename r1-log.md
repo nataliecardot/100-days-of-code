@@ -457,3 +457,12 @@ Learned about modifying Git commits with git commit --amend, reverting commits (
 
 **Today's Progress:**
 Learned more about referencing Git commits relative to one another with ancestry references, started a lesson on remote repositories, and changed some images and the navbar on my portfolio site.
+
+### R1D60
+
+**Today's Progress:**
+Learned about and practiced using the Git commands:
+:heavy_check_mark: git remote (to manage a remote repository)
+:heavy_check_mark: git push (to send changes from a local to remote repository)
+:heavy_check_mark: git fetch (to retreive updates from a remote repository)
+:heavy_check_mark: git pull (to retrieve updates from a remote repository and automatically merge them with a local one).
