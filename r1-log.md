@@ -469,4 +469,9 @@ Learned about and practiced using the following Git commands:
 
 :heavy_check_mark: **git fetch** *(to retreive updates from a remote repository)*
 
-:heavy_check_mark: **git pull** *(to retrieve updates from a remote repository and automatically merge them with a local one).*
+:heavy_check_mark: **git pull** *(to retrieve updates from a remote repository and automatically merge them with a local one)*
+
+### R1D61
+
+**Today's Progress:**
+Learned how to and got practice working on another developer's repository using the command line and GitHub, including forking, cloning, and creating a pull request.
