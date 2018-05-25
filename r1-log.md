@@ -475,3 +475,8 @@ Learned about and practiced using the following Git commands:
 
 **Today's Progress:**
 Learned how to and got practice working on another developer's repository using the command line and GitHub, including forking, cloning, and creating a pull request.
+
+### R1D62
+
+**Today's Progress:**
+Learned about the powerful git rebase command and got a refresher on the document object model. 
