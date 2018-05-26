@@ -479,4 +479,9 @@ Learned how to and got practice working on another developer's repository using 
 ### R1D62
 
 **Today's Progress:**
-Learned about the powerful git rebase command and got a refresher on the document object model. 
+Learned about the powerful git rebase command and got a refresher on the document object model.
+
+### R1D63
+
+**Today's Progress:**
+Learned several DOM methods and properties for updating, adding, and removing page content.
