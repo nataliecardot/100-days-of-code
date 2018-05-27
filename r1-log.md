@@ -485,3 +485,8 @@ Learned about the powerful git rebase command and got a refresher on the documen
 
 **Today's Progress:**
 Learned several DOM methods and properties for updating, adding, and removing page content.
+
+### R1D64
+
+**Today's Progress:**
+Continued working through material on DOM methods and properties for updating, adding, and removing page content.
