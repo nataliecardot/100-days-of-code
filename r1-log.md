@@ -490,3 +490,8 @@ Learned several DOM methods and properties for updating, adding, and removing pa
 
 **Today's Progress:**
 Continued working through material on DOM methods and properties for updating, adding, and removing page content.
+
+### R1D65
+
+**Today's Progress:**
+Worked through material centered around JavaScript performance, including the event loop, the call stack, reflow and repaint, the browser's setTimeout() method, and measuring code speed. 
