@@ -494,4 +494,9 @@ Continued working through material on DOM methods and properties for updating, a
 ### R1D65
 
 **Today's Progress:**
-Worked through material centered around JavaScript performance, including the event loop, the call stack, reflow and repaint, the browser's setTimeout() method, and measuring code speed. 
+Worked through material centered around JavaScript performance, including the event loop, the call stack, reflow and repaint, the browser's setTimeout() method, and measuring code speed.
+
+### R1D66
+
+**Today's Progress:**
+Got started on Udacity FEND project no. 2, a memory game (I'll be using vanilla JavaScript).
