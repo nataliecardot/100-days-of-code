@@ -500,3 +500,8 @@ Worked through material centered around JavaScript performance, including the ev
 
 **Today's Progress:**
 Got started on Udacity FEND project no. 2, a memory game (I'll be using vanilla JavaScript).
+
+### R1D67
+
+**Today's Progress:**
+Worked on my memory game project. I have it laid out but it's still not functional. 
