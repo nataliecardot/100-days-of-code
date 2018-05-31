@@ -504,4 +504,9 @@ Got started on Udacity FEND project no. 2, a memory game (I'll be using vanilla 
 ### R1D67
 
 **Today's Progress:**
-Worked on my memory game project. I have it laid out but it's still not functional. 
+Worked on my memory game project. I have it laid out but it's still not functional.
+
+### R1D68
+
+**Today's Progress:**
+Worked on my memory game project. It now has matching and flipping functionality as well as a timer and game reset option.
