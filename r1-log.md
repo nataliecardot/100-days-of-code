@@ -510,3 +510,8 @@ Worked on my memory game project. I have it laid out but it's still not function
 
 **Today's Progress:**
 Worked on my memory game project. It now has matching and flipping functionality as well as a timer and game reset option.
+
+### R1D69
+
+**Today's Progress:**
+Worked on my memory game project. It now has a modal that displays when the user wins the game and provides game details.
