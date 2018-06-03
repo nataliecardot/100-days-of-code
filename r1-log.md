@@ -527,7 +527,12 @@ Completed and submitted my vanilla JS memory game (Udacity FEND project no. 2).
 ### R1D71
 
 **Today's Progress:**
-Made some adjustments to my memory game: added meta tags and changed media queries to make it more mobile friendly, and added additional semantic tags. 
+Made some adjustments to my memory game: added meta tags and changed media queries to make it more mobile friendly, and added additional semantic tags.
 
 **Link to Work:**
 [Memory game](https://s.codepen.io/nataliecardot/debug/MXavdj/nqMwvGvdDgJk)
+
+### R1D72
+
+**Today's Progress:**
+Added my completed memory game project to my website and made some minor adjustments to my site's content and styling.
