@@ -515,3 +515,19 @@ Worked on my memory game project. It now has matching and flipping functionality
 
 **Today's Progress:**
 Worked on my memory game project. It now has a modal that displays when the user wins the game and provides game details.
+
+### R1D70
+
+**Today's Progress:**
+Completed and submitted my vanilla JS memory game (Udacity FEND project no. 2).
+
+**Link to Work:**
+[Memory game](https://s.codepen.io/nataliecardot/debug/MXavdj/nqMwvGvdDgJk)
+
+### R1D71
+
+**Today's Progress:**
+Made some adjustments to my memory game: added meta tags and changed media queries to make it more mobile friendly, and added additional semantic tags. 
+
+**Link to Work:**
+[Memory game](https://s.codepen.io/nataliecardot/debug/MXavdj/nqMwvGvdDgJk)
