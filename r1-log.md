@@ -536,3 +536,18 @@ Made some adjustments to my memory game: added meta tags and changed media queri
 
 **Today's Progress:**
 Added my completed memory game project to my website and made some minor adjustments to my site's content and styling.
+
+### R1D73
+
+**Today's Progress:**
+Made some layout changes and added content to my portfolio site and worked through lessons on webpage accessibility.
+
+### R1D74
+
+**Today's Progress:**
+Made some layout changes and added content to my portfolio site.
+
+### R1D75
+
+**Today's Progress:**
+Went through lessons on webpage accessibility (navigating content, semantics, ARIA) and fixed a bug on my portfolio page.
