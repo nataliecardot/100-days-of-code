@@ -551,3 +551,13 @@ Made some layout changes and added content to my portfolio site.
 
 **Today's Progress:**
 Went through lessons on webpage accessibility (navigating content, semantics, ARIA) and fixed a bug on my portfolio page.
+
+### R1D76
+
+**Today's Progress:**
+Worked through lesson on ARIA.
+
+### R1D77
+
+**Today's Progress:**
+Completed a lesson on styling CSS to comply with web accessibility guidelines and started one on JavaScript object-oriented programming.
