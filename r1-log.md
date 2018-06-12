@@ -561,3 +561,13 @@ Worked through lesson on ARIA.
 
 **Today's Progress:**
 Completed a lesson on styling CSS to comply with web accessibility guidelines and started one on JavaScript object-oriented programming.
+
+### R1D78
+
+**Today's Progress:**
+Worked through an in-depth lesson on JavaScript objects.
+
+### R1D79
+
+**Today's Progress:**
+Worked through an in-depth lesson on JavaScript objects.
