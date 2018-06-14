@@ -571,3 +571,13 @@ Worked through an in-depth lesson on JavaScript objects.
 
 **Today's Progress:**
 Worked through an in-depth lesson on JavaScript objects.
+
+### R1D80
+
+**Today's Progress:**
+Went through a lesson on JavaScript functions at runtime and researched how let, const, and var work at a more detailed level.
+
+### R1D81
+
+**Today's Progress:**
+Went through a lesson on JavaScript functions at runtime and researched how let, const, and var work at a more detailed level.
