@@ -581,3 +581,13 @@ Went through a lesson on JavaScript functions at runtime and researched how let,
 
 **Today's Progress:**
 Went through a lesson on JavaScript functions at runtime and researched how let, const, and var work at a more detailed level.
+
+### R1D82
+
+**Today's Progress:**
+Learned about closures and immediately invoked function expressions. 
+
+### R1D83
+
+**Today's Progress:**
+Learned about closures and immediately invoked function expressions.
