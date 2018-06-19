@@ -585,9 +585,24 @@ Went through a lesson on JavaScript functions at runtime and researched how let,
 ### R1D82
 
 **Today's Progress:**
-Learned about closures and immediately invoked function expressions. 
+Learned about closures and immediately invoked function expressions.
 
 ### R1D83
 
 **Today's Progress:**
 Learned about closures and immediately invoked function expressions.
+
+### R1D84
+
+**Today's Progress:**
+Researched and wrote an article about statements and expressions in JavaScript.
+
+### R1D85
+
+**Today's Progress:**
+Researched and wrote an article on the variables defined with let and const.
+
+### R1D86
+
+**Today's Progress:**
+Got through half of a lesson on classes and objects, which went over object constructors and the keyword this—what it represents in different contexts and how to set it with the call(), apply(), and bind() methods.
