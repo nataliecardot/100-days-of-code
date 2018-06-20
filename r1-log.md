@@ -606,3 +606,8 @@ Researched and wrote an article on the variables defined with let and const.
 
 **Today's Progress:**
 Got through half of a lesson on classes and objects, which went over object constructors and the keyword this—what it represents in different contexts and how to set it with the call(), apply(), and bind() methods.
+
+### R1D87
+
+**Today's Progress:**
+Went back and reviewed material on closures and immediately invoked functions.  
