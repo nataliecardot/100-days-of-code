@@ -611,3 +611,28 @@ Got through half of a lesson on classes and objects, which went over object cons
 
 **Today's Progress:**
 Went back and reviewed material on closures and immediately invoked functions.  
+
+### R1D88
+
+**Today's Progress:**
+Researched IIFEs and almost finished writing an article explaining them.
+
+### R1D89
+
+**Today's Progress:**
+Continued IFFE research/writing on the topic.
+
+### R1D90
+
+**Today's Progress:**
+Finished an article on IFFEs.
+
+### R1D91
+
+**Today's Progress:**
+Learned about prototypal inheritance, including methods and properties to check origins and references of objects and their prototypes, and using Object.create() to create a new object specifying the prototype of an existing object.
+
+### R1D92
+
+**Today's Progress:**
+Reviewed destructuring and the syntax for the spread operator and rest parameter. Started on a new lesson on functions, with a recap on arrow functions and the introduction of function parameters.
