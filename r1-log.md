@@ -636,3 +636,18 @@ Learned about prototypal inheritance, including methods and properties to check 
 
 **Today's Progress:**
 Reviewed destructuring and the syntax for the spread operator and rest parameter. Started on a new lesson on functions, with a recap on arrow functions and the introduction of function parameters.
+
+### R1D93
+
+**Today's Progress:**
+Learned what the `this` keyword refers to in arrow functions and reviewed how classes work, including the keywords `extends` (creates a class which is a child of another class) and `super` (accesses and calls functions on an object's parent).
+
+### R1D94
+
+**Today's Progress:**
+Worked through a lesson on JS built-ins provided in ES6, including the symbol data type, the iteration and iteratable protocols, and Set objects.
+
+### R1D95
+
+**Today's Progress:**
+Worked through a lesson on JS built-ins provided in ES6, including Set and Map objects.
