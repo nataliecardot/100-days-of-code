@@ -651,3 +651,28 @@ Worked through a lesson on JS built-ins provided in ES6, including the symbol da
 
 **Today's Progress:**
 Worked through a lesson on JS built-ins provided in ES6, including Set and Map objects.
+
+### R1D96
+
+**Today's Progress:**
+Continued working through a lesson on JS built-ins.
+
+### R1D97
+
+**Today's Progress:**
+Configured my portfolio website (a GitHub Pages custom domain) to use HTTPS.
+
+### R1D98
+
+**Today's Progress:**
+Finished a lesson on ES6 built-ins, including material on Promise, Proxy, and Generator objects.
+
+### R1D99
+
+**Today's Progress:**
+Worked through a lesson on object-oriented design patterns, including implementing the object mixin technique with the Object.assign() method (copies properties from one or more source objects to a target object).
+
+### R1D100
+
+**Today's Progress:**
+Finished a lesson on object-oriented design patterns, including material on the module pattern and revealing module pattern. Also finished writing and published a Medium article on function declarations vs function expressions.
