@@ -13,3 +13,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 ### R2D2
 
 **Today's Progress:** Went through a lesson on promises, brushed up on some basic computer science concepts, and researched dependency management tool options.
+
+### R2D3
+
+**Today's Progress:** Worked through another lesson on promises, with a focus on promise chaining.
