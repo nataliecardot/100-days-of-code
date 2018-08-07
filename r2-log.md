@@ -17,3 +17,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 ### R2D3
 
 **Today's Progress:** Worked through another lesson on promises, with a focus on promise chaining.
+
+### R2D4
+
+**Today's Progress:** Worked through a lesson about Ajax with XHR, which covered how to create an XHR object, its required methods and properties, and how asychronous requests are sent.
