@@ -21,3 +21,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 ### R2D4
 
 **Today's Progress:** Worked through a lesson about Ajax with XHR, which covered how to create an XHR object, its required methods and properties, and how asychronous requests are sent.
+
+### R2D5
+
+**Today's Progress:** Worked through lessons covering Ajax with jQuery and with the Fetch API.
