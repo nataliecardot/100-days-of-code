@@ -25,3 +25,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 ### R2D5
 
 **Today's Progress:** Worked through lessons covering Ajax with jQuery and with the Fetch API.
+
+### R2D6
+
+**Today's Progress:** Learned about features of single-page apps, as a prelude to getting into JavaScript frameworks.
