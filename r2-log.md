@@ -29,3 +29,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 ### R2D6
 
 **Today's Progress:** Learned about features of single-page apps, as a prelude to getting into JavaScript frameworks.
+
+### R2D7
+
+**Today's Progress:** Learned about factory functions, the function constructor, regular expressions, and the BackboneJS JavaScript library.
