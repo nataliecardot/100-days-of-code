@@ -32,4 +32,4 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 
 ### R2D7
 
-**Today's Progress:** Learned about factory functions, the function constructor, regular expressions, and the BackboneJS JavaScript library.
+**Today's Progress:** Learned about factory functions, the function constructor, regular expressions, and the Backbone.js library.
