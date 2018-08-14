@@ -36,4 +36,4 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 
 ### R2D8
 
-**Today's Progress:** Continued learning about the Backbone.js library.
+**Today's Progress:** Finished a lesson on the basic structure of Backbone.js.
