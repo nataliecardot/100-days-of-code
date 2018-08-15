@@ -37,3 +37,20 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 ### R2D8
 
 **Today's Progress:** Finished a lesson on the basic structure of Backbone.js.
+
+### R2D9
+
+**Today's Progress:** Started a lesson providing a conceptual overview of AngularJS.
+
+**Notes:**
+* **Module:** container that stores different components of an app
+* **Template:**	HTML with additional markup. AngularJS provides templating system that lets you format HTML structure of application (view part of MVC framework architecture that AngularJS uses)
+* **Directives:** markers on template that tell AngularJS HTML compiler to attach special behavior to a DOM element
+* **Controller:** where you set up initial state (condition regarding stored inputs) and logic for view (template)
+* **Service:** closely tied with controller, contains view-independent logic
+* **Model:** data shown to the user in the view and with which the user interacts
+* **Scope:** binds template and controller together. When user interacts with template and changes some data, scope watches for this change and updates controller; or if data changes in the controller, template is updated
+* **View:** what user sees (DOM)
+* **Routing:** uses ngRoute module, which acts based on URL. Captures URL and renders view based on the defined routing rules
+* **Example case:** If you had a "save for later" checkbox that should appear on each individual item page and have its own page that lists all items that have been saved, you'd need these components: Because "save for later" will have its own page where customers can view items they've saved for later, a new entry in router is needed. Checkbox will be added to item template (view), but page listing all items will need its own template; new template must be created. Items controller will have new property to track whether saved or not, but save for later page needs controller. Service keeps track of everything.
+* **Two-way data binding:** Prized feature of AngularJS. Typically a framework retrieves data and feeds it into template (a one-way info fetch), in a compile step. AngularJS works similarly, but there's another update step: info added, deleted, or change in browser updates underlying data object. In other words, it has live bindings, and whenever input values change, values of expressions are recalculated automatically and DOM is updated accordingly.
