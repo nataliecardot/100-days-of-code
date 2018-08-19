@@ -66,3 +66,21 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 * **Bootstrapping:** In AngularJS this is the equivalent of initializing (starting) your app. One way is with the ng-app directive. The other is, after creating your app with `angular.module("myApp", []);`, do so from the JavaScript with `angular.bootstrap(document, ['myApp']);`.
 * **ng-app directive:** in an HTML element tells your AngularJS app two things: that that element contains your application. If you put it in a div rather than the body, it will only be loaded inside that div. Second, it says to load the module with name in quotes, which would be like `angular.module("myApp", []);` in the JavaScript file. For example `<body ng-app="myApp">`
 * Templates in AngularJS: plain HTML. Dynamic parts of template are set in a controller, using expressions. Expressions are double curly braces containing variables or simple mathematical operations.
+
+### R2D11
+
+**Today's Progress:** Finished a lesson providing a conceptual overview of AngularJS and started a lesson on Ember.
+
+**Notes:**
+
+###### AngularJS
+* **ui-router:** angular-route.js module (that Yeomann gives you option to use when you generate an AngularJS app with `yo angular`) doesn't allow for nested views. Use the community-built routing module ui-router for that. Single-page applications typically have many different views (screens) you can interact with, and a router handles loading them based on the URL. Bower used to install in example, with `bower install -S angular-ui-router`. -S saves ui-router to the Bower config file.
+
+###### Ember
+
+* Dependencies: Git, Node.js, npm (for fetching required Dependencies),  
+* Focus is on convention over configuration
+* Comes with its own build tool (build tools are programs that automate the creation of executable [able to be run by a computer] applications from source code)
+* `ember-cli` (entered into npm CLI), Ember.js command line utility, is recommended by Ember as de facto way to build and develop a new app. Also use to create new template and component files and maintain and update new routes.
+* Use `ember-cli` and `ember new <app name>` to generate a new app. ember-new creates new directory, creates initial commit, runs npm install, and built-in server
+* `ember serve` starts development server
