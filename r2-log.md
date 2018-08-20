@@ -84,3 +84,18 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 * `ember-cli` (entered into npm CLI), Ember.js command line utility, is recommended by Ember as de facto way to build and develop a new app. Also use to create new template and component files and maintain and update new routes.
 * Use `ember-cli` and `ember new <app name>` to generate a new app. ember-new creates new directory, creates initial commit, runs npm install, and built-in server
 * `ember serve` starts development server
+
+### R2D12
+
+**Today's Progress:** Finished a lesson on the basic features of Ember.
+
+**Notes:**
+
+* **Components:** like custom HTML elements. Default DOM element of `div`. The functionality (per the default file structure generated with `ember new` command) goes in app/components, while the components HTML file goes in templates/components.
+* When an Ember app is loaded, router's job is to match URL against a list of routes. When it finds that route, it loads that route's route file and loads the associated template.
+* Use `ember g route <url to match>` to generate a route (`g` is an alias for `generate`). This creates a route file at app/routes/route-name.js, a template for the route at app/templates/route-name.hbs, and a unit test file at tests/unit/routes/route-name-test.js. It also adds the route to the router. Loads data (model) for that route. Can use dynamic data set by route file.
+* Ember provides a number of hooks we can use in a route file.
+* Ember templates can be thought of as containers (in addition to chunks of standalone HTML). The base container is the application template; it contains all other templates. Sitewide HTML (such as navigation, header, footer) should go in the application template.
+* A dynamic segment is a portion of a URL that starts with a : and is followed by an identifier.
+* Ember templates are powered by the Handlebars templating language. A Handlebars template is a block of HTML that has Handlebars expressions that look like `{{ brick_color }}`. Handlebars is a standalone templating language that can be used outside of Ember.
+* A Service is an Ember object that lives for the duration of an application and can be made available in di  fferent parts of one. Services are useful for features that require shared state or persistent connections, e.g., user/session authentication, geolocation, WebSockets (WebSocket is a protocol for creating a fast two-way channel between a web browser and a server), and third-party APIs (note: an API is a software intermediary that allows two applications to talk to each other).
