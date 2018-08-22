@@ -99,3 +99,31 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 * A dynamic segment is a portion of a URL that starts with a : and is followed by an identifier.
 * Ember templates are powered by the Handlebars templating language. A Handlebars template is a block of HTML that has Handlebars expressions that look like `{{ brick_color }}`. Handlebars is a standalone templating language that can be used outside of Ember.
 * A Service is an Ember object that lives for the duration of an application and can be made available in di  fferent parts of one. Services are useful for features that require shared state or persistent connections, e.g., user/session authentication, geolocation, WebSockets (WebSocket is a protocol for creating a fast two-way channel between a web browser and a server), and third-party APIs (note: an API is a software intermediary that allows two applications to talk to each other).
+
+### R2D13
+
+**Today's Progress:** Began a lesson on the service worker.
+
+**Notes:**
+###### Service worker
+* Script (JavaScript file) that runs in the background, intercepting requests as the browser makes them, to improve offline experience
+* With a service worker you can easily set an app up to use cached assets first, providing a default experience even when offline
+* Heavy use of [promises](https://codeburst.io/javascript-learn-promises-f1eaa00c5461) (proxies for a value not necessarily known when promise created, and which can be in one of three states: pending, fulfilled, rejected. It's also settled if it's no longer pending (fulfilled or rejected).
+* Requires HTTPS
+* As a JavaScript web worker, sits separately from page and can't access DOM directly
+* AppCache was previous attempt at addressing network connectivity issues (now deprecated)
+* Service worker will control any URL that begins with scope (from the registration URL). Trailing slash is important. If scope is  '/my-app/', URL must begin with /my-app/.
+* Add an event listener for a fetch event to add service worker, with self.addEventListener('fetch', function(event) { ... }). Also needs to be registered from the page (or won't work). When a user navigates to a page within your service worker's scope, it controls it. The network request for its HTML goes to the service worker and triggers a fetch event. But you also get a fetch event for every request triggered by that page: CSS, JS, images, etc.
+* Cache API provides global caches object. To create or open a cache, use caches.open('my-stuff').then(function(cache) { ... The cache box contains request/response pairs from any secure origin. You can use it to store fonts, scripts, images--just about anything--from our own origin as well as elsewhere on the web.
+* Add items using cache.put(request, response), cache.addAll([ '/foo', '/bar' ]) (it's atomic: if any fail to cache, none are added), cache.match(request), or caches.match(request)
+
+### R2D14
+
+**Today's Progress:** Finished a lesson on the service worker.
+
+**Notes:**
+###### Service worker
+* When to store caches: when a browser runs a service worker for the first time, the install event is fired. Browser won't allow service worker to take control of a webpage till its install phase has completed, and we're in control of what that involves. It's a good opportunity to get everything we need from network and create a cache for it. In service worker file, add event listener for install event. Within the function, use event.waitUntil() (signals progress of install), and pass it a promise. If/when the promise resolves, the browser will know install is complete; if it rejects, it knows install has failed, and service worker should be discarded.
+* If you make a change to CSS, the service worker isn't automatically updated. You must make a change to the service worker in order for the browser to treat the updated service worker as a new version. Because it's new, it'll get its own install event, in which it will fetch the JS, HTML, and updated CSS, and place them in a new cache. Must change the name of the cache for it to place in new cache; doesn't do so by itself (make new one; don't want to disrupt preexisting cache already in use by old service worker and pages it controls). Once new service worker is released and ready to take over, we delete old cache, so next page load gets resources from new cache (i.e., updated CSS).
+* Activate event: ideal time to discard old caches. Use `caches.delete(cacheName);`
+* Use `caches.keys()` to get names of all caches.
