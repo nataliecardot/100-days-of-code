@@ -127,3 +127,9 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 * If you make a change to CSS, the service worker isn't automatically updated. You must make a change to the service worker in order for the browser to treat the updated service worker as a new version. Because it's new, it'll get its own install event, in which it will fetch the JS, HTML, and updated CSS, and place them in a new cache. Must change the name of the cache for it to place in new cache; doesn't do so by itself (make new one; don't want to disrupt preexisting cache already in use by old service worker and pages it controls). Once new service worker is released and ready to take over, we delete old cache, so next page load gets resources from new cache (i.e., updated CSS).
 * Activate event: ideal time to discard old caches. Use `caches.delete(cacheName);`
 * Use `caches.keys()` to get names of all caches.
+
+### R2D15
+
+**Today's Progress:** Started restaurant reviews app project:
+* Forked and cloned project repository
+* Reviewed files/rubric
