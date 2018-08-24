@@ -133,3 +133,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 **Today's Progress:** Started restaurant reviews app project:
 * Forked and cloned project repository
 * Reviewed files/rubric
+
+### R2D16
+
+**Today's Progress:** Got restaurant reviews app map working with MapBox access key, made layout responsive and mobile friendly
