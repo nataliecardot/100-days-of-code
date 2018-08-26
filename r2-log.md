@@ -145,3 +145,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 ### R2D18
 
 **Today's Progress:** Made minor restaurant reviews app styling improvements and comment/code cleanup.
+
+### R2D19
+
+**Today's Progress:** Added ARIA attributes to restaurant reviews app for improved accessibility.
