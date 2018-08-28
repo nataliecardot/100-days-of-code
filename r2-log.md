@@ -149,3 +149,18 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 ### R2D19
 
 **Today's Progress:** Added ARIA attributes to restaurant reviews app for improved accessibility.
+
+### R2D20
+
+**Today's Progress:**
+* Worked on restaurant reviews app by adding ARIA attributes and fixing a minor bug.
+* Watched part of a [video](https://www.youtube.com/watch?v=ksXwaWHCW6k&feature=youtu.be) on the service worker for review/preparation to implement it in the project.
+
+**Notes:**
+###### Service worker
+* Can't directly access the DOM; instead they communicate with the pages it controls by responding to messages sent by the POST message interface, which can manipulate DOM if needed
+* Programmable network proxy that allows you to control how network requests from your page are handled
+* Terminated when not used, restarted when needed again
+* Need HTTPS unless using localhost; if you upload to remote server, ensure it has HTTPS installed and enabled
+* In addition to caching assets, used for push notifications, background data sync/preload (new API that lets you defer actions in the cache until user has stable connection [Instagram works like this when offline])
+* Lifecycle: register -> install (triggers "install") event -> activate (triggers "activate" event)
