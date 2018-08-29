@@ -164,3 +164,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 * Need HTTPS unless using localhost; if you upload to remote server, ensure it has HTTPS installed and enabled
 * In addition to caching assets, used for push notifications, background data sync/preload (new API that lets you defer actions in the cache until user has stable connection [Instagram works like this when offline])
 * Lifecycle: register -> install (triggers "install") event -> activate (triggers "activate" event)
+
+### R2D21
+
+**Today's Progress:** Added additional ARIA attributes and a service worker (attempt) to restaurant reviews app.
