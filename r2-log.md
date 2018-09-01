@@ -168,3 +168,11 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 ### R2D21
 
 **Today's Progress:** Added additional ARIA attributes and a service worker (attempt) to restaurant reviews app.
+
+### R2D22
+
+**Today's Progress:** Continued working on implementing the service worker in restaurant reviews app.
+
+### R2D23
+
+**Today's Progress:** Continued working on implementing the service worker in restaurant reviews app.
