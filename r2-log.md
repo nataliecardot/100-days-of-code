@@ -176,3 +176,10 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 ### R2D23
 
 **Today's Progress:** Continued working on implementing the service worker in restaurant reviews app.
+
+### R2D24
+
+**Today's Progress:**
+* Got service worker working in restaurant reviews app and submitted the project to Udacity.
+* Restyled my cat clicker app and added it to my site
+* Added a project placeholder to my site for an improved (more symmetrical) appearance
