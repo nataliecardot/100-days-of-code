@@ -183,3 +183,11 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 * Got service worker working in restaurant reviews app and submitted the project to Udacity.
 * Restyled my cat clicker app and added it to my site
 * Added a project placeholder to my site for an improved (more symmetrical) appearance
+
+### R2D25
+
+**Today's Progress:** Fixed some things I missed (section header element order) and resubmitted restaurant reviews app project (it passed!). Also continued restyling my site, including changing the hero image and optimizing its responsiveness.
+
+### R2D26
+
+**Today's Progress:** Finished restyling my site: Made it fully secure by removing the contact form, made the newly added contact information responsive at all breakpoints, and added new favicons.
