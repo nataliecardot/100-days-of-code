@@ -191,3 +191,22 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 ### R2D26
 
 **Today's Progress:** Finished restyling my site: Made it fully secure by removing the contact form, made the newly added contact information responsive at all breakpoints, and added new favicons.
+
+### R2D27
+
+**Today's Progress:** Started a lesson on React.
+
+**Notes:**
+* __Composition__ is combining simple functions together to create complex functions. This is a key way in which React constructs UI.
+* __Declarative vs imperative__ programming: Declarative is saying what you want done and leaving the work to another entity, whereas declarative means doing the work. For example, to maintain a comfortable temperature in the car, an imperative method would be fiddling with the knobs continuously, whereas a declarative method would be if you had a voice-activated system to which you could *declare* what temperature you wanted the car to be. You declare state and markup then React does the imperative work of keeping the DOM in sync.
+
+Declarative: expresses logic of computation without describing its control flow (control flow is order in which individual statements, instructions or function calls of an imperative program are executed or evaluated)
+Imperative: uses statements that change a program's state.
+
+If you have code with logic that says that if something is red then make it blue, it could be declarative or imperative. If it does so by directly manipulating the DOM, it's imperative. If it simply says it should change the color, and an element is not touched to accomplish this, it's declarative. See more detailed example in [this article](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2).
+
+React is declarative: You declare state and markup, then React does imperative work of keeping the DOM in sync with your app.
+
+* Redux is an open-source JavaScript library for managing application state--a "predictable state container." Stated differently, it helps you manage the data you display and how you respond to user actions.
+
+* Routing is the process of selecting a path for traffic in a network
