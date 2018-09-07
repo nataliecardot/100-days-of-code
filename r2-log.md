@@ -210,3 +210,9 @@ React is declarative: You declare state and markup, then React does imperative w
 * Redux is an open-source JavaScript library for managing application state--a "predictable state container." Stated differently, it helps you manage the data you display and how you respond to user actions.
 
 * Routing is the process of selecting a path for traffic in a network
+
+### R2D28
+
+**Today's Progress:** Contined a lesson on React.
+
+**Notes:** Whereas front-end frameworks like Angular and Ember use two-way data binding (if a model changes the data, data updates in the view; alternatively, if the user changes the data in the view, then the data is updated in the model), React has a unidirectional data flow: from the parent component to a child component. Data updates are transmitted to parent component, which performs the actual change.
