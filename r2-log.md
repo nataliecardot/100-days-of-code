@@ -220,3 +220,14 @@ React is declarative: You declare state and markup, then React does imperative w
 ### R2D29
 
 **Today's Progress:** Finished an introductory lesson on React and got a refresher on the .map() and .filter() methods, which are heavily used in React.
+
+### R2D30
+
+**Today's Progress:**
+
+**Notes:**
+* To describe UI, React uses elements rather than templates.
+* React's .createElement() method takes in a description of an element and returns a plain JavaScript object. `React.createElement( /* type */, /* props */, /* content */ );` Created elements describe DOM nodes, not HTML. When HTML is parsed by browser into DOM, the HTML “element” is called object or node, and HTML attributes become properties of the object/node. When passing properties into createElement(), use DOM property name, e.g., className instead of class.
+* In React the process of deciding what to render in completely decoupled from actually rendering it; the decoupling makes it possible to render things on the server, VR environments
+* ReactDOM is the glue between React and the DOM. Its single use is the ReactDOM.render() method to render our element onto a particular area of a page. You can render an element into a DOM node called root. Apps built with React typically have a single root DOM node. For example, an HTML file may contain a <div> with the following: `<div id='root'></div>` By passing this DOM node into getElementById(), React will end up controlling the entirety of its contents.
+* VirtualDOM: When using React's createElement() method, real elements aren't being created; rather, they're objects that describe real DOM nodes. To create something in the DOM with createElement(), must render it using  ReactDOM.render().
