@@ -223,7 +223,7 @@ React is declarative: You declare state and markup, then React does imperative w
 
 ### R2D30
 
-**Today's Progress:**
+**Today's Progress:** Started lesson on rendering UI with React.
 
 **Notes:**
 * To describe UI, React uses elements rather than templates.
@@ -231,3 +231,43 @@ React is declarative: You declare state and markup, then React does imperative w
 * In React the process of deciding what to render in completely decoupled from actually rendering it; the decoupling makes it possible to render things on the server, VR environments
 * ReactDOM is the glue between React and the DOM. Its single use is the ReactDOM.render() method to render our element onto a particular area of a page. You can render an element into a DOM node called root. Apps built with React typically have a single root DOM node. For example, an HTML file may contain a <div> with the following: `<div id='root'></div>` By passing this DOM node into getElementById(), React will end up controlling the entirety of its contents.
 * VirtualDOM: When using React's createElement() method, real elements aren't being created; rather, they're objects that describe real DOM nodes. To create something in the DOM with createElement(), must render it using  ReactDOM.render().
+
+### R2D31
+
+**Today's Progress:** Continued lesson on rendering UI with React.
+
+**Notes:**
+* React.createElement( type, props, content); creates a single React element of a particular type. We'd normally pass in a tag such as a div or span to represent that type, but the content argument can be another React element.  However, even when .createElement() there are nested elements, it returns just one root element.
+* JSX is a sytax extension to JavaScript that allows us to write JavaScript code that looks more like HTML, which makes describing the nested relationships of elements more simplistic and elegant than many createElement() calls. It is similar to XML, Extensible Markup Language, which is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. XML was designed to store and transport data and to be self-descriptive. (A markup language is a system for annotating a document in a way that is syntactically distinguishable from the text.)
+* Whenever you want JSX to evaluate JavaScript, must wrap it in curly braces.
+* React component:
+
+  A single view of a user interface (in this case the way through which a user interacts with an application or a website), the 'tree' or 'trunk', is divided into logical chunks, such as branches. The tree becomes the starting component (e.g., a layout component) and each chunk in the UI will become a subcomponent that can be divided further into subcomponents (that is, subbranches).
+
+  React provides a base component class that we can use to group many elements together and use them as if they were one element.
+
+  Components refer to reusable pieces of code ultimately responsible for returning HTML to be rendered onto the page. They are like factories used to create React elements--by creating custom components (or classes), we can easily generate custom elements. Formatted like:
+
+  ```
+  // reminder: Pascal case is used for class and constructor names
+  class ContactList extends React.component {
+  // Only method required in a class is render(). It is render's jobto return the JSX or the elements that that component renders
+    render() {
+      const people = [
+        { name: 'Mike' },
+        { name: 'Stacey' },
+        { name: 'Trish' }
+      ]
+
+    return <ol>
+      {people.map(person => (
+        <li key={person.name}>{person.name}</li>
+      ))}
+      </ol>
+    }
+  }
+  ```
+
+  Since React's main focus is to streamline building app's UI, there is only one method that is vital in any React component class: render().
+
+  A React component is basically any part of a UI that can contain React nodes (via React.createElement() or JSX).
