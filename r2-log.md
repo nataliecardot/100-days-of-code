@@ -271,3 +271,13 @@ React is declarative: You declare state and markup, then React does imperative w
   Since React's main focus is to streamline building app's UI, there is only one method that is vital in any React component class: render().
 
   A React component is basically any part of a UI that can contain React nodes (via React.createElement() or JSX).
+
+  Think of component classes as factories that produce instances of components. These component classes should follow the single responsibility principle and manage only one task.
+
+  ### R2D32
+
+  **Today's Progress:** Continued lesson on rendering UI with React.
+
+  **Notes:**
+  * Create React App installs react, react-dom, and react-scripts. react-scrips installs Babel (so can use latest JS syntax and JSX), webpack (to generate the build), and webpack-dev-server, which provides auto reload behavior.
+  * Webpack's main purpose is to bundle JavaScript files for usage in a browser. It is a module bundler. A module is a reusable piece of code that encapsulates implementation details and exposes a public API so it can be easily loaded and used by other code. Stated differently, a module is an object referring to the functionality that will be exported from a file. Or, a module can be thought of as a container that holds related code which can then be exported to another file.
