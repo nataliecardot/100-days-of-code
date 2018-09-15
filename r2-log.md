@@ -284,4 +284,4 @@ React is declarative: You declare state and markup, then React does imperative w
 
 ### R2D33
 
-**Today's Progress:** Optimized my jQuery to-do list for mobile.
+**Today's Progress:** Optimized both of my to-do list projects for mobile and added mobile and tablet incompatibility messages for my two pixel art maker versions.
