@@ -228,7 +228,7 @@ React is declarative: You declare state and markup, then React does imperative w
 **Notes:**
 * To describe UI, React uses elements rather than templates.
 * React's .createElement() method takes in a description of an element and returns a plain JavaScript object. `React.createElement( /* type */, /* props */, /* content */ );` Created elements describe DOM nodes, not HTML. When HTML is parsed by browser into DOM, the HTML “element” is called object or node, and HTML attributes become properties of the object/node. When passing properties into createElement(), use DOM property name, e.g., className instead of class.
-* In React the process of deciding what to render in completely decoupled from actually rendering it; the decoupling makes it possible to render things on the server, VR environments
+* In React the process of deciding what to render is completely decoupled from actually rendering it; the decoupling makes it possible to render things on the server, VR environments
 * ReactDOM is the glue between React and the DOM. Its single use is the ReactDOM.render() method to render our element onto a particular area of a page. You can render an element into a DOM node called root. Apps built with React typically have a single root DOM node. For example, an HTML file may contain a <div> with the following: `<div id='root'></div>` By passing this DOM node into getElementById(), React will end up controlling the entirety of its contents.
 * VirtualDOM: When using React's createElement() method, real elements aren't being created; rather, they're objects that describe real DOM nodes. To create something in the DOM with createElement(), must render it using  ReactDOM.render().
 
@@ -285,3 +285,106 @@ React is declarative: You declare state and markup, then React does imperative w
 ### R2D33
 
 **Today's Progress:** Optimized both of my to-do list projects for mobile and added mobile and tablet incompatibility messages for my two pixel art maker versions.
+
+### R2D34
+
+**Today's Progress:** Futher optimized media query styling for my arcade game project and started Codecademy's React course.
+
+**Notes:**
+* Positioning is static by default; for top, left, etc., to work in CSS, you need to set position to relative.
+* To vertically center without flexbox, one way is to wrap everything you want to center in a div (if there are multiple items, such as an img and p element) set top to 50%, set position to relative, and use transform: translateY: -50%;
+* Another way to vertically center is to set the enclosing parent element (such as a div) to display: table, and set the child element (such as a p element) to display: table-cell, with vertical-align: middle. Margins won't work with this; instead you can use padding (one possibility).
+* Multi-line JSX must be enclosed in parentheses and there can only be one outermost element. An easy solution is to wrap everything in a div.
+* If you try to render a JSX element twice, and it's the same in both instances, nothing will happen; it only renders elements that have changed.
+* A key feature of React is the virtual DOM. In React, for every DOM object, there is a corresponding virtual DOM object, a representation of a DOM object, like a lightweight copy. It has the same properties as a real DOM object, but unlike the real thing, it cannot directly change what's on screen. Real DOM manipulation is slow, but since manipulating the virtual DOM does not draw anything on the screen, it's much faster. Manipulating the virtual DOM is like editing a blueprint of a home's layout, as opposed to moving rooms within it. When a JSX element is rendered, every virtual DOM object is updated, with little efficiency cost because it updates so quickly. Once React knows which virtual DOM objects have changed, then React updates those objects, and those objects alone, on the real DOM. This is the reason for React's reputation for performance.
+* With JSX, must use className instead of class atttribute name because JSX gets translated into JavaScript, and class is a reserved word in JavaScript. When JSX is rendered, JSX className attributes are automatically rendered as class attributes.
+* JSX element and rendering example:
+```
+const myDiv = <div className="big">I AM A BIG DIV</div>;
+
+ReactDOM.render(myDiv,
+document.getElementById('app'));
+```
+* When you write a self-closing tag in HTML, it is optional to include a forward-slash immediately before the final angle-bracket, but it is required with JSX.
+* Any code between the tags of a JSX element will be read as JSX, not as regular JavaScript! To treat text between JSX tags as ordinary JavaScript, wrap it in curly braces.
+
+### R2D35
+
+**Today's Progress:** Contined Codecademy's React course.
+
+**Notes:**
+* When you insert JavaScript into JSX, it's part of the same environment as the rest of the JavaScript in your file; you can access variables from inside of a JSX expression even if those variables were declared on the outside.
+* It's common to use variables to set attributes when writing JSX. Put each attribute on its own line for readability. Object properties are also often used to set attributes.
+* JSX elements can have event listeners like HTML elements can. You can create an event listener by giving a JSX element a special attribute, such as `<img onClick={myFunc} />` or `<button onClick={yo}></button>`, where `yo` is a previously defined variable. See React's [supported events](https://reactjs.org/docs/events.html#supported-events) (remember capturing is synonymous with trickling).
+* If statements cannot be used in JSX expressions because JSX is just syntactic sugar for JavaScript function calls & object construction, and when it's compiled to JavaScript, the if statements don't fit in, as explained [here](https://react-cn.github.io/react/tips/if-else-in-JSX.html). A common way to include conditionals is to place them outside of the JSX tags.
+* Ternary operator can be used between JSX tags. Example:
+```
+const headline = (
+  <h1>
+    { age >= drinkingAge ? 'Buy Drink' : 'Do Teen Stuff' }
+  </h1>
+);
+```
+* Map is best for creating lists of JSX elements. Example:
+```
+const strings = ['Home', 'Shop', 'About Me'];
+
+const listItems = strings.map(string => <li>{string}</li>);
+
+<ul>{listItems}</ul>
+```
+Note: {listItems} will evaluate to an array because it's the returned value of .map()--JSX <li>s don't have to be in an array, but they can be.
+* JSX attribute key is used to keep track of lists. Example: `<li key="li-01">Example1</li>` A list needs key if 1) when a list is rendered, whether a list item was checked off or not needs to be "remembered" (as is the case with a to-do list), and 2) a list's order might be shuffled
+* React applications are comprised of components. A component is a small, reusable chunk of code that is responsible for one job, which is often to render some HTML. Example of code that creates and renders a component:
+```
+// Importing React library and saving it to a variable named 'React'
+import React from 'react'; // Methods used for pure React purposes (e.g., components, writing JSX elements)
+import ReactDOM from 'react-dom'; // Methods for interacting with the DOM
+
+class MyComponentClass extends React.Component {
+  render() {
+    return <h1>Hello world</h1>;
+  }
+};
+
+ReactDOM.render(
+  <MyComponentClass />,
+  document.getElementById('app')
+);
+```
+* Every component must come from a component class, which is like a factory that creates components. To make a component class, use a base class from the React library: React.Component, which is a JavaScript class. To create your own component class, you subclass that React.Component base class. To do so, use the syntax `class YourComponentNameGoesHere extends React.Component {}`.
+* A component class is like a factory that builds components, which it builds by consulting a set of instructions, which must be provided between the curly braces in ES6 class syntax. The only required property to include is the render() method (the property's name is render, and its value is a function). The render method (referring to either the entire property or the function part alone) must contain a return statement.
+* To make a React component, you write a JSX element, giving it the same name as a component class. JSX elements can be either HTML-like or component instances; JSX uses capitalization to distinguish between the two, which is why you muse use Pascal case for the component class name. Here's an example of an instance of a component class: `<MyComponentClass />`
+* Whenever you make a component (an instance if the component class), that component inherits all of the methods of its component class. MyComponentClass has the method MyComponentClass.render(); <MyComponentClass /> also has a method named render.
+* To call a component's render method, you pass that component as a first argument to ReactDOM.render():
+```
+ReactDOM.render(
+  <MyComponentClass />,
+  document.getElementById('app')
+);
+```
+This instructs the component instance to call _its_ render method.
+* A render method must contain a return statement, but it also is a good place for anysimple calculations that need to happen right before a component renders. This logic must be within the render method's curly braces. Example:
+```
+class Random extends React.Component {
+  render() {
+    const n = Math.floor(Math.random() * 10 + 1);
+    return <h1>The number is {n}!</h1>;
+  }
+}
+```
+* To use a conditional inside a render() function, it must be before the return statement.
+* The `this` keyword is often used in the body of component class declarations. The simple explanation of what it refers to is an instance of the component class (actually, this is almost always the case, but it could technically be something else). The more complex explanation is that it refers to the object on which this's enclosing method, in this case .render(), is called:
+```
+class IceCreamGuy extends React.Component {
+  get food() {
+    return 'ice cream';
+  }
+
+  render() {
+    return <h1>I like {this.food}.</h1>;
+  }
+}
+```
+* Reminder: The set syntax binds an object property to a function to be called when there is an attempt to set that property. The get syntax binds an object property to a function that will be called when that property is looked up.
+* Reminder: An event handler is a function that gets called in response to an event.
