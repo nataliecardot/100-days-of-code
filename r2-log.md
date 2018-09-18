@@ -388,3 +388,44 @@ class IceCreamGuy extends React.Component {
 ```
 * Reminder: The set syntax binds an object property to a function to be called when there is an attempt to set that property. The get syntax binds an object property to a function that will be called when that property is looked up.
 * Reminder: An event handler is a function that gets called in response to an event.
+
+### R2D36
+
+**Today's Progress:** Continued Codecademy's React course.
+
+**Notes:**
+* In React, you define event handlers as methods on a component class.
+* Component instance, React component, and component are synonymous, while component class is not (it's like a factory for making components).
+* In addition to HTML-like JSX elements, render methods can also return another kind of JSX: component instances. Example:
+```
+class OMG extends React.Component {
+  render() {
+    return <h1>Whooaa!</h1>;
+  }
+}
+
+class Crazy extends React.Component {
+  render() {
+    return <OMG />;
+  }
+}
+```
+* One component can render another component by placing it (the component instance) in its render function. But since when you using React.js, every JavaScript file in your application is invisible to every other JavaScript file by default, you have to import the variable if it has been declared in another file with an import statement: `import { NavBar } from './NavBar.js';`
+* React's module system comes from ES6. This behavior is not specific to React.
+* A module is a piece of a program that specifies which other pieces it relies on and which functionality it provides for other modules to use (called its interface). The relations between modules are called dependences. To separate modules this way, each needs its own private scope.
+* A package is a chunk of code that can be distributed (copied and installed). It may contain one or more modules and has information about which other packages it depends on.
+* NPM is two things: an online service where one can download (and upload) packages and a program (bundled with Node.js) that helps you install and manage them.
+* JavaScript execution in Node.js is single threaded. In computer programming, single-threading is the processing of one command at a time. The opposite of single-threading is multithreading. Node.js uses multiple threads in the background to execute asynchronous code. Blocking methods execute synchronously and nonblocking methods execute asynchronously. Node.js is nonblocking; all functions (callbacks) are delegated to the event loop and they are (or can be) executed by different threads.
+* In computing, input/output or I/O (or, informally, io or IO) is the communication between an information processing system, such as a computer, and the outside world, possibly a human or another information processing system.
+* Node Package Manager (NPM) provides two main functionalities:
+  - Online repositories for node.js packages/modules, which are searchable on search.nodejs.org
+  - Command line utility to install Node.js packages, do version management and dependency management of Node.js packages.
+
+  NPM helps JavaScript developers load dependencies effectively. To load dependencies we just have to run this command in command prompt:
+
+  `npm install`
+
+  This locates a JSON file named as package.json in the root directory and installs all dependencies defined within it.
+* When you import a variable from a file that is not the current file, then an import statement isn't quite enough. You also need an export statement, written in the other file, exporting the variable that you hope to grab. There are a few different ways to use export. To do a named export: In one file, place the keyword export immediately before something that you want to export. That something can be any top-level var, let, const, function, or class. When you use named exports, you always need to wrap your imported names in curly braces, such as:
+
+`import { faveManifestos, alsoRan } from './Manifestos';`
