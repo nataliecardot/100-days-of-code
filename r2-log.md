@@ -318,53 +318,63 @@ document.getElementById('app'));
 * JSX elements can have event listeners like HTML elements can. You can create an event listener by giving a JSX element a special attribute, such as `<img onClick={myFunc} />` or `<button onClick={yo}></button>`, where `yo` is a previously defined variable. See React's [supported events](https://reactjs.org/docs/events.html#supported-events) (remember capturing is synonymous with trickling).
 * If statements cannot be used in JSX expressions because JSX is just syntactic sugar for JavaScript function calls & object construction, and when it's compiled to JavaScript, the if statements don't fit in, as explained [here](https://react-cn.github.io/react/tips/if-else-in-JSX.html). A common way to include conditionals is to place them outside of the JSX tags.
 * Ternary operator can be used between JSX tags. Example:
-```
-const headline = (
-  <h1>
-    { age >= drinkingAge ? 'Buy Drink' : 'Do Teen Stuff' }
-  </h1>
-);
-```
+
+  ```
+  const headline = (
+    <h1>
+      { age >= drinkingAge ? 'Buy Drink' : 'Do Teen Stuff' }
+    </h1>
+  );
+  ```
+
 * Map is best for creating lists of JSX elements. Example:
-```
-const strings = ['Home', 'Shop', 'About Me'];
 
-const listItems = strings.map(string => <li>{string}</li>);
+  ```
+  const strings = ['Home', 'Shop', 'About Me'];
 
-<ul>{listItems}</ul>
-```
-Note: {listItems} will evaluate to an array because it's the returned value of .map()--JSX <li>s don't have to be in an array, but they can be.
+  const listItems = strings.map(string => <li>{string}</li>);
+
+  <ul>{listItems}</ul>
+  ```
+
+  Note: {listItems} will evaluate to an array because it's the returned value of .map()--JSX `<li>`s don't have to be in an array, but they can be.
+
 * JSX attribute key is used to keep track of lists. Example: `<li key="li-01">Example1</li>` A list needs key if 1) when a list is rendered, whether a list item was checked off or not needs to be "remembered" (as is the case with a to-do list), and 2) a list's order might be shuffled
 * React applications are comprised of components. A component is a small, reusable chunk of code that is responsible for one job, which is often to render some HTML. Example of code that creates and renders a component:
-```
-// Importing React library and saving it to a variable named 'React'
-import React from 'react'; // Methods used for pure React purposes (e.g., components, writing JSX elements)
-import ReactDOM from 'react-dom'; // Methods for interacting with the DOM
 
-class MyComponentClass extends React.Component {
-  render() {
-    return <h1>Hello world</h1>;
-  }
-};
+  ```
+  // Importing React library and saving it to a variable named 'React'
+  import React from 'react'; // Methods used for pure React purposes (e.g., components, writing JSX elements)
+  import ReactDOM from 'react-dom'; // Methods for interacting with the DOM
 
-ReactDOM.render(
-  <MyComponentClass />,
-  document.getElementById('app')
-);
-```
+  class MyComponentClass extends React.Component {
+    render() {
+      return <h1>Hello world</h1>;
+    }
+  };
+
+  ReactDOM.render(
+    <MyComponentClass />,
+    document.getElementById('app')
+  );
+  ```
+
 * Every component must come from a component class, which is like a factory that creates components. To make a component class, use a base class from the React library: React.Component, which is a JavaScript class. To create your own component class, you subclass that React.Component base class. To do so, use the syntax `class YourComponentNameGoesHere extends React.Component {}`.
 * A component class is like a factory that builds components, which it builds by consulting a set of instructions, which must be provided between the curly braces in ES6 class syntax. The only required property to include is the render() method (the property's name is render, and its value is a function). The render method (referring to either the entire property or the function part alone) must contain a return statement.
 * To make a React component, you write a JSX element, giving it the same name as a component class. JSX elements can be either HTML-like or component instances; JSX uses capitalization to distinguish between the two, which is why you muse use Pascal case for the component class name. Here's an example of an instance of a component class: `<MyComponentClass />`
 * Whenever you make a component (an instance if the component class), that component inherits all of the methods of its component class. MyComponentClass has the method MyComponentClass.render(); <MyComponentClass /> also has a method named render.
 * To call a component's render method, you pass that component as a first argument to ReactDOM.render():
-```
-ReactDOM.render(
-  <MyComponentClass />,
-  document.getElementById('app')
-);
-```
-This instructs the component instance to call _its_ render method.
-* A render method must contain a return statement, but it also is a good place for anysimple calculations that need to happen right before a component renders. This logic must be within the render method's curly braces. Example:
+
+  ```
+  ReactDOM.render(
+    <MyComponentClass />,
+    document.getElementById('app')
+  );
+  ```
+
+  This instructs the component instance to call _its_ render method.
+
+* A render method must contain a return statement, but it also is a good place for any simple calculations that need to happen right before a component renders. This logic must be within the render method's curly braces. Example:
 ```
 class Random extends React.Component {
   render() {
@@ -428,4 +438,116 @@ class Crazy extends React.Component {
   This locates a JSON file named as package.json in the root directory and installs all dependencies defined within it.
 * When you import a variable from a file that is not the current file, then an import statement isn't quite enough. You also need an export statement, written in the other file, exporting the variable that you hope to grab. There are a few different ways to use export. To do a named export: In one file, place the keyword export immediately before something that you want to export. That something can be any top-level var, let, const, function, or class. When you use named exports, you always need to wrap your imported names in curly braces, such as:
 
-`import { faveManifestos, alsoRan } from './Manifestos';`
+  `import { faveManifestos, alsoRan } from './Manifestos';`
+
+### R2D37
+
+**Today's Progress:** Continued Codecademy's React course.
+
+**Notes:**
+* A component can pass information to another component. Information that gets passed from one component to another is known as "props."
+* Every component has something a props object.
+* To see a component's props object, you use this.props.
+* Reminder: JSON.parse() takes a JSON string and transforms it into a JavaScript object. JSON.stringify() takes a JavaScript object and transforms it into a JSON string.
+* To pass props to a component (again, this means component instance, not component class), you give it an attribute of any name you wish.
+
+  Example: `<MyComponent foo="bar" />`
+
+  If you want to pass information that isn't a string, then wrap that information in curly braces. Here's how you would pass an array:
+
+  `<Greeting myInfo={["top", "secret", "lol"]} />`
+
+* To make a component display passed-in information: 1) Find the component class that is going to receive that information. 2) Include this.props.name-of-information in that component class's render method's return statement. Example:
+
+  ```
+  class Greeting extends React.Component {
+    render() {
+      return <h1>Hi there, {this.props.firstName}!</h1>;
+    }
+  }
+  ```
+
+* props could refer to two pieces of passed-in information, or it could refer to the object that stores those pieces of information
+* The most common use of props is to pass information to a component, from a different component.
+* It is common to pass functions, especially event handler functions, as props.
+* You define an event handler as a method on the component class, just like the render method.
+
+### R2D38
+
+**Today's Progress:** Continued Codecademy's React course.
+
+**Notes:**
+* To pass a method defined on a component class to another component (that is, component instance), you pass it as a prop. Give the component in the render method an attribute and value. The attribute can have any name. The value would use this and curly braces. Example:
+
+  ```
+  import React from 'react';
+  import ReactDOM from 'react-dom';
+  import { Button } from './Button';
+
+  class Talker extends React.Component {
+    talk() {
+      let speech = '';
+      for (let i = 0; i < 10000; i++) {
+        speech += 'blah ';
+      }
+      alert(speech);
+    }
+
+    render() {
+      return <Button talk={this.talk} />;
+    }
+  }
+
+  ReactDOM.render(
+    <Talker />,
+    document.getElementById('app')
+  );  
+  ```
+
+  However, for the method to be called, you must pass attach it to the event recipient (in this example, a button) as an event handler. Give the JSX element a special attribute name like `onClick` or `onHover` with an attribute value of the event handler (the method).
+
+  Example (goes with previous one):
+
+  ```
+  import React from 'react';
+
+  export class Button extends React.Component {
+    render() {
+      return (
+        <button onClick={this.props.talk}>
+          Click me!
+        </button>
+      );
+    }
+  }
+  ```
+
+### R2D39
+
+**Today's Progress:** Continued Codecademy's React course.
+* When you pass an event handler as a prop, there are two names that you have to choose: the name of the event handler itself, which should be (per the convention) something like handleClick if you're listening for a keypress event, and the prop name, which should be something like the word "on" plus the event type, like "onKeypress" if you're listening for a keypress event.
+
+### R2D40
+
+**Today's Progress:** Continued Codecademy's React course.
+
+**Notes:**
+* Every component's props object has a property named children. `this.props.children` returns everything between a components opening and closing JSX tags.
+*  Components often have self-closing tags, such as <MyComponentClass />. but you could write <MyComponentClass></MyComponentClass>, and it would still work. `this.props.children` would return everything between <MyComponentClass> and </MyComponentClass>.
+* You can display a default message by giving your component class a property called defaultProps, which should be set to equal an object, inside of which object you can set properties. Example:
+
+```
+class Example extends React.Component {
+  render() {
+    return <h1>{this.props.text}</h1>;
+  }
+}
+
+Example.defaultProps = { text: 'Crickets chirping.' };
+```
+
+* Dynamic information is info that can change.
+* A component can obtain dynamic info from props and state.
+* State represents mutable data that ultimately affects what is rendered on the page.
+* Whereas props are passed in from the outside, a component is given the state property and manages the state internally. It can be declared in a constructor method, or directly in the class, as a class field that isn't supported in JS yet but can be used thanks to Babel's transpiling.
+* When defining a component's initial state, avoid initializing it with props; state will only be initialized with props when the component is first created. This is an anti-pattern (a pattern that may be commonly used but is ineffective or error prone).
