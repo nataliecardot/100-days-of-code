@@ -200,12 +200,12 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 * __Composition__ is combining simple functions together to create complex functions. This is a key way in which React constructs UI.
 * __Declarative vs imperative__ programming: Declarative is saying what you want done and leaving the work to another entity, whereas declarative means doing the work. For example, to maintain a comfortable temperature in the car, an imperative method would be fiddling with the knobs continuously, whereas a declarative method would be if you had a voice-activated system to which you could *declare* what temperature you wanted the car to be. You declare state and markup then React does the imperative work of keeping the DOM in sync.
 
-Declarative: expresses logic of computation without describing its control flow (control flow is order in which individual statements, instructions or function calls of an imperative program are executed or evaluated)
-Imperative: uses statements that change a program's state.
+  Declarative: expresses logic of computation without describing its control flow (control flow is order in which individual statements, instructions or function calls of an imperative program are executed or evaluated)
+  Imperative: uses statements that change a program's state.
 
-If you have code with logic that says that if something is red then make it blue, it could be declarative or imperative. If it does so by directly manipulating the DOM, it's imperative. If it simply says it should change the color, and an element is not touched to accomplish this, it's declarative. See more detailed example in [this article](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2).
+  If you have code with logic that says that if something is red then make it blue, it could be declarative or imperative. If it does so by directly manipulating the DOM, it's imperative. If it simply says it should change the color, and an element is not touched to accomplish this, it's declarative. See more detailed example in [this article](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2).
 
-React is declarative: You declare state and markup, then React does imperative work of keeping the DOM in sync with your app.
+  React is declarative: You declare state and markup, then React does imperative work of keeping the DOM in sync with your app.
 
 * Redux is an open-source JavaScript library for managing application state--a "predictable state container." Stated differently, it helps you manage the data you display and how you respond to user actions.
 
@@ -536,18 +536,99 @@ class Crazy extends React.Component {
 *  Components often have self-closing tags, such as <MyComponentClass />. but you could write <MyComponentClass></MyComponentClass>, and it would still work. `this.props.children` would return everything between <MyComponentClass> and </MyComponentClass>.
 * You can display a default message by giving your component class a property called defaultProps, which should be set to equal an object, inside of which object you can set properties. Example:
 
-```
-class Example extends React.Component {
-  render() {
-    return <h1>{this.props.text}</h1>;
+  ```
+  class Example extends React.Component {
+    render() {
+      return <h1>{this.props.text}</h1>;
+    }
   }
-}
 
-Example.defaultProps = { text: 'Crickets chirping.' };
-```
+  Example.defaultProps = { text: 'Crickets chirping.' };
+  ```
 
 * Dynamic information is info that can change.
 * A component can obtain dynamic info from props and state.
 * State represents mutable data that ultimately affects what is rendered on the page.
 * Whereas props are passed in from the outside, a component is given the state property and manages the state internally. It can be declared in a constructor method, or directly in the class, as a class field that isn't supported in JS yet but can be used thanks to Babel's transpiling.
 * When defining a component's initial state, avoid initializing it with props; state will only be initialized with props when the component is first created. This is an anti-pattern (a pattern that may be commonly used but is ineffective or error prone).
+
+### R2D41
+
+**Today's Progress:** Worked through a Udacity lesson on state management in React.
+
+**Notes:**
+* If your component doesn't keep track of internal state (it only has a render() method), you can declare it as a stateless functional component. Props would be passed in as an argument, rather than being accessed with this.props. Example (ES6 arrow function with implicit return):
+
+  ```
+  const Email = (props) => (
+    <div>
+      {props.text}
+    </div>
+  );
+  ```
+
+* _**Reconciliation**_ is the process through which React updates the DOM. When a component's state changes, React must calculate if it's necessary to update the DOM, which it does by creating a virtual DOM and comparing it with the current DOM.
+* You can't update state directly (e.g., `this.state.username = 'Natalie'`), because React won't know it changed. To solve this problem, React provides helper method setState (`this.setState()`) Two ways to use it: passing it a function, passed previous state as its first argument (in this case, the state update would be asynchronous). _Use functional setState when the new state of your component depends on previous state._
+
+  ```
+  this.setState({
+    subject: 'Hello! This is a new subject'
+  })
+  ```
+
+  The second way to use setState is to pass in an object, which will be merged with current state to form the new state of the component. _Use this object setState whenever the new state of your component does not depend on its previous state._
+
+  ```
+  this.setState((prevState) => ({
+    count: prevState.count + 1
+  }))
+  ```
+
+* Whenever you invoke setState(), React rerenders entire application (also calls render() with new state) and updates UI; your UI is a function of your state.
+* If the initial state of a component contains multiple properties, they can be independently updated with this.setState()
+
+### R2D42
+
+**Today's Progress:** Worked through a Udacity lesson on state management in React.
+
+**Notes:**
+* PropTypes package allows you to define intended data type and warns during development if prop passed to component doesn't match what's expected. Use `npm install prop-types` or, if using Yarn to manage packages, `yarn add prop-types`. After running either command restart the server with `npm start` (an alias for `npm run start`)
+* Normally when using forms in a web app, form state lives in the DOM, but the whole point of React is to more effectively manage state within your application; if form state typically lives within DOM, but React is about state management, how do we handle forms in React? With what React calls "controlled components." _Controlled components_ are components that render a form, but the source of truth for that form state lives inside the component rather than inside the DOM. They're called controlled components because React is controlling state of form. Benefits of controlled components include support for instant input validation, allowing you to conditionally enable or disable form buttons, and they enforce input formats. Example of controlled component usage:
+
+  ```
+  class NameForm extends React.Component {
+    state = { email: '' }
+    handleChange = event => {
+      this.setState({email: event.target.value})
+    }
+    render() {
+      return (
+        <form>
+          <input type = "text" value={this.state.email} onChange={this.handleChange} />
+        </form>
+      )
+    }
+  }
+  ```
+
+* The Chrome extension React Developer Tools (from Facebook) allows you to inspect your component hierarchy along with their respective props and states.
+* _When to use a controlled component:_ If you want form data to update UI in any way besides just updating input field itself, make the form a controlled component--where React is controlling the state of the input field. (For example, when you have a search contacts feature [contacts added with form])
+* String.prototype.match(): match() method retrieves the matches when matching a string against a regular expression.
+* Controlled component: a component that renders a form, but the source of truth for that form lives in a component rather than in the DOM. Controlled components unique benefit (as compared to uncontrolled components): they allow you to update UI based on form itself, since form state lives inside the component
+* If you're accessing from this.props and/or this.state frequently, you can simplify with [object destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Object_destructuring). For instance instead of using this.state.query you can use const { query } = this.state, and just use query where you reference it.
+* Reminder:  All values in JavaScript are truthy unless they are defined as falsy (i.e., except for false, 0, "", null, undefined, and NaN).
+* With controlled components:
+  - Each update to state has an associated handler function
+  - Form elements receive their current value via an attribute
+  - Form input values are stored in component's state
+  - Event handlers for controlled element update component's state
+* render() is for rendering only; don't place AJAX request (reminder: XHR and fetch are both types of AJAX requests, and fetch is superior because it uses promises and therefore has a more succint, simple syntax) inside of it.
+* Lifecycle events are special methods each component can have that allow us to hook into different points in a component's life to run some code. These methods include:
+  - componentWillMount: invoked immediately before component is inserted into DOM
+  - componentDidMount: invoked immediately after component is inserted into DOM
+  - componentWillUnmount: invoked immediately before a component is removed from the DOM
+  - componentWillReceiveProps: will be invoked whenever component is about to receive new props
+* To fetch or do an Ajax request for remote data (from a database), use componentDidMount(), which  is invoked immediately after a component is mounted. Initialization that requires DOM nodes should go here. If you need to load data from a remote endpoint, this is a good place to instantiate the network request. Setting state in this method will trigger a re-rendering.
+* The render() method should be a "pure function"; it should take input via props, return a description of your UI (JSX), and nothing else. You shouldn't make Ajax requests in the render method for this reason and because you don't have complete control over when the render() method will be invoked.
+* Typical site (non-single-page application): When user visits it, browser requests a page from site's server. Server generates HTML and returns it. Each time user navigates site, broswer requests new page from server, and server again returns HTML for it. Using JS to render UI is sometimes calle da single-page application. Single-page application doesn't mean there's only one page in the app; it means the browser doesn't need to go back to the server for new pages; instead, JavaScript can handle the transition between them. There's only a single, initial page sent from server.
+* React Router is a tool used to create a single-page app with a router. It is a collection of navigational components that compose declaratively with your application.
