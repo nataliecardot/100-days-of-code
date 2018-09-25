@@ -279,7 +279,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 **Today's Progress:** Continued lesson on rendering UI with React.
 
 **Notes:**
-* Create React App installs react, react-dom, and react-scripts. react-scripts installs Babel (so can use latest JS syntax and JSX), webpack (to generate the build), and webpack-dev-server, which provides auto reload behavior.
+* Create React App installs the packages react, react-dom, and react-scripts. react-scripts installs Babel (so can use latest JS syntax and JSX), webpack (to generate the build), and webpack-dev-server, which provides auto-reload behavior.
 * Webpack's main purpose is to bundle JavaScript files for usage in a browser. It is a module bundler. A module is a reusable piece of code that encapsulates implementation details and exposes a public API so it can be easily loaded and used by other code. Stated differently, a module is an object referring to the functionality that will be exported from a file. Or, a module can be thought of as a container that holds related code which can then be exported to another file.
 
 ### R2D33
@@ -425,7 +425,7 @@ class Crazy extends React.Component {
 * A module is a piece of a program that specifies which other pieces it relies on and which functionality it provides for other modules to use (called its interface). The relations between modules are called dependences. To separate modules this way, each needs its own private scope.
 * A package is a chunk of code that can be distributed (copied and installed). It may contain one or more modules and has information about which other packages it depends on.
 * NPM is two things: an online service where one can download (and upload) packages and a program (bundled with Node.js) that helps you install and manage them.
-* JavaScript execution in Node.js is single threaded. In computer programming, single-threading is the processing of one command at a time. The opposite of single-threading is multithreading. Node.js uses multiple threads in the background to execute asynchronous code. Blocking methods execute synchronously and nonblocking methods execute asynchronously. Node.js is nonblocking; all functions (callbacks) are delegated to the event loop and they are (or can be) executed by different threads.
+* JavaScript execution in Node.js is single threaded. In computer programming, single-threading is the processing of one command at a time. The opposite of single-threading is multithreading. Node.js uses multiple threads in the background to execute asynchronous code. "Blocking" methods are those that execute synchronously while "nonblocking" methods execute asynchronously--Node.js is _nonblocking_; all functions (callbacks) are delegated to the event loop and they are (or can be) executed by different threads.
 * In computing, input/output or I/O (or, informally, io or IO) is the communication between an information processing system, such as a computer, and the outside world, possibly a human or another information processing system.
 * Node Package Manager (NPM) provides two main functionalities:
   - Online repositories for node.js packages/modules, which are searchable on search.nodejs.org
@@ -632,3 +632,23 @@ class Crazy extends React.Component {
 * The render() method should be a "pure function"; it should take input via props, return a description of your UI (JSX), and nothing else. You shouldn't make Ajax requests in the render method for this reason and because you don't have complete control over when the render() method will be invoked.
 * Typical site (non-single-page application): When user visits it, browser requests a page from site's server. Server generates HTML and returns it. Each time user navigates site, broswer requests new page from server, and server again returns HTML for it. Using JS to render UI is sometimes calle da single-page application. Single-page application doesn't mean there's only one page in the app; it means the browser doesn't need to go back to the server for new pages; instead, JavaScript can handle the transition between them. There's only a single, initial page sent from server.
 * React Router is a tool used to create a single-page app with a router. It is a collection of navigational components that compose declaratively with your application.
+
+### R2D43
+
+**Today's Progress:** Started Udacity Project 6, a React app and continued Codecademy's React course.
+
+**Notes:**
+* React components always have to call super in their constructors to be set up properly. Example with initial state also set in the constructor:
+
+  ```
+  constructor(props) {
+    super(props);
+    this.state = { mood: 'decent' };
+  }
+  ```
+
+* Reminder: Never separate methods within a class with a comma, as to distinguish between classes and object literals.
+* To read a component's state, use the expression this.state.name-of-property
+* By default, npm install will install all modules listed as dependencies (that satisfy version specifications) in package.json (refer to R2D32 notes for a reminder of what a module is) into node_modules (if it doesn't exist in the current directory, npm adds it). You can hide node_modules from view (from the working directory, that is) and tell Git not to track it by adding it to .gitignore file.
+* package-lock.json automatically created for any operations where npm modifies either the node_modules tree or package.json. One of its purposes as described in [npm documentation](https://docs.npmjs.com/files/package-lock.json) is to "describe a single representation of a dependency tree such that teammates, deployments, and continuous integration are guaranteed to install exactly the same dependencies."
+- Semantic versioning (semver): This is why there's a caret in front of versions listed in package.json. You can give npm permission to install a newer patch release with tilde and a minor release with caret. See [this article](https://bytearcher.com/articles/semver-explained-why-theres-a-caret-in-my-package-json/) and [npm's article](https://docs.npmjs.com/getting-started/semantic-versioning) for further details.
