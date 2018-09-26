@@ -652,3 +652,14 @@ class Crazy extends React.Component {
 * By default, npm install will install all modules listed as dependencies (that satisfy version specifications) in package.json (refer to R2D32 notes for a reminder of what a module is) into node_modules (if it doesn't exist in the current directory, npm adds it). You can hide node_modules from view (from the working directory, that is) and tell Git not to track it by adding it to .gitignore file.
 * package-lock.json automatically created for any operations where npm modifies either the node_modules tree or package.json. One of its purposes as described in [npm documentation](https://docs.npmjs.com/files/package-lock.json) is to "describe a single representation of a dependency tree such that teammates, deployments, and continuous integration are guaranteed to install exactly the same dependencies."
 - Semantic versioning (semver): This is why there's a caret in front of versions listed in package.json. You can give npm permission to install a newer patch release with tilde and a minor release with caret. See [this article](https://bytearcher.com/articles/semver-explained-why-theres-a-caret-in-my-package-json/) and [npm's article](https://docs.npmjs.com/getting-started/semantic-versioning) for further details.
+
+### R2D44
+
+**Today's Progress:** Continued React app project.
+
+**Notes:**
+* "A floating action button (FAB) performs the primary, or most common, action on a screen. It appears in front of all screen content, typically as a circular shape with an icon in its center." See [this page](https://material-ui.com/demos/buttons/) for more on FABs.
+
+### R2D45
+
+**Today's Progress:** Continued React app project.
