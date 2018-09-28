@@ -361,7 +361,7 @@ document.getElementById('app'));
 
 * Every component must come from a component class, which is like a factory that creates components. To make a component class, use a base class from the React library: React.Component, which is a JavaScript class. To create your own component class, you subclass that React.Component base class. To do so, use the syntax `class YourComponentNameGoesHere extends React.Component {}`.
 * A component class is like a factory that builds components, which it builds by consulting a set of instructions, which must be provided between the curly braces in ES6 class syntax. The only required property to include is the render() method (the property's name is render, and its value is a function). The render method (referring to either the entire property or the function part alone) must contain a return statement.
-* To make a React component, you write a JSX element, giving it the same name as a component class. JSX elements can be either HTML-like or component instances; JSX uses capitalization to distinguish between the two, which is why you muse use Pascal case for the component class name. Here's an example of an instance of a component class: `<MyComponentClass />`
+* To make a React component, you write a JSX element, giving it the same name as a component class. JSX elements can be either HTML-like or component instances; JSX uses capitalization to distinguish between the two, which is why you must use Pascal case for the component class name. Here's an example of an instance of a component class: `<MyComponentClass />`
 * Whenever you make a component (an instance if the component class), that component inherits all of the methods of its component class. MyComponentClass has the method MyComponentClass.render(); <MyComponentClass /> also has a method named render.
 * To call a component's render method, you pass that component as a first argument to ReactDOM.render():
 
@@ -420,12 +420,12 @@ class Crazy extends React.Component {
   }
 }
 ```
-* One component can render another component by placing it (the component instance) in its render function. But since when you using React.js, every JavaScript file in your application is invisible to every other JavaScript file by default, you have to import the variable if it has been declared in another file with an import statement: `import { NavBar } from './NavBar.js';`
+* One component can render another component by placing it (the component instance) in its render function. But since when you're using React.js, every JavaScript file in your application is invisible to every other JavaScript file by default, you have to import the variable if it has been declared in another file with an import statement: `import { NavBar } from './NavBar.js';`
 * React's module system comes from ES6. This behavior is not specific to React.
 * A module is a piece of a program that specifies which other pieces it relies on and which functionality it provides for other modules to use (called its interface). The relations between modules are called dependences. To separate modules this way, each needs its own private scope.
 * A package is a chunk of code that can be distributed (copied and installed). It may contain one or more modules and has information about which other packages it depends on.
 * NPM is two things: an online service where one can download (and upload) packages and a program (bundled with Node.js) that helps you install and manage them.
-* JavaScript execution in Node.js is single threaded. In computer programming, single-threading is the processing of one command at a time. The opposite of single-threading is multithreading. Node.js uses multiple threads in the background to execute asynchronous code. "Blocking" methods are those that execute synchronously while "nonblocking" methods execute asynchronously--Node.js is _nonblocking_; all functions (callbacks) are delegated to the event loop and they are (or can be) executed by different threads.
+* JavaScript execution in Node.js is single threaded. In computer programming, single threading is the processing of one command at a time. The opposite of single threading is multithreading. Node.js uses multiple threads in the background to execute asynchronous code. "Blocking" methods are those that execute synchronously while "nonblocking" methods execute asynchronously---Node.js is _nonblocking_; all functions (callbacks) are delegated to the event loop and they are (or can be) executed by different threads.
 * In computing, input/output or I/O (or, informally, io or IO) is the communication between an information processing system, such as a computer, and the outside world, possibly a human or another information processing system.
 * Node Package Manager (NPM) provides two main functionalities:
   - Online repositories for node.js packages/modules, which are searchable on search.nodejs.org
@@ -436,7 +436,7 @@ class Crazy extends React.Component {
   `npm install`
 
   This locates a JSON file named as package.json in the root directory and installs all dependencies defined within it.
-* When you import a variable from a file that is not the current file, then an import statement isn't quite enough. You also need an export statement, written in the other file, exporting the variable that you hope to grab. There are a few different ways to use export. To do a named export: In one file, place the keyword export immediately before something that you want to export. That something can be any top-level var, let, const, function, or class. When you use named exports, you always need to wrap your imported names in curly braces, such as:
+* When you import a variable from a file that is not the current file, then an import statement isn't quite enough. You also need an export statement, written in the other file, exporting the variable that you hope to grab. There are a few different ways to use export. To do a named export: In one file, place the keyword `export` immediately before something that you want to export. That something can be any top-level `var`, `let`, `const`, function, or class. When you use named exports, you always need to wrap your imported names in curly braces, such as:
 
   `import { faveManifestos, alsoRan } from './Manifestos';`
 
@@ -446,9 +446,9 @@ class Crazy extends React.Component {
 
 **Notes:**
 * A component can pass information to another component. Information that gets passed from one component to another is known as "props."
-* Every component has something a props object.
-* To see a component's props object, you use this.props.
-* Reminder: JSON.parse() takes a JSON string and transforms it into a JavaScript object. JSON.stringify() takes a JavaScript object and transforms it into a JSON string.
+* Every component has something called a props object.
+* To see a component's props object, you use `this.props`.
+* Reminder: `JSON.parse()` takes a JSON string and transforms it into a JavaScript object. `JSON.stringify()` takes a JavaScript object and transforms it into a JSON string. (When sending data to a web server, the data has to be a string.)
 * To pass props to a component (again, this means component instance, not component class), you give it an attribute of any name you wish.
 
   Example: `<MyComponent foo="bar" />`
@@ -457,7 +457,7 @@ class Crazy extends React.Component {
 
   `<Greeting myInfo={["top", "secret", "lol"]} />`
 
-* To make a component display passed-in information: 1) Find the component class that is going to receive that information. 2) Include this.props.name-of-information in that component class's render method's return statement. Example:
+* To make a component display passed-in information: 1) Find the component class that is going to receive that information. 2) Include `this.props.name-of-information` in that component class's render method's return statement. Example:
 
   ```
   class Greeting extends React.Component {
@@ -467,8 +467,8 @@ class Crazy extends React.Component {
   }
   ```
 
-* props could refer to two pieces of passed-in information, or it could refer to the object that stores those pieces of information
-* The most common use of props is to pass information to a component, from a different component.
+* `props` could refer to two pieces of passed-in information or it could refer to the object that stores those pieces of information.
+* The most common use of `props` is to pass information to a component from a different component.
 * It is common to pass functions, especially event handler functions, as props.
 * You define an event handler as a method on the component class, just like the render method.
 
@@ -477,7 +477,7 @@ class Crazy extends React.Component {
 **Today's Progress:** Continued Codecademy's React course.
 
 **Notes:**
-* To pass a method defined on a component class to another component (that is, component instance), you pass it as a prop. Give the component in the render method an attribute and value. The attribute can have any name. The value would use this and curly braces. Example:
+* To pass a method defined on a component class to another component (that is, a component instance), you pass it as a prop. Give the component in the render method an attribute and value. The attribute can have any name. The value would use `this` and curly braces. Example:
 
   ```
   import React from 'react';
@@ -504,7 +504,7 @@ class Crazy extends React.Component {
   );  
   ```
 
-  However, for the method to be called, you must pass attach it to the event recipient (in this example, a button) as an event handler. Give the JSX element a special attribute name like `onClick` or `onHover` with an attribute value of the event handler (the method).
+  However, for the method to be called, you must attach it to the event recipient (in this example, a button) as an event handler. Give the JSX element a special attribute name like `onClick` or `onHover` with an attribute value of the event handler (the method).
 
   Example (goes with previous one):
 
@@ -525,15 +525,15 @@ class Crazy extends React.Component {
 ### R2D39
 
 **Today's Progress:** Continued Codecademy's React course.
-* When you pass an event handler as a prop, there are two names that you have to choose: the name of the event handler itself, which should be (per the convention) something like handleClick if you're listening for a keypress event, and the prop name, which should be something like the word "on" plus the event type, like "onKeypress" if you're listening for a keypress event.
+* When you pass an event handler as a prop, there are two names that you have to choose: the name of the event handler itself, which should be (per the convention) something like `handleClick` if you're listening for a keypress event, and the prop name, which should be something like the word "on" plus the event type, like "onKeypress" if you're listening for a keypress event.
 
 ### R2D40
 
 **Today's Progress:** Continued Codecademy's React course.
 
 **Notes:**
-* Every component's props object has a property named children. `this.props.children` returns everything between a components opening and closing JSX tags.
-*  Components often have self-closing tags, such as <MyComponentClass />. but you could write <MyComponentClass></MyComponentClass>, and it would still work. `this.props.children` would return everything between <MyComponentClass> and </MyComponentClass>.
+* Every component's props object has a property named children. `this.props.children` returns everything between a component's opening and closing JSX tags.
+*  Components often have self-closing tags, such as `<MyComponentClass />`. but you could write `<MyComponentClass></MyComponentClass>`, and it would still work. `this.props.children` would return everything between `<MyComponentClass>` and `</MyComponentClass>`.
 * You can display a default message by giving your component class a property called defaultProps, which should be set to equal an object, inside of which object you can set properties. Example:
 
   ```
@@ -568,15 +568,7 @@ class Crazy extends React.Component {
   ```
 
 * _**Reconciliation**_ is the process through which React updates the DOM. When a component's state changes, React must calculate if it's necessary to update the DOM, which it does by creating a virtual DOM and comparing it with the current DOM.
-* You can't update state directly (e.g., `this.state.username = 'Natalie'`), because React won't know it changed. To solve this problem, React provides helper method setState (`this.setState()`) Two ways to use it: passing it a function, passed previous state as its first argument (in this case, the state update would be asynchronous). _Use functional setState when the new state of your component depends on previous state._
-
-  ```
-  this.setState({
-    subject: 'Hello! This is a new subject'
-  })
-  ```
-
-  The second way to use setState is to pass in an object, which will be merged with current state to form the new state of the component. _Use this object setState whenever the new state of your component does not depend on its previous state._
+* You can't update state directly (e.g., `this.state.username = 'Natalie'`), because React won't know it changed. To solve this problem, React provides helper method setState (`this.setState()`) Two ways to use it. The first is passing it a function, with previous state passed in as its first argument (in this case, the state update would be asynchronous). _Use functional setState when the new state of your component depends on previous state._
 
   ```
   this.setState((prevState) => ({
@@ -584,16 +576,24 @@ class Crazy extends React.Component {
   }))
   ```
 
-* Whenever you invoke setState(), React rerenders entire application (also calls render() with new state) and updates UI; your UI is a function of your state.
-* If the initial state of a component contains multiple properties, they can be independently updated with this.setState()
+  The second way to use setState is to pass in an object, which will be merged with current state to form the new state of the component. _Use object setState whenever the new state of your component does not depend on its previous state._
+
+  ```
+  this.setState({
+    subject: 'Hello! This is a new subject'
+  })
+  ```
+
+* Whenever you invoke `setState()`, React rerenders entire application (also calls render() with new state) and updates UI; UI is a function of state.
+* If the initial state of a component contains multiple properties, they can be independently updated with `this.setState()`.
 
 ### R2D42
 
 **Today's Progress:** Worked through a Udacity lesson on state management in React.
 
 **Notes:**
-* PropTypes package allows you to define intended data type and warns during development if prop passed to component doesn't match what's expected. Use `npm install prop-types` or, if using Yarn to manage packages, `yarn add prop-types`. After running either command restart the server with `npm start` (an alias for `npm run start`)
-* Normally when using forms in a web app, form state lives in the DOM, but the whole point of React is to more effectively manage state within your application; if form state typically lives within DOM, but React is about state management, how do we handle forms in React? With what React calls "controlled components." _Controlled components_ are components that render a form, but the source of truth for that form state lives inside the component rather than inside the DOM. They're called controlled components because React is controlling state of form. Benefits of controlled components include support for instant input validation, allowing you to conditionally enable or disable form buttons, and they enforce input formats. Example of controlled component usage:
+* PropTypes package allows you to define an intended data type and warns during development if a prop passed to a component doesn't match what's expected. Use `npm install prop-types` or, if using Yarn to manage packages, `yarn add prop-types`. After running either command restart the server with `npm start` (an alias for `npm run start`).
+* Normally when using forms in a web app, form state lives in the DOM, but the whole point of React is to more effectively manage state within your application; if form state typically lives within DOM, but React is about state management, how do we handle forms in React? With what React calls "controlled components." _Controlled components_ are components that render a form, but the source of truth for that form's state resides inside the component rather than inside the DOM. They're called controlled components because React is controlling the state of a form. Benefits of controlled components include support for instant input validation, allowing you to conditionally enable or disable form buttons, and they enforce input formats. Example of controlled component usage:
 
   ```
   class NameForm extends React.Component {
@@ -648,7 +648,7 @@ class Crazy extends React.Component {
   ```
 
 * Reminder: Never separate methods within a class with a comma, as to distinguish between classes and object literals.
-* To read a component's state, use the expression this.state.name-of-property
+* To read a component's state, use the expression `this.state.name-of-property`.
 * By default, npm install will install all modules listed as dependencies (that satisfy version specifications) in package.json (refer to R2D32 notes for a reminder of what a module is) into node_modules (if it doesn't exist in the current directory, npm adds it). You can hide node_modules from view (from the working directory, that is) and tell Git not to track it by adding it to .gitignore file.
 * package-lock.json automatically created for any operations where npm modifies either the node_modules tree or package.json. One of its purposes as described in [npm documentation](https://docs.npmjs.com/files/package-lock.json) is to "describe a single representation of a dependency tree such that teammates, deployments, and continuous integration are guaranteed to install exactly the same dependencies."
 * Semantic versioning (semver): You can give npm permission to install a newer patch release with tilde and a minor release with caret in package.json. See [this article](https://bytearcher.com/articles/semver-explained-why-theres-a-caret-in-my-package-json/) and [npm's article](https://docs.npmjs.com/getting-started/semantic-versioning) for further details.
@@ -670,3 +670,10 @@ class Crazy extends React.Component {
 
 **Notes:**
 * With 2017 release of npm 5, --save became default (no longer needed), and a package.json file was then automatically created. Before then, packages were installed with npm install, but dependencies weren't added to package.json; --save was needed to add them to it. See https://stackoverflow.com/questions/19578796/what-is-the-save-option-for-npm-install
+
+### R2D47
+
+**Today's Progress:** Continued React app project.
+
+**Notes:**
+* Parsing JSON with response.json() means converting the string received by the web server into a JSON object. (Encoding JSON is the opposite of parsing it.)
