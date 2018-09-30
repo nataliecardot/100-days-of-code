@@ -215,7 +215,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 
 **Today's Progress:** Contined a lesson on React.
 
-**Notes:** Whereas front-end frameworks like Angular and Ember use two-way data binding (if a model changes the data, data updates in the view; alternatively, if the user changes the data in the view, then the data is updated in the model), React has a unidirectional data flow: from the parent component to a child component. Data updates are transmitted to parent component, which performs the actual change.
+**Notes:** Whereas front-end frameworks like Angular and Ember use two-way data binding (if a model changes the data, data updates in the view; alternatively, if the user changes the data in the view, then the data is updated in the model), React has a unidirectional data flow: down the "tree" from the parent component to a child component.
 
 ### R2D29
 
@@ -612,7 +612,7 @@ class Crazy extends React.Component {
   ```
 
 * The Chrome extension React Developer Tools (from Facebook) allows you to inspect your component hierarchy along with their respective props and states.
-* _When to use a controlled component:_ If you want form data to update UI in any way besides just updating input field itself, make the form a controlled component--where React is controlling the state of the input field. (For example, when you have a search contacts feature [contacts added with form])
+* _When to use a controlled component:_ If you want form data to update UI in any way besides just updating input field itself, make the form a controlled component---where React is controlling the state of the input field. (For example, when you have a search contacts feature [contacts added with form])
 * String.prototype.match(): match() method retrieves the matches when matching a string against a regular expression.
 * Controlled component: a component that renders a form, but the source of truth for that form lives in a component rather than in the DOM. Controlled components unique benefit (as compared to uncontrolled components): they allow you to update UI based on form itself, since form state lives inside the component
 * If you're accessing from this.props and/or this.state frequently, you can simplify with [object destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Object_destructuring). For instance instead of using this.state.query you can use const { query } = this.state, and just use query where you reference it.
@@ -677,3 +677,7 @@ class Crazy extends React.Component {
 
 **Notes:**
 * Parsing JSON with response.json() means converting the string received by the web server into a JSON object. (Encoding JSON is the opposite of parsing it.)
+
+### R2D48
+
+**Today's Progress:** Continued React app project.
