@@ -649,7 +649,7 @@ class Crazy extends React.Component {
 
 * Reminder: Never separate methods within a class with a comma, as to distinguish between classes and object literals.
 * To read a component's state, use the expression `this.state.name-of-property`.
-* By default, npm install will install all modules listed as dependencies (that satisfy version specifications) in package.json (refer to R2D32 notes for a reminder of what a module is) into node_modules (if it doesn't exist in the current directory, npm adds it). You can hide node_modules from view (from the working directory, that is) and tell Git not to track it by adding it to .gitignore file.
+* By default, `npm install` will install all modules that are listed as dependencies (that satisfy version specifications) in package.json (refer to R2D32 notes for a reminder of what a module is) into node_modules (if it doesn't exist in the current directory, npm adds it). You can hide node_modules from view (from the working directory, that is) and tell Git not to track it by adding it to .gitignore file.
 * package-lock.json automatically created for any operations where npm modifies either the node_modules tree or package.json. One of its purposes as described in [npm documentation](https://docs.npmjs.com/files/package-lock.json) is to "describe a single representation of a dependency tree such that teammates, deployments, and continuous integration are guaranteed to install exactly the same dependencies."
 * Semantic versioning (semver): You can give npm permission to install a newer patch release with tilde and a minor release with caret in package.json. See [this article](https://bytearcher.com/articles/semver-explained-why-theres-a-caret-in-my-package-json/) and [npm's article](https://docs.npmjs.com/getting-started/semantic-versioning) for further details.
 
@@ -681,3 +681,11 @@ class Crazy extends React.Component {
 ### R2D48
 
 **Today's Progress:** Continued React app project.
+
+### R2D49
+
+**Today's Progress:** Started neighborhood maps React app project (project 7 for my nanodegree, the last one).
+
+**Notes:**
+* "Build tools are programs that automate the creation of executable applications from source code. Building incorporates compiling, linking and packaging the code into a usable or executable form. In small projects, developers will often manually invoke the build process. This is not practical for larger projects, where it is very hard to keep track of what needs to be built, in what sequence and what dependencies there are in the building process. Using an automation tool allows the build process to be more consistent." (From [techopedia](https://www.techopedia.com/definition/16359/build-tool))
+* "`npm run build` is an alias for `npm build`, and it does nothing unless you specify what "build" does in your package.json file. It lets you perform any necessary building/prep tasks for your project, prior to it being used in another project." From [SO](https://stackoverflow.com/questions/43664200/what-is-the-difference-between-npm-install-and-npm-run-build)
