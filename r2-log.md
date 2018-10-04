@@ -689,3 +689,21 @@ class Crazy extends React.Component {
 **Notes:**
 * "Build tools are programs that automate the creation of executable applications from source code. Building incorporates compiling, linking and packaging the code into a usable or executable form. In small projects, developers will often manually invoke the build process. This is not practical for larger projects, where it is very hard to keep track of what needs to be built, in what sequence and what dependencies there are in the building process. Using an automation tool allows the build process to be more consistent." (From [techopedia](https://www.techopedia.com/definition/16359/build-tool))
 * "`npm run build` is an alias for `npm build`, and it does nothing unless you specify what "build" does in your package.json file. It lets you perform any necessary building/prep tasks for your project, prior to it being used in another project." From [SO](https://stackoverflow.com/questions/43664200/what-is-the-difference-between-npm-install-and-npm-run-build)
+
+### R2D50
+
+**Today's Progress:** Continued neighborhood maps React app project.
+
+### R2D51
+
+**Today's Progress:** Continued neighborhood maps React app project. Worked on implementing Foursquare's API to get venue details, among other 
+
+**Notes:**
+* Hypertext is a word, phrase or chunk of text that can be linked to another document or text.
+* The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients (such as web browsers) and servers (such as an application on a computer that hosts website).
+* HTTP methods: GET, POST, PUT, HEAD, DELETE, PATCH, OPTIONS
+* GET method: used to request data from a certain resource. The query string (name/value pairs) is sent in the URL of a GET request.
+* HEAD method: almost identical to GET, but without the response body.
+* POST and PUT method: both used to send data to a server to create or update a resource. The difference between POST and PUT is that PUT requests are idempotent (can be applied multiple times without changing the result beyond the initial application)---calling the same PUT request multiple times will always produce the same result, whereas calling a POST request repeatedly have side effects of creating the same resource multiple times.
+* Get: get syntax binds an object property to a function that will be called when that property is looked up
+* Set: set syntax binds an object property to a function to be called when there is an attempt to set that property.
