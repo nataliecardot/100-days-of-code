@@ -696,7 +696,7 @@ class Crazy extends React.Component {
 
 ### R2D51
 
-**Today's Progress:** Continued neighborhood maps React app project. Worked on implementing Foursquare's API to get venue details, among other 
+**Today's Progress:** Continued neighborhood maps React app project. Worked on implementing Foursquare's API to get venue details.
 
 **Notes:**
 * Hypertext is a word, phrase or chunk of text that can be linked to another document or text.
@@ -707,3 +707,7 @@ class Crazy extends React.Component {
 * POST and PUT method: both used to send data to a server to create or update a resource. The difference between POST and PUT is that PUT requests are idempotent (can be applied multiple times without changing the result beyond the initial application)---calling the same PUT request multiple times will always produce the same result, whereas calling a POST request repeatedly have side effects of creating the same resource multiple times.
 * Get: get syntax binds an object property to a function that will be called when that property is looked up
 * Set: set syntax binds an object property to a function to be called when there is an attempt to set that property.
+
+### R2D52
+
+**Today's Progress:** Continued neighborhood maps React app project. Added map with Google Maps API and fixed Foursquare API component code. (Both now functional.)
