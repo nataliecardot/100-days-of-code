@@ -702,12 +702,16 @@ class Crazy extends React.Component {
 * Hypertext is a word, phrase or chunk of text that can be linked to another document or text.
 * The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients (such as web browsers) and servers (such as an application on a computer that hosts website).
 * HTTP methods: GET, POST, PUT, HEAD, DELETE, PATCH, OPTIONS
-* GET method: used to request data from a certain resource. The query string (name/value pairs) is sent in the URL of a GET request.
+* GET method: used to request data from a certain resource. The query string (name/value pairs) is sent in the URL of a GET request. Default fetch HTTP method.
 * HEAD method: almost identical to GET, but without the response body.
-* POST and PUT method: both used to send data to a server to create or update a resource. The difference between POST and PUT is that PUT requests are idempotent (can be applied multiple times without changing the result beyond the initial application)---calling the same PUT request multiple times will always produce the same result, whereas calling a POST request repeatedly have side effects of creating the same resource multiple times.
-* Get: get syntax binds an object property to a function that will be called when that property is looked up
-* Set: set syntax binds an object property to a function to be called when there is an attempt to set that property.
+* POST and PUT methods: both used to send data to a server to create or update a resource. The difference between POST and PUT is that PUT requests are idempotent (can be applied multiple times without changing the result beyond the initial application)---calling the same PUT request multiple times will always produce the same result, whereas calling a POST request repeatedly might have side effects from creating the same resource multiple times.
+* `get`: get syntax binds an object property to a function that will be called when that property is looked up
+* `set`: set syntax binds an object property to a function to be called when there is an attempt to set that property.
 
 ### R2D52
 
 **Today's Progress:** Continued neighborhood maps React app project. Added map with Google Maps API and fixed Foursquare API component code. (Both now functional.)
+
+### R2D53
+
+**Today's Progress:** Continued neighborhood maps React app project. Cleaned up Foursquare Places API fetch request code.
