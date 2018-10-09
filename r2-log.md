@@ -405,7 +405,7 @@ class IceCreamGuy extends React.Component {
 
 **Notes:**
 * In React, you define event handlers as methods on a component class.
-* Component instance, React component, and component are synonymous, while component class is not (it's like a factory for making components).
+* "Component instance," "React component," and "component" are synonymous, while component class is not (it's like a factory for making components).
 * In addition to HTML-like JSX elements, render methods can also return another kind of JSX: component instances. Example:
 ```
 class OMG extends React.Component {
@@ -715,3 +715,7 @@ class Crazy extends React.Component {
 ### R2D53
 
 **Today's Progress:** Continued neighborhood maps React app project. Cleaned up Foursquare Places API fetch request code.
+
+### R2D54
+
+**Today's Progress:** Continued neighborhood maps React app project. Added markers to the map.
