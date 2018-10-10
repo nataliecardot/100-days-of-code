@@ -705,8 +705,8 @@ class Crazy extends React.Component {
 * GET method: used to request data from a certain resource. The query string (name/value pairs) is sent in the URL of a GET request. Default fetch HTTP method.
 * HEAD method: almost identical to GET, but without the response body.
 * POST and PUT methods: both used to send data to a server to create or update a resource. The difference between POST and PUT is that PUT requests are idempotent (can be applied multiple times without changing the result beyond the initial application)---calling the same PUT request multiple times will always produce the same result, whereas calling a POST request repeatedly might have side effects from creating the same resource multiple times.
-* `get`: get syntax binds an object property to a function that will be called when that property is looked up
-* `set`: set syntax binds an object property to a function to be called when there is an attempt to set that property.
+* `get`: (getter) get syntax binds an object property to a function that will be called when that property is looked up
+* `set`: (setter) set syntax binds an object property to a function to be called when there is an attempt to set that property.
 
 ### R2D52
 
@@ -719,3 +719,7 @@ class Crazy extends React.Component {
 ### R2D54
 
 **Today's Progress:** Continued neighborhood maps React app project. Added markers to the map.
+
+### R2D55
+
+**Today's Progress:** Continued neighborhood maps React app project. Started implementing markers' info windows.
