@@ -723,3 +723,21 @@ class Crazy extends React.Component {
 ### R2D55
 
 **Today's Progress:** Continued neighborhood maps React app project. Started implementing markers' info windows.
+
+### R2D56
+
+**Today's Progress:** Continued neighborhood maps React app project. Finished implementing markers' info windows.
+
+### R2D57
+
+**Today's Progress:** Continued neighborhood maps React app project. Started creating a sidebar.
+
+**Notes:**
+* These will bypass an if block: false, falsy values null, undefined, 0, NaN, an empty string. See [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Falsy#Examples) and [SO](https://stackoverflow.com/questions/5113374/javascript-check-if-variable-exists-is-defined-initialized).
+
+### R2D58
+
+**Today's Progress:** Continued neighborhood maps React app project. Continued creating a sidebar.
+
+**Notes:**
+* It's a good idea to use round brackets for a React return statement to avoid problems due to automatic semicolon insertion. If you place your opening round bracket on the same line as return (`return (`), no semicolon can be automatically inserted until that bracket is closed.
