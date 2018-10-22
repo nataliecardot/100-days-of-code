@@ -688,7 +688,7 @@ class Crazy extends React.Component {
 
 **Notes:**
 * "Build tools are programs that automate the creation of executable applications from source code. Building incorporates compiling, linking and packaging the code into a usable or executable form. In small projects, developers will often manually invoke the build process. This is not practical for larger projects, where it is very hard to keep track of what needs to be built, in what sequence and what dependencies there are in the building process. Using an automation tool allows the build process to be more consistent." (From [techopedia](https://www.techopedia.com/definition/16359/build-tool))
-* "`npm run build` is an alias for `npm build`, and it does nothing unless you specify what "build" does in your package.json file. It lets you perform any necessary building/prep tasks for your project, prior to it being used in another project." From [SO](https://stackoverflow.com/questions/43664200/what-is-the-difference-between-npm-install-and-npm-run-build)
+* "`npm run build` does nothing unless you specify what "build" does in your package.json file. It lets you perform any necessary building/prep tasks for your project, prior to it being used in another project." From [SO](https://stackoverflow.com/questions/43664200/what-is-the-difference-between-npm-install-and-npm-run-build)
 
 ### R2D50
 
@@ -741,3 +741,11 @@ class Crazy extends React.Component {
 
 **Notes:**
 * It's a good idea to use round brackets for a React return statement to avoid problems due to automatic semicolon insertion. If you place your opening round bracket on the same line as return (`return (`), no semicolon can be automatically inserted until that bracket is closed.
+
+### R2D59
+
+**Today's Progress:** Continued neighborhood maps React app project. Added search capability to the sidebar.
+
+### R2D60
+
+**Today's Progress:** Continued neighborhood maps React app project. Added an animation for markers, added ARIA roles and tabindex values, and deployed the project to GitHub Pages.
