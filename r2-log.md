@@ -749,3 +749,7 @@ class Crazy extends React.Component {
 ### R2D60
 
 **Today's Progress:** Continued neighborhood maps React app project. Added an animation for markers, added ARIA roles and tabindex values, and deployed the project to GitHub Pages.
+
+### R2D61
+
+**Today's Progress:** Finished and submitted my neighborhood maps React app project.
