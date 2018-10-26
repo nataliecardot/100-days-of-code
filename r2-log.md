@@ -757,3 +757,7 @@ class Crazy extends React.Component {
 ### R2D62
 
 **Today's Progress:** Added some finishing touches my neighborhood maps React app project. It was accepted; I graduated from the Udacity Front-End Nanodegree program today!
+
+### R2D63
+
+**Today's Progress:** Deployed my restaurant reviews app and cleaned up its CSS.
