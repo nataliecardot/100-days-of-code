@@ -669,14 +669,14 @@ class Crazy extends React.Component {
 **Today's Progress:** Continued React app project.
 
 **Notes:**
-* With 2017 release of npm 5, --save became default (no longer needed), and a package.json file was then automatically created. Before then, packages were installed with npm install, but dependencies weren't added to package.json; --save was needed to add them to it. See https://stackoverflow.com/questions/19578796/what-is-the-save-option-for-npm-install
+* With 2017 release of npm 5, creation of a package.json file and the `--save`  command (which adds dependencies to package.json) became the default when running `npm install`. Before then, packages were installed with `npm install`, but dependencies weren't added to package.json; `--save` was needed to add them to it. See https://stackoverflow.com/questions/19578796/what-is-the-save-option-for-npm-install
 
 ### R2D47
 
 **Today's Progress:** Continued React app project.
 
 **Notes:**
-* Parsing JSON with response.json() means converting the string received by the web server into a JSON object. (Encoding JSON is the opposite of parsing it.)
+* Parsing JSON with `response.json()` means converting the string received by the web server into a JSON object. (Encoding JSON is the opposite of parsing it.)
 
 ### R2D48
 
@@ -761,3 +761,34 @@ class Crazy extends React.Component {
 ### R2D63
 
 **Today's Progress:** Deployed my restaurant reviews app and cleaned up its CSS.
+
+### R2D64
+
+**Today's Progress:** Added my last three projects to my portfolio site.
+
+### R2D65
+
+**Today's Progress:** Finished Codecademy's Learn ReactJS: Part I course, and started Learn ReactJS: Part II.
+
+**Notes:**
+* In React, since class methods are not bound by default in JavaScript, whenever you define an event handler that uses `this`, you need to add `this.methodName = this.methodName.bind(this)` to your constructor function. The [React docs](https://reactjs.org/docs/handling-events.html) state "Generally, if you refer to a method without () after it, such as onClick={this.handleClick}, you should bind that method."
+* `this.setState` automatically calls render. That's why you can't call `this.setState()`` from inside of the ``.render()` method; it would create an infinite loop.
+* "Stateful" describes any component that has a state property; "stateless" describes any component that does not.
+* For a component to pass props to another component, it has to render it, and in the component receiving the prop, it needs to use `this.props.name-of-prop`
+* A component should never update this.props. `props` and `state` store dynamic information. Dynamic information can change, by definition. If a component can't change its `props`, then what are `props` for? A React component should use `props` to store information that can be changed, but can only be changed by a _different_ component. A React component should use `state` to store information that the component _itself_ can change.
+* A child component can update a parent component's state.
+1. The parent component class defines a method that calls this.setState().
+2. The parent component binds the newly defined method to the current instance of the component in its constructor. This ensures that when we pass the method to the child component, it will still update the parent component.
+3. Once the parent has defined a method that updates its state and binds this to it in the constructor, the parent then passes that method down to a child. For example, in the return statement of the render method, `<ChildClass onClick={this.handleClick} />`
+4. The child receives the passed-down function, and uses it as an event handler.
+* See [this Codecademy's summary](https://www.codecademy.com/courses/react-102/lessons/child-updates-sibling/exercises/stateless-inherit-stateful-recap?action=resume_content_item) of the steps for a stateless component to inherit from a stateful component.
+* Inline styles (styles written as JSX element attributes) in React have double curly braces. The outer ones inject JavaScript into JSX, while the inner ones create an object literal.
+* If you want to use more than a few styles, a nice alternative to inline styles is to store the styles in a variable and inject it into JSX.
+* In React, style property names are camelCase.
+* In React, if you write a style value as a number, then the unit "px" is assumed; if you want a font size of 30px, you can simply write `{ fontSize: 30 }`
+
+### R2D66
+
+**Today's Progress:** Continued Codecademy's Learn ReactJS: Part II.
+
+**Notes:** Separate presentational components from business/container/display components: "If a component has to have state, make calculations based on props, or manage any other complex logic, then that component shouldn't also have to render HTML-like JSX. [This should be a container component.] Instead of rendering HTML-like JSX, the component should render another component [the presentational component]. It should be that component's job to render HTML-like JSX." See [this Medium article](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) for more details on this React programming pattern.
