@@ -557,7 +557,9 @@ class Crazy extends React.Component {
 **Today's Progress:** Worked through a Udacity lesson on state management in React.
 
 **Notes:**
-* If your component doesn't keep track of internal state (it only has a render() method), you can declare it as a stateless functional component. Props would be passed in as an argument, rather than being accessed with this.props. Example (ES6 arrow function with implicit return):
+* If your component doesn't keep track of internal state (it only has a render() method), you can declare it as a stateless functional component. Stateless functional components usually have props passed to them.
+To access these props, give your stateless functional component a parameter. This parameter will automatically be equal to the component's `props` object.
+It's customary to name this parameter `props`.  Example (ES6 arrow function with implicit return).
 
   ```
   const Email = (props) => (
@@ -593,7 +595,7 @@ class Crazy extends React.Component {
 
 **Notes:**
 * PropTypes package allows you to define an intended data type and warns during development if a prop passed to a component doesn't match what's expected. Use `npm install prop-types` or, if using Yarn to manage packages, `yarn add prop-types`. After running either command restart the server with `npm start` (an alias for `npm run start`).
-* Normally when using forms in a web app, form state lives in the DOM, but the whole point of React is to more effectively manage state within your application; if form state typically lives within DOM, but React is about state management, how do we handle forms in React? With what React calls "controlled components." _Controlled components_ are components that render a form, but the source of truth for that form's state resides inside the component rather than inside the DOM. They're called controlled components because React is controlling the state of a form. Benefits of controlled components include support for instant input validation, allowing you to conditionally enable or disable form buttons, and they enforce input formats. Example of controlled component usage:
+* Normally when using forms in a web app, form state lives in the DOM, but the whole point of React is to more effectively manage state within your application; if form state typically lives within DOM, but React is about state management, how do we handle forms in React? With what React calls "controlled components." _Controlled components_ are components that render a form, but the source of truth for that form's state resides inside the component rather than inside the DOM. They're called controlled components because React is controlling the state of a form. Benefits of controlled components include support for instant input validation, allowing you to conditionally enable or disable form buttons, and enforcement of input formats. Example of controlled component usage:
 
   ```
   class NameForm extends React.Component {
@@ -791,4 +793,18 @@ class Crazy extends React.Component {
 
 **Today's Progress:** Continued Codecademy's Learn ReactJS: Part II.
 
-**Notes:** Separate presentational components from business/container/display components: "If a component has to have state, make calculations based on props, or manage any other complex logic, then that component shouldn't also have to render HTML-like JSX. [This should be a container component.] Instead of rendering HTML-like JSX, the component should render another component [the presentational component]. It should be that component's job to render HTML-like JSX." See [this Medium article](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) for more details on this React programming pattern.
+**Notes:**
+* Separate presentational components from business/container/display components: In this programming pattern, the container component does the work of figuring out what to display. The presentational component does the work of actually displaying it. If a component does a significant amount of work in both areas, then that's a sign that you should use this pattern See [this Medium article](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) for more details on this React programming pattern.
+* In addition to validation, propTypes is also useful for documentation--to quickly understand what's inside a component.
+* propTypes usage example (note capitalization discrepancy, abbreviation of `bool` and `func`):
+
+  ```
+  Runner.propTypes = {
+  message:   React.PropTypes.string.isRequired,
+  style:     React.PropTypes.object.isRequired,
+  isMetric:  React.PropTypes.bool.isRequired,
+  miles:     React.PropTypes.number.isRequired,
+  milesToKM: React.PropTypes.func.isRequired,
+  races:     React.PropTypes.array.isRequired
+  };
+  ```
