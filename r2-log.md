@@ -808,3 +808,66 @@ It's customary to name this parameter `props`.  Example (ES6 arrow function with
   races:     React.PropTypes.array.isRequired
   };
   ```
+
+### R2D67
+
+**Today's Progress:** Continued Codecademy's Learn ReactJS: Part II.
+
+**Notes:**
+* A traditional form doesn't update the server until a user hits "submit," but you want to update the server any time a user enters or deletes any character. Use onChange with an event handler method. Example (note value attribute--this is so what appears in input field matches what `this.state.userInput` is set to [which is an empy string in this case])
+
+  ```
+  import React from 'react';
+
+  export class Example extends React.Component {
+  	constructor(props) {
+  		super(props);
+
+  		this.state = { userInput: '' };
+
+  		this.handleChange = this.handleChange.bind(this);
+  	}
+
+  	handleChange(e) {
+  	  this.setState({
+  	    userInput: e.target.value
+  	  });
+  	}
+
+  	render() {
+  	  return (
+  	    <div>
+          <input
+    	      onChange={this.handleChange}
+            value={this.state.userInput}
+    	      type="text"
+          />
+          <h1>{this.state.userInput}</h1>
+        </div>
+  	  );
+  	}
+  }
+  ```
+* Reminder: when using this.setState, a component needs to have an initial state set.
+* From earlier: "Controlled components are components that render a form, but the source of truth for that form's state resides inside the component rather than inside the DOM. They're called controlled components because React is controlling the state of a form." Codecademy also says "An uncontrolled component is a component that maintains its own internal state. A controlled component is a component that does not maintain any internal state. Since a controlled component has no state, it must be controlled by someone else."
+* Normally an input element keeps track of its own state, making it an uncontrolled component. Example of getting what's entered from the input with JavaScript:
+
+  ```
+  let input = document.querySelector('input[type="text"]');
+  let typedText = input.value;
+  ```
+* A controlled component has no memory. If you ask it for information about itself, it must obtain that information through `props`.
+In React, when you give an `<input />` a `value` attribute, it _becomes_ controlled and stops using its internal storage.
+* Often, you don't need a form or submit eflement; only an input element, since React rerenders on each character change.
+* There are three categories of lifecycle methods: mounting, updating, and unmounting. A component mounts when it renders for the first time. Mounting lifecycle methods, in order: 1. componentWillMount 2. render 3. componentDidMount
+* Mounting lifecycle events only execute the first time that a component renders.
+* You can call `this.setState` from within `componentWillMount`.
+
+### R2D68
+
+**Today's Progress:** Continued Codecademy's Learn ReactJS: Part II.
+
+**Notes:**
+* If you need to do something only the first time that a component renders, it's probably a job for a mounting lifecycle method.
+* `render` belongs to two categories: mounting lifecycle methods, and updating lifecycle methods
+* When a component renders for the first time, componentDidMount gets called immediately after the HTML from render has finished loading.
