@@ -248,7 +248,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 
   Components refer to reusable pieces of code ultimately responsible for returning HTML to be rendered onto the page. They are like factories used to create React elements--by creating custom components (or classes), we can easily generate custom elements. Formatted like:
 
-  ```
+  ```javascript
   // reminder: Pascal case is used for class and constructor names
   class ContactList extends React.component {
   // Only method required in a class is render(). It is render's jobto return the JSX or the elements that that component renders
@@ -299,7 +299,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 * A key feature of React is the virtual DOM. In React, for every DOM object, there is a corresponding virtual DOM object, a representation of a DOM object, like a lightweight copy. It has the same properties as a real DOM object, but unlike the real thing, it cannot directly change what's on screen. Real DOM manipulation is slow, but since manipulating the virtual DOM does not draw anything on the screen, it's much faster. Manipulating the virtual DOM is like editing a blueprint of a home's layout, as opposed to moving rooms within it. When a JSX element is rendered, every virtual DOM object is updated, with little efficiency cost because it updates so quickly. Once React knows which virtual DOM objects have changed, then React updates those objects, and those objects alone, on the real DOM. This is the reason for React's reputation for performance.
 * With JSX, must use className instead of class atttribute name because JSX gets translated into JavaScript, and class is a reserved word in JavaScript. When JSX is rendered, JSX className attributes are automatically rendered as class attributes.
 * JSX element and rendering example:
-```
+```javascript
 const myDiv = <div className="big">I AM A BIG DIV</div>;
 
 ReactDOM.render(myDiv,
@@ -319,7 +319,7 @@ document.getElementById('app'));
 * If statements cannot be used in JSX expressions because JSX is just syntactic sugar for JavaScript function calls & object construction, and when it's compiled to JavaScript, the if statements don't fit in, as explained [here](https://react-cn.github.io/react/tips/if-else-in-JSX.html). A common way to include conditionals is to place them outside of the JSX tags.
 * Ternary operator can be used between JSX tags. Example:
 
-  ```
+  ```javascript
   const headline = (
     <h1>
       { age >= drinkingAge ? 'Buy Drink' : 'Do Teen Stuff' }
@@ -329,7 +329,7 @@ document.getElementById('app'));
 
 * Map is best for creating lists of JSX elements. Example:
 
-  ```
+  ```javascript
   const strings = ['Home', 'Shop', 'About Me'];
 
   const listItems = strings.map(string => <li>{string}</li>);
@@ -342,7 +342,7 @@ document.getElementById('app'));
 * JSX attribute key is used to keep track of lists. Example: `<li key="li-01">Example1</li>` A list needs key if 1) when a list is rendered, whether a list item was checked off or not needs to be "remembered" (as is the case with a to-do list), and 2) a list's order might be shuffled
 * React applications are comprised of components. A component is a small, reusable chunk of code that is responsible for one job, which is often to render some HTML. Example of code that creates and renders a component:
 
-  ```
+  ```javascript
   // Importing React library and saving it to a variable named 'React'
   import React from 'react'; // Methods used for pure React purposes (e.g., components, writing JSX elements)
   import ReactDOM from 'react-dom'; // Methods for interacting with the DOM
@@ -365,7 +365,7 @@ document.getElementById('app'));
 * Whenever you make a component (an instance if the component class), that component inherits all of the methods of its component class. MyComponentClass has the method MyComponentClass.render(); <MyComponentClass /> also has a method named render.
 * To call a component's render method, you pass that component as a first argument to ReactDOM.render():
 
-  ```
+  ```javascript
   ReactDOM.render(
     <MyComponentClass />,
     document.getElementById('app')
@@ -375,7 +375,7 @@ document.getElementById('app'));
   This instructs the component instance to call _its_ render method.
 
 * A render method must contain a return statement, but it also is a good place for any simple calculations that need to happen right before a component renders. This logic must be within the render method's curly braces. Example:
-```
+```javascript
 class Random extends React.Component {
   render() {
     const n = Math.floor(Math.random() * 10 + 1);
@@ -385,7 +385,7 @@ class Random extends React.Component {
 ```
 * To use a conditional inside a render() function, it must be before the return statement.
 * The `this` keyword is often used in the body of component class declarations. The simple explanation of what it refers to is an instance of the component class (actually, this is almost always the case, but it could technically be something else). The more complex explanation is that it refers to the object on which this's enclosing method, in this case .render(), is called:
-```
+```javascript
 class IceCreamGuy extends React.Component {
   get food() {
     return 'ice cream';
@@ -407,7 +407,7 @@ class IceCreamGuy extends React.Component {
 * In React, you define event handlers as methods on a component class.
 * "Component instance," "React component," and "component" are synonymous, while component class is not (it's like a factory for making components).
 * In addition to HTML-like JSX elements, render methods can also return another kind of JSX: component instances. Example:
-```
+```javascript
 class OMG extends React.Component {
   render() {
     return <h1>Whooaa!</h1>;
@@ -459,7 +459,7 @@ class Crazy extends React.Component {
 
 * To make a component display passed-in information: 1) Find the component class that is going to receive that information. 2) Include `this.props.name-of-information` in that component class's render method's return statement. Example:
 
-  ```
+  ```javascript
   class Greeting extends React.Component {
     render() {
       return <h1>Hi there, {this.props.firstName}!</h1>;
@@ -479,7 +479,7 @@ class Crazy extends React.Component {
 **Notes:**
 * To pass a method defined on a component class to another component (that is, a component instance), you pass it as a prop. Give the component in the render method an attribute and value. The attribute can have any name. The value would use `this` and curly braces. Example:
 
-  ```
+  ```javascript
   import React from 'react';
   import ReactDOM from 'react-dom';
   import { Button } from './Button';
@@ -508,7 +508,7 @@ class Crazy extends React.Component {
 
   Example (goes with previous one):
 
-  ```
+  ```javascript
   import React from 'react';
 
   export class Button extends React.Component {
@@ -536,7 +536,7 @@ class Crazy extends React.Component {
 *  Components often have self-closing tags, such as `<MyComponentClass />`. but you could write `<MyComponentClass></MyComponentClass>`, and it would still work. `this.props.children` would return everything between `<MyComponentClass>` and `</MyComponentClass>`.
 * You can display a default message by giving your component class a property called defaultProps, which should be set to equal an object, inside of which object you can set properties. Example:
 
-  ```
+  ```javascript
   class Example extends React.Component {
     render() {
       return <h1>{this.props.text}</h1>;
@@ -561,7 +561,7 @@ class Crazy extends React.Component {
 To access these props, give your stateless functional component a parameter. This parameter will automatically be equal to the component's `props` object.
 It's customary to name this parameter `props`.  Example (ES6 arrow function with implicit return).
 
-  ```
+  ```javascript
   const Email = (props) => (
     <div>
       {props.text}
@@ -572,7 +572,7 @@ It's customary to name this parameter `props`.  Example (ES6 arrow function with
 * _**Reconciliation**_ is the process through which React updates the DOM. When a component's state changes, React must calculate if it's necessary to update the DOM, which it does by creating a virtual DOM and comparing it with the current DOM.
 * You can't update state directly (e.g., `this.state.username = 'Natalie'`), because React won't know it changed. To solve this problem, React provides helper method setState (`this.setState()`) Two ways to use it. The first is passing it a function, with previous state passed in as its first argument (in this case, the state update would be asynchronous). _Use functional setState when the new state of your component depends on previous state._
 
-  ```
+  ```javascript
   this.setState((prevState) => ({
     count: prevState.count + 1
   }))
@@ -580,7 +580,7 @@ It's customary to name this parameter `props`.  Example (ES6 arrow function with
 
   The second way to use setState is to pass in an object, which will be merged with current state to form the new state of the component. _Use object setState whenever the new state of your component does not depend on its previous state._
 
-  ```
+  ```javascript
   this.setState({
     subject: 'Hello! This is a new subject'
   })
@@ -597,7 +597,7 @@ It's customary to name this parameter `props`.  Example (ES6 arrow function with
 * PropTypes package allows you to define an intended data type and warns during development if a prop passed to a component doesn't match what's expected. Use `npm install prop-types` or, if using Yarn to manage packages, `yarn add prop-types`. After running either command restart the server with `npm start` (an alias for `npm run start`).
 * Normally when using forms in a web app, form state lives in the DOM, but the whole point of React is to more effectively manage state within your application; if form state typically lives within DOM, but React is about state management, how do we handle forms in React? With what React calls "controlled components." _Controlled components_ are components that render a form, but the source of truth for that form's state resides inside the component rather than inside the DOM. They're called controlled components because React is controlling the state of a form. Benefits of controlled components include support for instant input validation, allowing you to conditionally enable or disable form buttons, and enforcement of input formats. Example of controlled component usage:
 
-  ```
+  ```javascript
   class NameForm extends React.Component {
     state = { email: '' }
     handleChange = event => {
@@ -642,7 +642,7 @@ It's customary to name this parameter `props`.  Example (ES6 arrow function with
 **Notes:**
 * React components always have to call super in their constructors to be set up properly. Example with initial state also set in the constructor:
 
-  ```
+  ```javascript
   constructor(props) {
     super(props);
     this.state = { mood: 'decent' };
@@ -798,7 +798,7 @@ It's customary to name this parameter `props`.  Example (ES6 arrow function with
 * In addition to validation, propTypes is also useful for documentation--to quickly understand what's inside a component.
 * propTypes usage example (note capitalization discrepancy, abbreviation of `bool` and `func`):
 
-  ```
+  ```javascript
   Runner.propTypes = {
   message:   React.PropTypes.string.isRequired,
   style:     React.PropTypes.object.isRequired,
@@ -816,7 +816,7 @@ It's customary to name this parameter `props`.  Example (ES6 arrow function with
 **Notes:**
 * A traditional form doesn't update the server until a user hits "submit," but you want to update the server any time a user enters or deletes any character. Use onChange with an event handler method. Example (note value attribute--this is so what appears in input field matches what `this.state.userInput` is set to [which is an empy string in this case])
 
-  ```
+  ```javascript
   import React from 'react';
 
   export class Example extends React.Component {
@@ -852,7 +852,7 @@ It's customary to name this parameter `props`.  Example (ES6 arrow function with
 * From earlier: "Controlled components are components that render a form, but the source of truth for that form's state resides inside the component rather than inside the DOM. They're called controlled components because React is controlling the state of a form." Codecademy also says "An uncontrolled component is a component that maintains its own internal state. A controlled component is a component that does not maintain any internal state. Since a controlled component has no state, it must be controlled by someone else."
 * Normally an input element keeps track of its own state, making it an uncontrolled component. Example of getting what's entered from the input with JavaScript:
 
-  ```
+  ```javascript
   let input = document.querySelector('input[type="text"]');
   let typedText = input.value;
   ```
@@ -869,5 +869,49 @@ In React, when you give an `<input />` a `value` attribute, it _becomes_ control
 
 **Notes:**
 * If you need to do something only the first time that a component renders, it's probably a job for a mounting lifecycle method.
-* `render` belongs to two categories: mounting lifecycle methods, and updating lifecycle methods
-* When a component renders for the first time, componentDidMount gets called immediately after the HTML from render has finished loading.
+* `render` belongs to two categories: mounting lifecycle methods and updating lifecycle methods
+* When a component renders for the first time, `componentDidMount` gets called immediately after the HTML from render has finished loading.
+
+### R2D69
+
+**Today's Progress:** Continued Codecademy's Learn ReactJS: Part II.
+
+**Notes:**
+* Updating methods (called in order whenever a component instance updates [a component updates every time that it renders, **starting with the second render**]):
+1. `componentWillReceiveProps` - called before (2nd and subsequent) rendering begins, and only if component will receive props. Automatically passed one argument: `nextProps`, a preview of the upcoming `props` object that the component is about to receive. A common use of this method is comparing incoming props to current props or state, and deciding what to render based on that comparison.
+2. `shouldComponentUpdate` - gets called after `componentWillReceiveProps`, but still before the rendering begins. If `shouldComponentUpdate` returns `true`, nothing noticeable happens, but if it returns false, the component will not update and none of the remaining lifecycle methods for that updating period will be called, including `render`. Receives two arguments: `nextProps` and `nextState`, which are usually compared to the current `this.props` and `this.state`, using the comparison's results to decide what to do.
+3. `componentWillUpdate`- gets called in between `shouldComponentUpdate` and `render`. Receives two arguments: `nextProps` and `nextState`. You cannot call `this.setState` from its body; its main purpose is to interact with things outside of the React architecture. If you need to do non-React setup before a component renders, such as checking the window size or **interacting with an API**, this method is a good time to do that.
+4. `render`
+5. `componentDidUpdate` - called after any rendered HTML has finished loading. Automatically passed two arguments: `prevProps` and `prevState`, references to component's `props` and `state` before the current updating period began that you can compare to current `props` and `state`. Often used for interacting with things outside of React environment, such as browser and APIs, making it similar to `componentWillUpdate`.
+
+### R2D70
+
+**Today's Progress:** Completed Codecademy's Learn ReactJS: Part II and Introduction to JavaScript (a newly added portion of the course, covering higher-order functions).
+
+**Notes:**
+* There's only one unmounting lifecycle method: `componentWillUnmount`. A component's unmounting period occurs when a component is removed from the DOM, which could happen if the DOM is rerendered without the component, or if the user navigates to a different website or closes their web browser.
+* `async` and `defer` are boolean attributes. Example: `<script async src="script.js"></script>`. They are useless if you place the script tag at the bottom of the page before the closing body tag. (If you place the script tag there, the script is loaded and executed after the rest of the page has been parsed and loaded. This is the _next best_ [slower because the script isn't loaded asynchronously] thing performance-wise to using `async` or `defer` attributes (if you need to support older browsers that don't yet have `async` or `defer` enabled), and makes the page appear to the user sooner than if the script were placed in the head, in which case it would interrupt HTML parsing.)
+* With either attribute, the script is fetched asynchronously, but with `async`, the HTML parsing is interrupted to execute the script as soon as the script is finished being fetched. On the other hand, with `defer`, the script is only executed _after_ the HTML parsing is complete.
+* To optimize page loading speed, it's best to put scripts in the head and add a defer attribute.
+* **async/await**: Placing the `async` keyword before a function ensures that it returns a promise. If the `async` function returns a value, that value will also get wrapped in a promise, which means you'll have to use `.then` to access it. Example:
+
+  ```javascript
+  async function add (x, y) {
+    return x + y
+  }
+
+  add(2,3).then(result => {
+    console.log(result) // 5
+  })
+  ```
+
+The keyword `await` can only be used within an `async` function. The keyword `await` makes JavaScript wait until the promise settles and returns its result.
+* Higher-order functions are functions that accept other functions as arguments and/or return functions as output. You can assign a function to a variable, e.g.:
+
+  ```javascript
+  const announceThatIAmDoingImportantWork = () => {
+    console.log("I’m doing very important work!");
+  };
+
+  const busy = announceThatIAmDoingImportantWork;
+  ```
