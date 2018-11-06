@@ -892,7 +892,7 @@ In React, when you give an `<input />` a `value` attribute, it _becomes_ control
 * There's only one unmounting lifecycle method: `componentWillUnmount`. A component's unmounting period occurs when a component is removed from the DOM, which could happen if the DOM is rerendered without the component, or if the user navigates to a different website or closes their web browser.
 * `async` and `defer` are boolean attributes. Example: `<script async src="script.js"></script>`. They are useless if you place the script tag at the bottom of the page before the closing body tag. (If you place the script tag there, the script is loaded and executed after the rest of the page has been parsed and loaded. This is the _next best_ [slower because the script isn't loaded asynchronously] thing performance-wise to using `async` or `defer` attributes (if you need to support older browsers that don't yet have `async` or `defer` enabled), and makes the page appear to the user sooner than if the script were placed in the head, in which case it would interrupt HTML parsing.)
 * With either attribute, the script is fetched asynchronously, but with `async`, the HTML parsing is interrupted to execute the script as soon as the script is finished being fetched. On the other hand, with `defer`, the script is only executed _after_ the HTML parsing is complete.
-* To optimize page loading speed, it's best to put scripts in the head and add a defer attribute.
+* To optimize page loading speed, it's best to put scripts in the head and add a `defer` attribute.
 * **async/await**: Placing the `async` keyword before a function ensures that it returns a promise. If the `async` function returns a value, that value will also get wrapped in a promise, which means you'll have to use `.then` to access it. Example:
 
   ```javascript
@@ -906,7 +906,7 @@ In React, when you give an `<input />` a `value` attribute, it _becomes_ control
   ```
 
 The keyword `await` can only be used within an `async` function. The keyword `await` makes JavaScript wait until the promise settles and returns its result.
-* Higher-order functions are functions that accept other functions as arguments and/or return functions as output. You can assign a function to a variable, e.g.:
+* Higher-order functions are functions that accept other functions as arguments (or in other words, passed into a function's parameter. Parameters are temporary variable names within functions. The argument can be thought of as the value that is assigned to that temporary variable) and/or return functions as output. You can assign a function to a variable, e.g.:
 
   ```javascript
   const announceThatIAmDoingImportantWork = () => {
@@ -915,3 +915,91 @@ The keyword `await` can only be used within an `async` function. The keyword `aw
 
   const busy = announceThatIAmDoingImportantWork;
   ```
+
+### R2D71
+
+**Today's Progress:** Continued Codecademy's Introduction to JavaScript (a newly added portion of the course, covering higher-order functions).
+
+**Notes:**
+* Functions passed as arguments to another function (higher-order functions are what functions that accept other functions as arguments are called) are called callback functions.
+* When we pass a function in as an argument to another function, we don't invoke it. Invoking the function would evaluate to the return value of that function call/invocation. With callbacks, we pass in the function itself by typing the function name without the parentheses (that would evaluate to the result of calling the function).
+* Example of higher-order function with callback (it takes in a function as an argument, saves a starting time, invokes the callback function, records the time after the function was called, and returns the time the function took to run by subtracting the starting time from the ending time.:
+
+  ```javascript
+  const timeFuncRuntime = funcParameter => {
+   let t1 = Date.now();
+   funcParameter();
+   let t2 = Date.now();
+   return t2 - t1;
+  }
+
+  const addOneToOne = () => 1 + 1;
+
+  timeFuncRuntime(addOneToOne);
+  ```
+  Anonymous functions can also be arguments:
+
+  ```javascript
+  timeFuncRuntime(() => {
+    for (let i = 10; i>0; i--){
+      console.log(i);
+    }
+  });
+  ```
+
+### R2D72
+
+**Today's Progress:** Finished the portion of Codecademy's Introduction to JavaScript covering higher-order functions, and started the portion on advanced objects (another newly added part of the course).
+
+**Notes:**
+* In JavaScript functions are first-class objects, meaning they can be stored in a variable, object, or array; passed as an argument to a function; or returned from a function.
+* Within the scope of a method, you don't automatically have access to other properties in that method's object. If you invoke a method that is supposed to console log the value of a property on the method, you'll get a reference error. Example:
+
+  ```javascript
+  const goat = {
+    dietType: 'herbivore',
+    makeSound() {
+      console.log('baaa');
+    },
+    diet() {
+      console.log(dietType);
+    }
+  };
+  goat.diet();
+  // Output will be "ReferenceError: dietType is not defined"
+  ```
+However, you _can_ access that property with `this`; it references the calling object, providing access to the object's properties.
+
+```javascript
+const goat = {
+  dietType: 'herbivore',
+  makeSound() {
+    console.log('baaa');
+  },
+  diet() {
+    console.log(this.dietType);
+  }
+};
+
+goat.diet();
+// Output: herbivore
+```
+
+*  Using `this` in a method with an arrow function works differently. Arrow functions shouldn't be used in methods when using `this`. Arrow functions don't provide their own `this` binding; it retains the value of the enclosing lexical context (in global code, it's the global object, which is `window` in browsers). `this` is lexically scoped, meaning it uses `this` from the code containing the arrow function; it always references the owner of the function it is in. The methods `call()`, `apply()`, and `bind()` will not change the value of this in arrow functions. In this example, the value of `this` is the global object, an object that exists in the global scope, which doesn't have a `dietType` property and thus returns `undefined`.
+
+```javascript
+const goat = {
+  dietType: 'herbivore',
+  makeSound() {
+    console.log('baaa');
+  },
+  diet: () => {
+    console.log(this.dietType);
+  }
+};
+
+goat.diet(); // Prints undefined
+```
+
+* With a constructor function, the value of `this` is bound to the new object being created.
+* When you use `this.` in the global scope, you create a public property on the window object. For example: `this.table = 'window table';`
