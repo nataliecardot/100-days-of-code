@@ -1003,3 +1003,106 @@ goat.diet(); // Prints undefined
 
 * With a constructor function, the value of `this` is bound to the new object being created.
 * When you use `this.` in the global scope, you create a public property on the window object. For example: `this.table = 'window table';`
+
+### R2D73
+
+**Today's Progress:** Continued Codecademy's Introduction to JavaScript portion covering advanced objects (another newly added part of the course).
+
+**Notes:**
+* ES6 shorthand for methods:
+Instead of:
+
+  ```
+  checkEnergy: function() {
+    console.log(`Energy is currently at ${this.energyLevel}%.`)
+  ```
+
+You can do:
+
+  ```
+  checkEnergy() {
+    console.log(`Energy is currently at ${this.energyLevel}%.`)
+  ```
+
+* When discussing privacy in objects, it is defined as the idea that only certain properties should be mutable. Some languages have privacy built-in for objects, but not JavaScript. Developers follow naming conventions that signal to other developers how to interact with a property. One common one is to prepend a property with an underscore to mean that the property should not be altered. For example:
+
+  ```
+  const bankAccount = {
+    _amount: 1000
+  }
+  ```
+
+This doesn't mean you can't reassign it: `bankAccount._amount = 1000000;`.
+Getters and setters are used to respect the intention of a prepended property. Getters can return the value of internal properties and setters can safely reassign property values.
+* Getter methods do not need to be called with a set of parentheses. Syntactically, it looks like we're accessing a property.
+* Some notable advantages of using a getter method:
+1. Getters can perform an action on the data when getting a property.
+2. Getters can return different values using conditionals.
+3. In a getter, we can access the properties of the calling object using this.
+* Another thing to keep in mind when using getter (and setter) methods is that properties cannot share the same name as the getter/setter function. If we do so, then calling the method will result in an infinite call stack error. One workaround is to add an underscore before the property name.
+Getter example:
+
+  ```javascript
+  const person = {
+    _firstName: 'John',
+    _lastName: 'Doe',
+    get fullName() {
+      if (this._firstName && this._lastName){
+        return `${this._firstName} ${this._lastName}`;
+      } else {
+        return 'Missing a first name or a last name.';
+      }
+    }
+  }
+
+  // To call the getter method:
+  person.fullName; // 'John Doe'
+  ```
+
+### R2D74
+
+**Today's Progress:** Continued Codecademy's Introduction to JavaScript portion covering advanced objects (another newly added part of the course).
+
+**Notes:**
+* Setter methods reassign values of existing properties within an object
+* Setters need at least one parameter.
+* Using the setter method looks syntactically like reassigning a property: `robot.someSetterMethod = 9001;`
+*  A factory function is a function that returns an object and can be reused to make multiple object instances. Factory functions can also have parameters allowing us to customize the object that gets returned.
+* Example of a factory function for a monster, and usage of it to make a specific monster (note you can also use [ES6 shorthand for the property names and values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Property_definitions), simply putting one word since both are the same)
+
+  ```javascript
+  const monsterFactory = (name, age, energySource, catchPhrase) => {
+    return {
+      name: name,
+      age: age,
+      energySource: energySource,
+      scare() {
+        console.log(catchPhrase);
+      }
+    }
+  };
+
+  const ghost = monsterFactory('Ghouly', 251, 'ectoplasm', 'BOO!');
+ghost.scare(); // 'BOO!'
+  ```
+
+  Another example of a factory function and its usage:
+
+  ```javascript
+  const robotFactory = (model, mobile) => {
+  return {
+    model,
+    mobile,
+    beep() {
+      console.log('Beep boop');
+    }
+  };
+
+  };
+
+  const tinCan = robotFactory('P-500', true);
+
+  tinCan.beep(); // Beep boop
+  ```
+
+* Note that the `return` statement is affected by automatic semicolon insertion (ASI). No line terminator is allowed between the `return` keyword and the expression. To get around this you can use parentheses.
