@@ -1068,7 +1068,7 @@ Getter example:
 * Setters need at least one parameter.
 * Using the setter method looks syntactically like reassigning a property: `robot.someSetterMethod = 9001;`
 *  A factory function is a function that returns an object and can be reused to make multiple object instances. Factory functions can also have parameters allowing us to customize the object that gets returned.
-* Example of a factory function for a monster, and usage of it to make a specific monster (note you can also use [ES6 shorthand for the property names and values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Property_definitions), simply putting one word since both are the same)
+* Example of a factory function for a monster, and usage of it to make a specific monster (note you can also use a destructuring technique called proprty value shorthand [see MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Property_definitions), simply putting one word since both are the same)
 
   ```javascript
   const monsterFactory = (name, age, energySource, catchPhrase) => {
@@ -1083,7 +1083,7 @@ Getter example:
   };
 
   const ghost = monsterFactory('Ghouly', 251, 'ectoplasm', 'BOO!');
-ghost.scare(); // 'BOO!'
+  ghost.scare(); // 'BOO!'
   ```
 
   Another example of a factory function and its usage:
@@ -1106,3 +1106,36 @@ ghost.scare(); // 'BOO!'
   ```
 
 * Note that the `return` statement is affected by automatic semicolon insertion (ASI). No line terminator is allowed between the `return` keyword and the expression. To get around this you can use parentheses.
+
+### R2D75
+
+**Today's Progress:** Continued Codecademy's Introduction to JavaScript portion covering advanced objects (another newly added part of the course).
+
+**Notes:**
+* Extracting key-value pair from object and saving it as a property:
+
+  ```javascript
+  const vampire = {
+    name: 'Dracula',
+    residence: 'Transylvania',
+    preferences: {
+      day: 'stay inside',
+      night: 'satisfy appetite'
+    }
+  };
+
+  // Normal (slightly longer) way
+  const residence = vampire.residence;
+  console.log(residence); // Prints 'Transylvania'
+
+  // With destructured assignment
+  const { residence } = vampire;
+  console.log(residence); // Prints 'Transylvania'
+
+  // Using destructured assignment to grab nested properties
+  const { day } = vampire.preferences;
+  console.log(day); // Prints 'stay inside'
+  ```
+
+*  In destructured assignment we create a variable with the name of an object's key that is wrapped in curly braces `{ }` and assign to it the object. Syntax: `const { propertyName } = obj;`
+* See [built-in object methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods) and [object methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor)
