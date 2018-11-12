@@ -1024,7 +1024,7 @@ You can do:
     console.log(`Energy is currently at ${this.energyLevel}%.`)
   ```
 
-* When discussing privacy in objects, it is defined as the idea that only certain properties should be mutable. Some languages have privacy built-in for objects, but not JavaScript. Developers follow naming conventions that signal to other developers how to interact with a property. One common one is to prepend a property with an underscore to mean that the property should not be altered. For example:
+* When discussing privacy in objects, it is defined as the idea that only certain properties should be mutable. Some languages have privacy built in for objects, but not JavaScript. Developers follow naming conventions that signal to other developers how to interact with a property. A common one is to prepend a property with an underscore to indicate that the property should not be altered. For example:
 
   ```
   const bankAccount = {
@@ -1139,3 +1139,42 @@ Getter example:
 
 *  In destructured assignment we create a variable with the name of an object's key that is wrapped in curly braces `{ }` and assign to it the object. Syntax: `const { propertyName } = obj;`
 * See [built-in object methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods) and [object methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor)
+* The object that a method belongs to is called the calling object.
+
+### R2D76
+
+**Today's Progress:** Completed Codecademy's Introduction to JavaScript portion covering advanced objects (and therefore refinishing the course), and started Codecademy's Learn Ruby course.
+
+**Notes:**
+* In both JavaScript and Ruby, the remainder, or modulo, operator `%` returns the remainder of a division operation. For example, `5 % 2` returns `1`.
+* Ruby: the `print` command takes whatever you want and prints it to the screen. `puts` also does so, but it also adds a blank line after whatever is printed.
+* Everything in Ruby is an object, and therefore everything in Ruby has certain built-in abilities called methods.
+* Recall that in JavaScript, everything is an object except for the six primitives: boolean, null, undefined, number, string, and symbol.
+* To comment in Ruby use `#` or `=begin` and `=end` (on their own lines, and note no space after the equals sign) for multi-line comments.
+* One type of variable in Ruby is a local variable. Local variables should start with a lowercase letter and words should be separated by underscores, like `counter` and `masterful_method`. Ruby won't stop you from starting your local variables with other symbols, such as capital letters, `$s`, or `@s`, but by convention these mean different things, so it's best to avoid confusion by doing what the Ruby community does. You declare a variable just by saying it and set it with `=`.
+* Getting input: `variable_name = gets.chomp`: `gets` is the Ruby method that gets input from the user. When getting input, Ruby automatically adds a blank line (or newline) after each bit of input; chomp removes that extra line. [See lesson](https://www.codecademy.com/courses/learn-ruby/lessons/putting-the-form-in-formatter/exercises/getting-input?action=resume_content_item).
+* Use `#{}` for string interpolation with variables:
+
+  ```ruby
+  n = "cheese"
+  puts "#{n}"
+  puts "I love #{n}!"
+  ```
+
+* In Ruby, the "environment" refers to the collection of all variables and their values that exist in the program at a given time.
+* Control flow allows for a flexible program that changes behavior based in reaction to the evironment. We can select different outcomes depending on information the user types, the result of a computation, or the value returned by another part of the program.
+* Ruby doesn't care about whitespace. Indentation isn't necessary, but it's a convention that Rubyists follow. Two spaces is common.
+* To use control flow to check if something is the opposite of the conditional, use an `unless` statement. Example:
+
+  ```ruby
+  x = 1
+  unless x > 0 # This is like saying "if x is not greater than 0"
+   puts 'x is less than 0'
+  else   
+   puts 'x is greater than 0'
+  end
+  ```
+
+* `==` and `!=` are called comparators or relational operators.
+* In both Ruby and JavaScript, `!` (not) is a boolean operator.
+* In Ruby (as elsewhere) expressions in parentheses are always evaluated before anything outside parentheses. You can combine boolean operators: `(x && (y || w)) && z`
