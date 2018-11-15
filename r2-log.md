@@ -1178,3 +1178,37 @@ Getter example:
 * `==` and `!=` are called comparators or relational operators.
 * In both Ruby and JavaScript, `!` (not) is a boolean operator.
 * In Ruby (as elsewhere) expressions in parentheses are always evaluated before anything outside parentheses. You can combine boolean operators: `(x && (y || w)) && z`
+* An exclamation point at the end of something modifies that variable in place (without it, Ruby would make a copy of the variable and modify that instead). Example:
+
+print "Thtring, pleathe!: "
+user_input = gets.chomp
+user_input.downcase! # With !, user_input will be lowercase next time it's used
+
+if user_input.include? "s"
+  user_input.gsub!(/s/, "th")
+else
+  puts "Nothing to do here!"
+end
+
+puts "Your string is: #{user_input}"
+
+### R2D77
+
+**Today's Progress:** Continued Codecademy's Learn Ruby course.
+
+### R2D78
+
+**Today's Progress:** Continued Codecademy's Learn Ruby course.
+
+**Notes:**
+* Assignment operators: `+=`, `-=`, `*=`, and `/=`
+* Ruby doesn't have the increment and decrement operators `++` and `--`
+* In JavaScript, you can use increment and decrement operators. They can come before or after the operand. When they follow the operand, as with `x++`, the value will be returned _before_ the operand is increased/decreased. Example:
+
+  ```javascript
+  let a = 1;
+  console.log(a++);   // 1
+  console.log(a);     // 2
+  ```
+
+  If you’d rather make the variable increment/decrement before returning, you simply have to use the increment/decrement operator before the operand
