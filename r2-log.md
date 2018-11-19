@@ -1212,3 +1212,7 @@ puts "Your string is: #{user_input}"
   ```
 
   If you’d rather make the variable increment/decrement before returning, you simply have to use the increment/decrement operator before the operand
+
+### R2D79
+
+**Today's Progress:** Read about how webpack works.
