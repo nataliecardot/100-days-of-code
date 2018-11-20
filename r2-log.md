@@ -1216,3 +1216,7 @@ puts "Your string is: #{user_input}"
 ### R2D79
 
 **Today's Progress:** Read about how webpack works.
+
+### R2D80
+
+**Today's Progress:** Started Codecademy's course Learn Sass and SoloLearn's Git course.
