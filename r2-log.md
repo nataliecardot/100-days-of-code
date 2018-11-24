@@ -1224,3 +1224,87 @@ puts "Your string is: #{user_input}"
 ### R2D80
 
 **Today's Progress:** Read various things about Sass and continued and SoloLearn's Git course.
+
+### R2D81
+
+**Today's Progress:** Continued Codecademy's Learn Sass course.
+
+**Notes:**
+* Nesting is the process of placing child selectors and properties in the scope of a parent selector. This allows a programmer to draw DOM relationships and avoid repetition.
+* Variables make it easy to update code and reference values by allowing you to assign an identifier to a value.
+* Sass data types: color (even '10px' is considered a number), numbers, strings (with single, double, or no quotes), booleans, and null, lists, and maps
+* Lists can be separated by either spaces or commas. Example: `1.5em Helvetica bold;` You can also surround a list with parentheses and create lists made up of lists. A list variable: `$standard-border: 4px solid black;`
+* Maps are very similar to lists, but instead each object is a key-value pair. The typical map looks like: `(key1: value1, key2: value2);` In a map, the value of a key can be a list or another map.
+* In Sass, the `&` character is used to specify exactly where a parent selector should be inserted. It also helps write psuedo classes in a much less repetitive way.
+* A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). For example, the selector `p::first-line` would style the font of the first line of a `p` element.
+* A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, the selector `button:hover` would change a button's color when the user's pointer hovers over it.
+* In Sass, the mixin directive lets you make groups of CSS declarations that you want to reuse throughout your site. It is particularly useful for vendor prefixes. Example:
+
+  ```
+  @mixin backface-visibility {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+  }
+  ```
+
+  To use this mixin as a declaration:
+  ```
+  @include backface-visibility;
+  ```
+
+  Mixins also have the ability to take in a value, such as $visibility in this example:
+
+    ```
+    @mixin backface-visibility($visibility) {
+      backface-visibility: $visibility;
+      -webkit-backface-visibility: $visibility;
+      -moz-backface-visibility: $visibility;
+      -ms-backface-visibility: $visibility;
+      -o-backface-visibility: $visibility;
+    }
+    ```
+
+  You should only ever use a mixin if it takes an argument (so the first mixin example is actually a discouraged use).
+
+  You can have a default value for a mixin's argument that would be overridden if a value is passed in when the mixin included in a declaration, but that applies if no value is specified (and the round brackets are left empty). Example:
+
+  ```
+  @mixin backface-visibility($visibility: hidden) {
+    // Backface properties
+  }
+  ```
+
+  A mixin can take multiple arguments. When they are explicity defined, the arguments can be out of order.
+
+  If a mixin definition has a combination of arguments with and without a default value, you should define the ones with no default value first.
+
+  Mixins can be nested.
+* Sass allows you to pass in multiple arguments in a list or a map format. See [Codecademy lesson](https://www.codecademy.com/courses/learn-sass/lessons/mixins-and-parent-selector/exercises/mixins-ii?action=resume_content_item) for details.
+* In Sass, string interpolation is the process of placing a variable string in the middle of two other strings. In a mixin context, interpolation is handy when you want to make use of variables in selectors or file names. Notation:
+
+  ```
+  @mixin photo-content($file) {
+    content: url(#{$file}.jpg); //string interpolation
+    object-fit: cover;
+  }
+
+  //....
+
+  .photo {
+    @include photo-content('titanosaur');
+    width: 60%;
+    margin: 0px auto;
+  }
+  ```
+
+* Sass allows uage of the `&` selector inside of mixins. The flow works like this:
+1. The `&` selector gets assigned the value of the parent at the point where the mixin is included.
+2. If there is no parent selector, then the value is null and Sass will throw an error.
+[See Codecademy lesson for more](https://www.codecademy.com/courses/learn-sass/lessons/mixins-and-parent-selector/exercises/mixin-parent-selector?action=resume_content_item).
+
+* Sass functions allow you to iterate through lists and maps, operate on color values, apply styles based on conditions, and assign values that result from math operations.
+* Sass arithmetic operators are `+`, `-`, `*`, `/`, and `%` (modulo, the remainder of a division operation).
+* When multiplying, keep in mind that `10px * 10px` would, like in regular math, be `100px * px` (squared units), so you'd have to do `10px * 10` to get `100px`.
