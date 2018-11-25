@@ -1308,3 +1308,96 @@ puts "Your string is: #{user_input}"
 * Sass functions allow you to iterate through lists and maps, operate on color values, apply styles based on conditions, and assign values that result from math operations.
 * Sass arithmetic operators are `+`, `-`, `*`, `/`, and `%` (modulo, the remainder of a division operation).
 * When multiplying, keep in mind that `10px * 10px` would, like in regular math, be `100px * px` (squared units), so you'd have to do `10px * 10` to get `100px`.
+
+### R2D82
+
+**Today's Progress:** Completed Codecademy's Learn Sass course.
+
+**Notes:**
+* Each loops in Sass iterate on each of the values in a list. Syntax:
+
+  ```
+  @each $item in $list {
+    // Rules and/or conditions
+  }
+  ```
+
+  Usage example:
+
+  ```
+  $list: (orange, purple, teal);
+
+  @each $item in $list {
+    .#{$item} {
+      background: $item;
+    }
+  }
+  ```
+
+* For loops in Sass can be used to style numerous elements or assign properties all at once. Syntax:
+
+  ```
+  @for $i from $begin through $end {
+     // Rules and/or conditions
+  }
+  ```
+
+  Where:
+  1. `$i` is just a variable for the index, or position, of the element in the list.
+  2. `$begin` and `$end` are placeholders for the start and end points of the loop.
+  3. The keywords `through` and `to` are interchangeable in Sass.
+
+* In Sass, `if()` is a function that can only branch one of two ways based on a condition. You can use it inline, to assign the value of a property:
+
+  ```
+  width: if($condition, $value-if-true, $value-if-false);
+  ```
+
+  For cases with more than two outcomes, the `@if`, `@else-if`, and `@else` directives allow for more flexibility:
+
+  ```
+  @mixin deck($suit) {
+    @if($suit == hearts || $suit == spades) {
+      color: blue;
+    }
+
+    @else-if($suit == clovers || $suit == diamonds) {
+      color: red;
+    }
+
+    @else {
+      // Some rule
+    }
+  }
+  ```
+
+* Sometimes `/` can function as a separator or division operator.
+* The @extend directive allows classes to share a set of properties with one another. Usage example:
+
+  ```
+  .foo {
+    color: black;
+    border: 1px solid black;
+  }
+
+  .bar {
+    @extend .foo;
+    background-color: red;
+  }
+  ```
+
+* An underscore is added to the beginning of Sass files to indicate that the file is only a partial file and should be imported to another file rather than compiled. Otherwise, if they use variables or mixins defined elsewhere, they will fail to be referenced correctly. Partial files are imported (using the `@import` directive) to a main stylesheet (often called `styles.scss` or `main.scss`). The advantage of using partial files is it's a good way to modularize your CSS and make it easier to maintain. To import a partial file using an `@import` statement, the underscore prefix is omitted, for example: `@import "variables";`
+* An example of file structure: in a folder named sass, have a subfolder called `components` (containing files such as `_buttons.scss`, `_carousel.scss`, and `cover.scss`), another called `helpers` (with files such as `_variables.scss`, `_functions.scss`, and `_mixins.scss`), another called `layout` (containing files like `_grid.scss` [CSS grid system], `_header.scss`, and `_footer.scss`), and one called `pages`, with files like `_home.scss`, `_contact.scss`, with styles specific to those pages.
+* Sass extends the existing CSS `@import` rule to allow including other SCSS and Sass files.
+cally, all imported SCSS files are imported into a main SCSS file which is then combined to make a single CSS output file.
+The main/global SCSS file has access to any variables or mixins defined in its imported files. The `@import` command takes a filename to import.
+By default, `@import` looks for a Sass file in the same or otherwise specified directory, but there are a few circumstances where it will behave just like a CSS `@import` rule:
+1. If the file's extension is `.css`.
+2. If the filename begins with `http://`.
+3. If the filename is a `url()`.
+4. If the `@import` has any media queries.
+* Sometimes, you may create classes solely for the purpose of extending them and never actually use them inside your HTML.
+Sass anticipated this and allows for a special type of selector called a placeholder, which behaves just like a class or id selector, but uses the `%` notation instead of `.` or `#`.
+Placeholders prevent rules from being rendered to CSS on their own and only become active once they are extended anywhere an id or class could be extended.
+Placeholders are a nice way to consolidate rules that never actually get used on their own in the HTML.
+* You should extend rather than use mixins unless your mixin takes an argument, because extend output is cleaner.
