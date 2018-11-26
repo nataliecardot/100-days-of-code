@@ -1401,3 +1401,13 @@ Sass anticipated this and allows for a special type of selector called a placeho
 Placeholders prevent rules from being rendered to CSS on their own and only become active once they are extended anywhere an id or class could be extended.
 Placeholders are a nice way to consolidate rules that never actually get used on their own in the HTML.
 * You should extend rather than use mixins unless your mixin takes an argument, because extend output is cleaner.
+
+### R2D83
+
+**Today's Progress:** Continued freeCodeCamp exercises, working toward a Responsive Web Design Certification.
+
+**Notes:**
+* Pixels are not a good choice for font-size because if the user changes their browser's default font size, it won't change; ems and rems are therefore a better choice since they are relative to font size.
+* Reminder: An element's `em` is equal to the computed `font-size` of that element’s parent.
+* CSS variables are entities defined by CSS authors that contain specific values to be reused throughout a document. They are set using custom property notation (e.g., `--main-color: black;`) and are accessed using the `var()` function (e.g., `color: var(--main-color);`). When using your variable as a CSS property value, you can attach a fallback value that your browser will revert to if the given variable is invalid. Example: `background: var(--penguin-skin, black);` This will set background to black if your variable wasn't set or if the variable is misspelled. Note that IE some other older browsers don't support CSS variables.
+* If you want to support IE, provide a fallback when using CSS variables: Internet Explorer will ignore the background color because it does not support CSS variables. In that case, the browser will use whatever value it has for that property. If it can't find any other value set for that property, it will revert to the default value, which is typically not ideal. This means that if you do want to provide a browser fallback, it's as easy as providing another more widely supported value immediately before your declaration. That way an older browser will have something to fall back on, while a newer browser will just interpret whatever declaration comes later in the cascade.
