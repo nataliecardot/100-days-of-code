@@ -1411,3 +1411,42 @@ Placeholders are a nice way to consolidate rules that never actually get used on
 * Reminder: An element's `em` is equal to the computed `font-size` of that element’s parent.
 * CSS variables are entities defined by CSS authors that contain specific values to be reused throughout a document. They are set using custom property notation (e.g., `--main-color: black;`) and are accessed using the `var()` function (e.g., `color: var(--main-color);`). When using your variable as a CSS property value, you can attach a fallback value that your browser will revert to if the given variable is invalid. Example: `background: var(--penguin-skin, black);` This will set background to black if your variable wasn't set or if the variable is misspelled. Note that IE some other older browsers don't support CSS variables.
 * If you want to support IE, provide a fallback when using CSS variables: Internet Explorer will ignore the background color because it does not support CSS variables. In that case, the browser will use whatever value it has for that property. If it can't find any other value set for that property, it will revert to the default value, which is typically not ideal. This means that if you do want to provide a browser fallback, it's as easy as providing another more widely supported value immediately before your declaration. That way an older browser will have something to fall back on, while a newer browser will just interpret whatever declaration comes later in the cascade.
+
+### R2D84
+
+**Today's Progress:** Continued freeCodeCamp exercises, working toward a Responsive Web Design Certification.
+
+**Notes:**
+* "When you create a variable, it becomes available for you to use inside the element in which you create it. It also becomes available within any elements nested within it. This effect is known as cascading. Because of cascading, CSS variables are often defined in the `:root` element. You can think of the `:root` element as a container for your entire HTML document, in the same way that an `html` element is a container for the `body` element. By creating your variables in `:root`, they will be available throughout the whole web page." From [FCC](https://learn.freecodecamp.org/responsive-web-design/basic-css/cascading-css-variables/).
+* Sass compiles all the `.scss` or `.sass` files inside the directory it's watching. However, when your goal is to import a file, you don’t need to compile it directly. You can tell Sass not to compile a file through the file's name. If you add an underscore to the start of the file name, Sass won’t compile it. If you don't want color.scss to compile to `.color.css`, name the file `_color.scss` instead. Files named this way are called partials in Sass terminology. You can skip the underscore when referencing a file inside an `@import` rule, the same way you can skip the extension (if it ends in `.scss` or `.sass`), e.g.: `@import "color";`
+
+### R2D85
+
+**Today's Progress:** Continued freeCodeCamp exercises, working toward a Responsive Web Design Certification.
+
+**Notes:**
+* In plain CSS: When you create your variables in `:root` they will set the value of that variable for the whole page. You can then overwrite these variables by setting them again within a specific element.
+* CSS variables can simplify the way you use media queries. For instance, when your screen is smaller or larger than your media query breakpoint, you can change the value of a variable, and it will apply its style wherever it is used. Example:
+
+  ```
+  :root {
+    --penguin-size: 300px;
+    --penguin-skin: gray;
+    --penguin-belly: white;
+    --penguin-beak: orange;
+  }
+
+  @media (max-width: 350px) {
+    :root {
+      --penguin-size: 200px;
+      --penguin-skin: black;
+    }
+  }
+  ```
+
+* With the `strong` tag, the browser applies the CSS of `font-weight: bold;` to the element.
+* With the `u` tag, the browser applies the CSS of `text-decoration: underline;` to the element.
+* To emphasize text, you can use the `em` tag. This displays text as italicized, as the browser applies the CSS of `font-style: italic;` to the element.
+* With the `s` tag, the browser applies the CSS of `text-decoration: line-through;` to the element.
+* The box-shadow property applies one or more shadows to an element. It takes values for `offset-x` (how far to push the shadow horizontally from the element), `offset-y` (how far to push the shadow vertically from the element), `blur-radius`, `spread-radius`, and a color value, in that order. The `blur-radius` and `spread-radius` values are optional. Here's an example of the CSS to create multiple shadows with some blur, at mostly-transparent black colors:
+`box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);`
