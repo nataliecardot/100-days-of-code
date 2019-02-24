@@ -1450,3 +1450,18 @@ Placeholders are a nice way to consolidate rules that never actually get used on
 * With the `s` tag, the browser applies the CSS of `text-decoration: line-through;` to the element.
 * The box-shadow property applies one or more shadows to an element. It takes values for `offset-x` (how far to push the shadow horizontally from the element), `offset-y` (how far to push the shadow vertically from the element), `blur-radius`, `spread-radius`, and a color value, in that order. The `blur-radius` and `spread-radius` values are optional. Here's an example of the CSS to create multiple shadows with some blur, at mostly-transparent black colors:
 `box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);`
+
+### R2D86
+
+**Today's Progress:** Continued freeCodeCamp exercises, working toward a Responsive Web Design Certification.
+
+**Notes:**
+The CSS offsets of top, bottom, left, or right tell the browser how far to offset an item relative to where it would sit in the normal flow of the document. You're offsetting an element away from a given spot, which moves the element away from the referenced side (effectively, the opposite direction).
+* `position: absolute` locks the element in place relative to its parent container. Unlike the `relative` position, this removes the element from the normal flow of the document, so surrounding items ignore it. The CSS offset properties (top or bottom and left or right) are used to adjust the position.
+* One nuance with absolute positioning is that it will be locked relative to its closest positioned ancestor. If you forget to add a position rule to the parent item, (this is typically done using `position: relative`), the browser will keep looking up the chain and ultimately default to the body tag.
+* Fixed position is a type of absolute positioning that locks an element relative to the browser window. Similar to absolute positioning, it's used with the CSS offset properties and also removes the element from the normal flow of the document. One key difference between the fixed and absolute positions is that an element with a fixed position won't move when the user scrolls.
+* Float property: Floating elements are removed from the normal flow of a document and pushed to either the left or right of their containing parent element. It's commonly used with the width property to specify how much horizontal space the floated element requires.
+* z-index property: When elements are positioned to overlap, the element coming later in the HTML markup will, by default, appear on the top of the other elements. However, the z-index property can specify the order of how elements are stacked on top of one another. It must be an integer (i.e. a whole number and not a decimal), and higher values for the z-index property of an element move it higher in the stack than those with lower values.
+* The default z-index value of all the elements on a webpage is auto, which corresponds to 0 where no z-index is assigned. An element with `z-index: -1` will be displayed behind all other elements on the page, assuming they are given no z-index values.
+* Another positioning technique is to center a block element horizontally. One way to do this is to set its margin to a value of auto.
+This method works for images, too. Images are inline elements by default, but can be changed to block elements when you set the display property to block.
