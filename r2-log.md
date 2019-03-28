@@ -198,7 +198,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 
 **Notes:**
 * __Composition__ is combining simple functions together to create complex functions. This is a key way in which React constructs UI.
-* __Declarative vs imperative__ programming: Declarative is saying what you want done and leaving the work to another entity, whereas declarative means doing the work. For example, to maintain a comfortable temperature in the car, an imperative method would be fiddling with the knobs continuously, whereas a declarative method would be if you had a voice-activated system to which you could *declare* what temperature you wanted the car to be. You declare state and markup then React does the imperative work of keeping the DOM in sync.
+* __Declarative vs imperative__ programming: Declarative is saying what you want done and leaving the work to another entity, whereas imperative means doing the work. For example, to maintain a comfortable temperature in the car, an imperative method would be fiddling with the knobs continuously, whereas a declarative method would be if you had a voice-activated system to which you could *declare* what temperature you wanted the car to be. You declare state and markup then React does the imperative work of keeping the DOM in sync.
 
   Declarative: expresses logic of computation without describing its control flow (control flow is order in which individual statements, instructions or function calls of an imperative program are executed or evaluated)
   Imperative: uses statements that change a program's state.
@@ -219,7 +219,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 
 ### R2D29
 
-**Today's Progress:** Finished an introductory lesson on React and got a refresher on the .map() and .filter() methods, which are heavily used in React.
+**Today's Progress:** Finished an introductory lesson on React and got a refresher on the `map()` and `filter()` methods, which are heavily used in React.
 
 ### R2D30
 
@@ -227,18 +227,17 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 
 **Notes:**
 * To describe UI, React uses elements rather than templates.
-* React's .createElement() method takes in a description of an element and returns a plain JavaScript object. `React.createElement( /* type */, /* props */, /* content */ );` Created elements describe DOM nodes, not HTML. When HTML is parsed by browser into DOM, the HTML “element” is called object or node, and HTML attributes become properties of the object/node. When passing properties into createElement(), use DOM property name, e.g., className instead of class.
-* In React the process of deciding what to render is completely decoupled from actually rendering it; the decoupling makes it possible to render things on the server, VR environments
-* ReactDOM is the glue between React and the DOM. Its single use is the ReactDOM.render() method to render our element onto a particular area of a page. You can render an element into a DOM node called root. Apps built with React typically have a single root DOM node. For example, an HTML file may contain a <div> with the following: `<div id='root'></div>` By passing this DOM node into getElementById(), React will end up controlling the entirety of its contents.
-* VirtualDOM: When using React's createElement() method, real elements aren't being created; rather, they're objects that describe real DOM nodes. To create something in the DOM with createElement(), must render it using  ReactDOM.render().
+* React's `React.createElement()` method takes in a description of an element and returns a plain JavaScript object. `React.createElement( /* type */, /* props */, /* content */ );` Created elements describe DOM nodes, not HTML. When HTML is parsed by browser into DOM, the HTML "element" is called object or node, and HTML attributes become properties of the object/node. When passing properties into `React.createElement()`, use DOM property name, e.g., className instead of class.
+* ReactDOM is the glue between React and the DOM. Its single use is the `ReactDOM.render()` method to render our element onto a particular area of a page. You can render an element into a DOM node called root. Apps built with React typically have a single root DOM node. For example, an HTML file may contain a <div> with the following: `<div id="root"></div>` By passing this DOM node into `getElementById()`, React will end up controlling the entirety of its contents.
+* VirtualDOM: When using React's `React.createElement()` method, real elements aren't being created; rather, they're objects that describe real DOM nodes. To create something in the DOM with `React.createElement()`, must render it using  `ReactDOM.render()`.
 
 ### R2D31
 
 **Today's Progress:** Continued lesson on rendering UI with React.
 
 **Notes:**
-* React.createElement( type, props, content); creates a single React element of a particular type. We'd normally pass in a tag such as a div or span to represent that type, but the content argument can be another React element.  However, even when .createElement() there are nested elements, it returns just one root element.
-* JSX is a sytax extension to JavaScript that allows us to write JavaScript code that looks more like HTML, which makes describing the nested relationships of elements more simplistic and elegant than many createElement() calls. It is similar to XML, Extensible Markup Language, which is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. XML was designed to store and transport data and to be self-descriptive. (A markup language is a system for annotating a document in a way that is syntactically distinguishable from the text.)
+* `React.createElement(type, props, content)` creates a single React element of a particular type. We'd normally pass in a tag such as `div` or `span` to represent that type, but the content argument can also be another React element. However, even when there are nested elements in `React.createElement()`, it returns just one root element.
+* JSX is a syntax extension to JavaScript that allows us to write JavaScript code that looks more like HTML, which makes describing the nested relationships of elements more simplistic and elegant than many `React.createElement()` calls. It is similar to XML, Extensible Markup Language, which is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. XML was designed to store and transport data and to be self-descriptive. (A markup language is a system for annotating a document in a way that is syntactically distinguishable from the text.)
 * Whenever you want JSX to evaluate JavaScript, must wrap it in curly braces.
 * React component:
 
@@ -249,7 +248,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
   Components refer to reusable pieces of code ultimately responsible for returning HTML to be rendered onto the page. They are like factories used to create React elements--by creating custom components (or classes), we can easily generate custom elements. Formatted like:
 
   ```javascript
-  // reminder: Pascal case is used for class and constructor names
+  // reminder: Pascal case (also called UpperCamelCase) is used for class and constructor names
   class ContactList extends React.component {
   // Only method required in a class is render(). It is render's jobto return the JSX or the elements that that component renders
     render() {
@@ -268,9 +267,9 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
   }
   ```
 
-  Since React's main focus is to streamline building app's UI, there is only one method that is vital in any React component class: render().
+  Since React's main focus is to streamline building app's UI, there is only one method that is vital in any React component class: `render()`.
 
-  A React component is basically any part of a UI that can contain React nodes (via React.createElement() or JSX).
+  A React component is basically any part of a UI that can contain React nodes (via `React.createElement()` or JSX).
 
   Think of component classes as factories that produce instances of components. These component classes should follow the single responsibility principle and manage only one task.
 
@@ -360,10 +359,10 @@ document.getElementById('app'));
   ```
 
 * Every component must come from a component class, which is like a factory that creates components. To make a component class, use a base class from the React library: React.Component, which is a JavaScript class. To create your own component class, you subclass that React.Component base class. To do so, use the syntax `class YourComponentNameGoesHere extends React.Component {}`.
-* A component class is like a factory that builds components, which it builds by consulting a set of instructions, which must be provided between the curly braces in ES6 class syntax. The only required property to include is the render() method (the property's name is render, and its value is a function). The render method (referring to either the entire property or the function part alone) must contain a return statement.
+* A component class is like a factory that builds components, which it builds by consulting a set of instructions, which must be provided between the curly braces in ES6 class syntax. The only required property to include is the `render()` method (the property's name is render, and its value is a function). The render method (referring to either the entire property or the function part alone) must contain a return statement.
 * To make a React component, you write a JSX element, giving it the same name as a component class. JSX elements can be either HTML-like or component instances; JSX uses capitalization to distinguish between the two, which is why you must use Pascal case for the component class name. Here's an example of an instance of a component class: `<MyComponentClass />`
-* Whenever you make a component (an instance if the component class), that component inherits all of the methods of its component class. MyComponentClass has the method MyComponentClass.render(); <MyComponentClass /> also has a method named render.
-* To call a component's render method, you pass that component as a first argument to ReactDOM.render():
+* Whenever you make a component (an instance if the component class), that component inherits all of the methods of its component class. MyComponentClass has the method `MyComponentClass.render()`; `<MyComponentClass />` also has a method named `render()`.
+* To call a component's `render()` method, you pass that component as a first argument to `ReactDOM.render()`:
 
   ```javascript
   ReactDOM.render(
