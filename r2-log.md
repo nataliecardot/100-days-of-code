@@ -359,9 +359,9 @@ document.getElementById('app'));
   ```
 
 * Every component must come from a component class, which is like a factory that creates components. To make a component class, use a base class from the React library: React.Component, which is a JavaScript class. To create your own component class, you subclass that React.Component base class. To do so, use the syntax `class YourComponentNameGoesHere extends React.Component {}`.
-* A component class is like a factory that builds components, which it builds by consulting a set of instructions, which must be provided between the curly braces in ES6 class syntax. The only required property to include is the `render()` method (the property's name is render, and its value is a function). The render method (referring to either the entire property or the function part alone) must contain a return statement.
+* A component class is like a factory that builds components, which it builds by consulting a set of instructions, which must be provided between the curly braces in ES6 class syntax. The only required property to include is the `render()` method (the property's name is render, and its value is a function). The render method must contain a return statement.
 * To make a React component, you write a JSX element, giving it the same name as a component class. JSX elements can be either HTML-like or component instances; JSX uses capitalization to distinguish between the two, which is why you must use Pascal case for the component class name. Here's an example of an instance of a component class: `<MyComponentClass />`
-* Whenever you make a component (an instance if the component class), that component inherits all of the methods of its component class. MyComponentClass has the method `MyComponentClass.render()`; `<MyComponentClass />` also has a method named `render()`.
+* Whenever you make a component (an instance of the component class), that component inherits all of the methods of its component class. MyComponentClass has the method `MyComponentClass.render()`; `<MyComponentClass />` also has a method named `render()`.
 * To call a component's `render()` method, you pass that component as a first argument to `ReactDOM.render()`:
 
   ```javascript
@@ -383,7 +383,7 @@ class Random extends React.Component {
 }
 ```
 * To use a conditional inside a render() function, it must be before the return statement.
-* The `this` keyword is often used in the body of component class declarations. The simple explanation of what it refers to is an instance of the component class (actually, this is almost always the case, but it could technically be something else). The more complex explanation is that it refers to the object on which this's enclosing method, in this case .render(), is called:
+* The `this` keyword is often used in the body of component class declarations. The simple explanation of what it refers to is an instance of the component class (actually, this is almost always the case, but it could technically be something else). The more complex explanation is that it refers to the object on which `this`'s enclosing method, in this case `render()`, is called:
 ```javascript
 class IceCreamGuy extends React.Component {
   get food() {
@@ -423,14 +423,14 @@ class Crazy extends React.Component {
 * React's module system comes from ES6. This behavior is not specific to React.
 * A module is a piece of a program that specifies which other pieces it relies on and which functionality it provides for other modules to use (called its interface). The relations between modules are called dependences. To separate modules this way, each needs its own private scope.
 * A package is a chunk of code that can be distributed (copied and installed). It may contain one or more modules and has information about which other packages it depends on.
-* NPM is two things: an online service where one can download (and upload) packages and a program (bundled with Node.js) that helps you install and manage them.
+* npm is two things: an online service where one can download (and upload) packages and a program (bundled with Node.js) that helps you install and manage them.
 * JavaScript execution in Node.js is single threaded. In computer programming, single threading is the processing of one command at a time. The opposite of single threading is multithreading. Node.js uses multiple threads in the background to execute asynchronous code. "Blocking" methods are those that execute synchronously while "nonblocking" methods execute asynchronously---Node.js is _nonblocking_; all functions (callbacks) are delegated to the event loop and they are (or can be) executed by different threads.
 * In computing, input/output or I/O (or, informally, io or IO) is the communication between an information processing system, such as a computer, and the outside world, possibly a human or another information processing system.
 * Node Package Manager (NPM) provides two main functionalities:
   - Online repositories for node.js packages/modules, which are searchable on search.nodejs.org
   - Command line utility to install Node.js packages, do version management and dependency management of Node.js packages.
 
-  NPM helps JavaScript developers load dependencies effectively. To load dependencies we just have to run this command in command prompt:
+  npm helps JavaScript developers load dependencies effectively. To load dependencies we just have to run this command in command prompt:
 
   `npm install`
 
