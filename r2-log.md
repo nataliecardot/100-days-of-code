@@ -1463,3 +1463,7 @@ The CSS offsets of top, bottom, left, or right tell the browser how far to offse
 * The default z-index value of all the elements on a webpage is auto, which corresponds to 0 where no z-index is assigned. An element with `z-index: -1` will be displayed behind all other elements on the page, assuming they are given no z-index values.
 * Another positioning technique is to center a block element horizontally. One way to do this is to set its margin to a value of auto.
 This method works for images, too. Images are inline elements by default, but can be changed to block elements when you set the display property to block.
+
+### R2D87
+
+**Today's Progress:** Completed the segment on promises that was recently added to Codecademy's course Introduction to JavaScript.
