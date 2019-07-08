@@ -1467,3 +1467,13 @@ This method works for images, too. Images are inline elements by default, but ca
 ### R2D87
 
 **Today's Progress:** Completed the segment on promises that was recently added to Codecademy's course Introduction to JavaScript.
+
+### R2D88
+
+**Today's Progress:**
+* Completed the segment on async-await that was recently added to Codecademy's course Introduction to JavaScript.
+* Worked on random quote machine project.
+
+**Notes:**
+* Framework vs library: When you use a library, you are in charge of the flow of the application. You are choosing when and where to call the library. When you use a framework, the framework is in charge of the flow.
+* React Hooks benefits: easier to reuse stateful logic between components, you can split a component into smaller functions based on related pieces, and you can use more of React features without classes.
