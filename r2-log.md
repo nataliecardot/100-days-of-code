@@ -1497,3 +1497,8 @@ This method works for images, too. Images are inline elements by default, but ca
 
 **Today's Progress:**
 * Worked on random quote machine project. Added Tweet web intent functionality and a Material-UI progress bar in place of a loading message.
+
+### R2D93
+
+**Today's Progress:**
+* Finished and deployed random quote machine project. Finishing touches included adding favicons, meta tags, and an og:image to display when the URL is shared.
