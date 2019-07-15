@@ -1501,4 +1501,9 @@ This method works for images, too. Images are inline elements by default, but ca
 ### R2D93
 
 **Today's Progress:**
-* Finished and deployed random quote machine project. Finishing touches included adding favicons, meta tags, and an og:image to display when the URL is shared.
+* Finished and deployed random quote machine project. Finishing touches included adding favicons, meta tags, and an og:image to display when the URL is shared. Started pomodoro timer project.
+
+### R2D94
+
+**Today's Progress:**
+* Finished most functionality of pomodoro timer. Worked many hours on it yesterday and today. It counts down and has separate state for breaks and work sessions. At the end of a work session, it switches to a break and vice versa, until the fourth session ends; then it will show a message saying the pomodoro cycle is complete. 
