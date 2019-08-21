@@ -78,7 +78,7 @@ My #100DaysOfCode challenge log. Started August 3, 2018.
 
 ###### Ember
 
-* Dependencies: Git, Node.js, npm (for fetching required Dependencies),  
+* Dependencies: Git, Node.js, npm (for fetching required Dependencies),
 * Focus is on convention over configuration
 * Comes with its own build tool (build tools are programs that automate the creation of executable [able to be run by a computer] applications from source code)
 * `ember-cli` (entered into npm CLI), Ember.js command line utility, is recommended by Ember as de facto way to build and develop a new app. Also use to create new template and component files and maintain and update new routes.
@@ -499,7 +499,7 @@ class Crazy extends React.Component {
   ReactDOM.render(
     <Talker />,
     document.getElementById('app')
-  );  
+  );
   ```
 
   However, for the method to be called, you must attach it to the event recipient (in this example, a button) as an event handler. Give the JSX element a special attribute name like `onClick` or `onHover` with an attribute value of the event handler (the method).
@@ -1168,7 +1168,7 @@ Getter example:
   x = 1
   unless x > 0 # This is like saying "if x is not greater than 0"
    puts 'x is less than 0'
-  else   
+  else
    puts 'x is greater than 0'
   end
   ```
@@ -1506,4 +1506,9 @@ This method works for images, too. Images are inline elements by default, but ca
 ### R2D94
 
 **Today's Progress:**
-* Finished most functionality of pomodoro timer. Worked many hours on it yesterday and today. It counts down and has separate state for breaks and work sessions. At the end of a work session, it switches to a break and vice versa, until the fourth session ends; then it will show a message saying the pomodoro cycle is complete. 
+* Finished most functionality of pomodoro timer. Worked many hours on it yesterday and today. It counts down and has separate state for breaks and work sessions. At the end of a work session, it switches to a break and vice versa, until the fourth session ends; then it will show a message saying the pomodoro cycle is complete.
+
+### R2D95
+
+**Today's Progress:**
+* Modified random quote machine code to use React Hooks.
