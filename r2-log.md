@@ -1511,4 +1511,19 @@ This method works for images, too. Images are inline elements by default, but ca
 ### R2D95
 
 **Today's Progress:**
-* Modified random quote machine code to use React Hooks.
+* Worked on Demon Slayer app.
+
+### R2D96
+
+**Today's Progress:**
+* Worked on Demon Slayer app.
+
+### R2D97
+
+**Today's Progress:**
+* Worked on Demon Slayer app.
+
+### R2D97
+
+**Today's Progress:**
+* Worked on Demon Slayer app.
